@@ -1,0 +1,185 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<title>Connections</title>
+
+	<script src="puzzles.js"></script>
+	<script src="conn.js"></script>
+
+	<link href="conn.css" rel="stylesheet"></link>
+</head>
+<body onload="init();">
+	<!--<div class="title">Connections <span id="date"></span></div>-->
+
+	<div id="toast" class="fade">
+		<div id="toast-contents"></div>
+	</div>
+
+	<div class="instructions">
+		<span>Create four groups of four!</span>
+		<span class="solved-counter">
+			<span class="bubble level-0"></span>
+			<span class="bubble level-1"></span>
+			<span class="bubble level-2"></span>
+			<span class="bubble level-3"></span>
+		</span>
+	</div>
+
+	<table class="grid" id="puzzle">
+		<tr class="solved" id="solved_row_0">
+			<td id="solved_cell_0" colspan="4">
+				<div id="category_0"></div>
+				<div class="solved-words" id="words_0"></div>
+			</td>
+		</tr>
+		<tr class="solved" id="solved_row_1">
+			<td id="solved_cell_1" colspan="4">
+				<div id="category_1"></div>
+				<div class="solved-words" id="words_1"></div>
+			</td>
+		</tr>
+		<tr class="solved" id="solved_row_2">
+			<td id="solved_cell_2" colspan="4">
+				<div id="category_2"></div>
+				<div class="solved-words" id="words_2"></div>
+			</td>
+		</tr>
+		<tr class="solved" id="solved_row_3">
+			<td id="solved_cell_3" colspan="4">
+				<div id="category_3"></div>
+				<div class="solved-words" id="words_3"></div>
+			</td>
+		</tr>
+		<tr class="unsolved" id="row_0">
+			<td id="cell_0_0" onclick="wordClick(this);"></td>
+			<td id="cell_0_1" onclick="wordClick(this);"></td>
+			<td id="cell_0_2" onclick="wordClick(this);"></td>
+			<td id="cell_0_3" onclick="wordClick(this);"></td>
+		</tr>
+		<tr class="unsolved" id="row_1">
+			<td id="cell_1_0" onclick="wordClick(this);"></td>
+			<td id="cell_1_1" onclick="wordClick(this);"></td>
+			<td id="cell_1_2" onclick="wordClick(this);"></td>
+			<td id="cell_1_3" onclick="wordClick(this);"></td>
+		</tr>
+		<tr class="unsolved" id="row_2">
+			<td id="cell_2_0" onclick="wordClick(this);"></td>
+			<td id="cell_2_1" onclick="wordClick(this);"></td>
+			<td id="cell_2_2" onclick="wordClick(this);"></td>
+			<td id="cell_2_3" onclick="wordClick(this);"></td>
+		</tr>
+		<tr class="unsolved" id="row_3">
+			<td id="cell_3_0" onclick="wordClick(this);"></td>
+			<td id="cell_3_1" onclick="wordClick(this);"></td>
+			<td id="cell_3_2" onclick="wordClick(this);"></td>
+			<td id="cell_3_3" onclick="wordClick(this);"></td>
+		</tr>
+	</table>
+
+	<div id="mistakes">
+		<span>Mistakes remaining:</span>
+		<span class="mistake-counter">
+			<span class="bubble" id="mistakes_left_0">0</span>
+			<span class="bubble" id="mistakes_left_1">1</span>
+			<span class="bubble" id="mistakes_left_2">2</span>
+			<span class="bubble" id="mistakes_left_3">3</span>
+		</span>
+	</div>
+
+	<div id="buttons" class="buttons">
+		<span onclick="shuffle();">Shuffle</span>
+		<span class="deselect" onclick="deselect();">Deselect All</span>
+		<span onclick="submit();" id="submit">Submit</span>
+	</div>
+
+	<div id="guesses_section">
+		<div class="instructions">Previous Guesses (newest first)</div>
+
+		<div id="no_guesses">None</div>
+
+		<table class="grid" id="guesses">
+			<tr id="guess_0">
+				<td id="guess_words_0" class="guess-words"></td>
+				<td id="guess_outcome_0"></td>
+			</tr>
+			<tr id="guess_1">
+				<td id="guess_words_1" class="guess-words"></td>
+				<td id="guess_outcome_1"></td>
+			</tr>
+			<tr id="guess_2">
+				<td id="guess_words_2" class="guess-words"></td>
+				<td id="guess_outcome_2"></td>
+			</tr>
+			<tr id="guess_3">
+				<td id="guess_words_3" class="guess-words"></td>
+				<td id="guess_outcome_3"></td>
+			</tr>
+			<tr id="guess_4">
+				<td id="guess_words_4" class="guess-words"></td>
+				<td id="guess_outcome_4"></td>
+			</tr>
+			<tr id="guess_5">
+				<td id="guess_words_5" class="guess-words"></td>
+				<td id="guess_outcome_5"></td>
+			</tr>
+			<tr id="guess_6">
+				<td id="guess_words_6" class="guess-words"></td>
+				<td id="guess_outcome_6"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="results_section">
+		<div class="instructions">Results (oldest guess first)</div>
+		<table class="grid" id="results">
+			<tr id="result_row_0">
+				<td id="result_0_0"></td>
+				<td id="result_0_1"></td>
+				<td id="result_0_2"></td>
+				<td id="result_0_3"></td>
+			</tr>
+			<tr id="result_row_1">
+				<td id="result_1_0"></td>
+				<td id="result_1_1"></td>
+				<td id="result_1_2"></td>
+				<td id="result_1_3"></td>
+			</tr>
+			<tr id="result_row_2">
+				<td id="result_2_0"></td>
+				<td id="result_2_1"></td>
+				<td id="result_2_2"></td>
+				<td id="result_2_3"></td>
+			</tr>
+			<tr id="result_row_3">
+				<td id="result_3_0"></td>
+				<td id="result_3_1"></td>
+				<td id="result_3_2"></td>
+				<td id="result_3_3"></td>
+			</tr>
+			<tr id="result_row_4">
+				<td id="result_4_0"></td>
+				<td id="result_4_1"></td>
+				<td id="result_4_2"></td>
+				<td id="result_4_3"></td>
+			</tr>
+			<tr id="result_row_5">
+				<td id="result_5_0"></td>
+				<td id="result_5_1"></td>
+				<td id="result_5_2"></td>
+				<td id="result_5_3"></td>
+			</tr>
+			<tr id="result_row_6">
+				<td id="result_6_0"></td>
+				<td id="result_6_1"></td>
+				<td id="result_6_2"></td>
+				<td id="result_6_3"></td>
+			</tr>
+		</table>
+		<div class="buttons">
+			<span class="enabled" onclick="share();">Share Your Results</span>
+		</div>
+		<br /><br />
+	</div>
+</body>
+</html>
+

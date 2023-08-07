@@ -1,0 +1,243 @@
+body {
+	font-family: sans-serif;
+}
+
+.title {
+	margin-right: 16px;
+	font-size: 42px;
+	font-weight: 700;
+	padding: 24px 12px;
+}
+
+.instructions {
+	height: 3.5em;
+	/*flex-direction: column;*/
+	justify-content: center; /*space-around;*/
+	align-items: center;
+	padding: 6px;
+	font-size: 18px;
+	display: flex;
+}
+
+#no_guesses { text-align: center; }
+
+.grid td {
+    width: 22.5vw;
+    max-width: 22.5vw;
+    min-width: 20px;
+    min-height: 70px;
+    height: 22.5vw;
+    max-height: 22.5vw;
+    background-color: #efefe6;
+    color: #000;
+    text-align: center;
+    z-index: 0;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: opacity .4s;
+	 cursor: pointer;
+}
+
+.all-solved td {
+	width: 92vw !important;
+	max-width: 92vw !important;
+}
+
+.grid td.guess-words {
+	width: 68vw;
+	max-width: 68vw;
+	font-weight: normal;
+}
+
+#guesses td {
+	height: 10vw !important;
+	max-height: 10vw !important;
+}
+
+.solved-words {
+	font-weight: normal !important;
+}
+
+.selected {
+	color: white !important;
+	background-color: #5a594e !important;
+}
+
+.level-0 {
+	background-color: #fbd400 !important;
+}
+
+.level-1 {
+	background-color: #b5e352 !important;
+}
+
+.level-2 {
+	background-color: #729eeb !important;
+}
+
+.level-3 {
+	background-color: #bc70c4 !important;
+}
+
+#mistakes {
+	display: flex;
+   justify-content: center;
+   margin-top: 24px;
+}
+
+.mistake-counter, .solved-counter {
+	width: 118px;
+   justify-content: space-evenly;
+	align-items: center;
+	display: flex;
+}
+
+.solved-counter .bubble {
+	color: black;
+}
+
+.bubble {
+	opacity: 100;
+	width: 16px;
+	height: 16px;
+	border-radius: 9999px;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	padding-bottom: 3px;
+/*	background-color: #efefe6;*/
+	color: white;
+	background-color: #5a594e;
+}
+
+.destroyed {
+	animation: destroy 1s;
+}
+
+@keyframes destroy {
+	0% { 
+		opacity: 1;
+/*		background-color: #5d594e; */
+	}
+	50% { 
+		opacity: 1;
+		background-color: red;
+	}
+	100% {
+		opacity: 0;
+		background-color: red;
+	}
+}
+
+.solved {
+ 	display: none;
+}
+
+.buttons {
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 24px 0 0 0;
+	display: flex;
+}
+
+.buttons span {
+    width: fit-content;
+    min-width: 5.5em;
+    height: 2em;
+    text-align: center;
+    max-width: 80vw;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5em;
+    display: flex;
+}
+
+.deselect {
+	width: 120px;
+}
+
+.buttons span#submit {
+	border: 1px solid #7f7f7f;
+	color: #7f7f7f;
+	pointer-events: none;
+}
+
+.enabled {
+	border: 1px solid black !important;
+	background-color: black !important;
+	color: white !important;
+	pointer-events: all !important;
+}
+
+#results_section {
+	display: none;
+}
+
+#results tr {
+	display: none;
+}
+
+.show-table {
+	display: table !important;
+}
+
+.show-row {
+	display: table-row !important;
+}
+
+#results.grid td {
+	cursor: auto;
+}
+
+.show-block {
+	display: block !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#guesses tr {
+	display: none;
+}
+
+#toast {
+    visibility: hidden;
+    color: #fff;
+    opacity: 1;
+    z-index: 100;
+    text-align: center;
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    margin: 30px;
+    padding: 13px;
+    font-size: 14px;
+    line-height: 16px;
+    position: fixed;
+    left: 50%;
+    transform: translate(calc(-50% - 30px));
+	 transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+	visibility: visible !important;
+}
+
+#toast.fade {
+	opacity: 0;
+}

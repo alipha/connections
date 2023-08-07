@@ -38,6 +38,8 @@ body {
     font-weight: 700;
     transition: opacity .4s;
 	 cursor: pointer;
+	/* overflow-wrap: break-word;
+	 hyphens: auto; */
 }
 
 .all-solved td {
@@ -240,4 +242,17 @@ body {
 
 #toast.fade {
 	opacity: 0;
+}
+
+#date {
+	text-align: center;
+	display: block;
+}
+#previous {
+	text-decoration: none;
+}
+#next {
+	text-decoration: none;
+	text-align: right;
+	display: block;
 }

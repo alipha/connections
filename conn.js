@@ -1,4 +1,5 @@
 var puzzleNumber;
+var todayNumber;
 var puzzle;
 var groups;
 var selectedWords = [];
@@ -12,14 +13,51 @@ var loadedState = false;
 function elem(id) { return document.getElementById(id); }
 function cellElem(row, col) { return elem('cell_' + row + '_' + col); }
 function resElem(row, col) { return elem('result_' + row + '_' + col); }
+function getText(td) { return td.firstChild.innerText; }
+
+function setText(td, text) {
+	td.firstChild.innerText = text;
+	resizeText(td);
+}
+
+function resizeText(td) {
+	var size = 15;
+	td.style.fontSize = '15px';
+	while(td.offsetWidth <= td.firstChild.offsetWidth && size > 8) {
+		td.style.fontSize = (--size) + 'px';
+	}
+}
 
 function init() {
 	const currentDate = new Date();
-	const targetDate = new Date('2023-06-12 00:00:00');
+	var targetDate = new Date('2023-06-11 00:00:00');
 	const timeDifference = currentDate - targetDate;
 	const daysDifference = timeDifference / (1000 * 60 * 60 * 24);
-	puzzleNumber = Math.floor(daysDifference);
-	puzzle = puzzles[puzzleNumber];
+	todayNumber = Math.floor(daysDifference);
+
+	const urlParams = new URLSearchParams(window.location.search);
+	const puzzleId = urlParams.get('id');
+
+	puzzleNumber = puzzleId === null ? todayNumber : Number(puzzleId);
+	targetDate.setDate(targetDate.getDate() + puzzleNumber);
+
+	if(puzzleNumber === 1) {
+		elem('previous').classList.add('hide');
+	}
+	if(puzzleNumber === todayNumber) {
+		elem('next').classList.add('hide');
+	}
+	elem('previous').href = '?id=' + (puzzleNumber - 1);
+	elem('next').href = puzzleNumber === todayNumber - 1 ? '?' : '?id=' + (puzzleNumber + 1);
+
+	const dateOptions = {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric'
+	};
+	elem('date').innerText = new Intl.DateTimeFormat('en-US', dateOptions).format(targetDate);
+
+	puzzle = puzzles[puzzleNumber - 1];
 	groups = Object.entries(puzzle.groups).map((entry) => ({ solved: false, category: entry[0], ...entry[1] }));
 	groups.sort((a, b) => a.level - b.level);
 
@@ -28,11 +66,11 @@ function init() {
 		const row = start[r];
 		
 		for(var c = 0; c < row.length; ++c) {
-			cellElem(r, c).innerText = row[c];
+			setText(cellElem(r, c), row[c]);
 		}
 	}
 
-	var storedState = localStorage.getItem('puzzle_' + puzzleNumber);
+	var storedState = localStorage.getItem('puzzle_' + (puzzleNumber - 1));
 	if(storedState) {
 		state = JSON.parse(storedState);
 		for(var i = 0; i < state.guesses.length; ++i) {
@@ -54,14 +92,14 @@ function init() {
 function saveState() {
 	if(loadedState) {
 		state = { guesses, solved, selected: selectedWords };
-		localStorage.setItem("puzzle_" + puzzleNumber, JSON.stringify(state));
+		localStorage.setItem("puzzle_" + (puzzleNumber - 1), JSON.stringify(state));
 	}
 }
 
 function findWord(word) {
 	var cells = document.querySelectorAll(':not(.hide).unsolved td');
 	for(var i = 0; i < cells.length; ++i) {
-		if(cells[i].innerText === word) {
+		if(getText(cells[i]) === word) {
 			return cells[i];
 		}
 	}
@@ -71,10 +109,10 @@ function findWord(word) {
 function wordClick(wordElem) {
 	if(wordElem.classList.contains('selected')) {
 		wordElem.classList.remove('selected');
-		selectedWords = selectedWords.filter(word => word !== wordElem.innerText);
+		selectedWords = selectedWords.filter(word => word !== getText(wordElem));
 	} else if(selectedWords.length < 4) {
 		wordElem.classList.add('selected');
-		selectedWords.push(wordElem.innerText);
+		selectedWords.push(getText(wordElem));
 	}
 
 	saveState();
@@ -90,7 +128,7 @@ function shuffle() {
 	var words = [];
 	var cells = document.querySelectorAll(':not(.hide).unsolved td');
 	cells.forEach(c => {
-		words.push({ selected: c.classList.contains('selected'), word: c.innerText });
+		words.push({ selected: c.classList.contains('selected'), word: getText(c) });
 	});
 
 	shuffleArray(words);
@@ -98,7 +136,7 @@ function shuffle() {
 	var i = 0;
 	cells.forEach(c => {
 		words[i].selected ? c.classList.add('selected') : c.classList.remove('selected');
-		c.innerText = words[i].word;
+		setText(c, words[i].word);
 		++i;
 	});
 }
@@ -156,7 +194,7 @@ function addToResults() {
 		for(var i = 0; i < groups.length; ++i) {
 			var group = groups[i];
 			if(group.members.includes(word)) {
-				resElem(row, col).innerText = word;
+				resElem(row, col).firstChild.innerText = word;
 				resElem(row, col).classList.add('level-' + group.level);
 				break;
 			}
@@ -190,14 +228,14 @@ function processMatch(group) {
 
 	var cellsToMove = document.querySelectorAll('#row_' + solvedCount + ' td:not(.selected)');
 	var wordsToMove = [];
-	cellsToMove.forEach(e => { wordsToMove.push(e.innerText); });
+	cellsToMove.forEach(e => { wordsToMove.push(getText(e)); });
 
 	var selectedCellsInRow = document.querySelectorAll('#row_' + solvedCount + ' .selected');
 	selectedCellsInRow.forEach(cell => cell.classList.remove('selected'));
 
 	var selectedCells = document.getElementsByClassName('selected');
 	while(selectedCells.length > 0) {
-		selectedCells[0].innerText = wordsToMove.shift();
+		setText(selectedCells[0], wordsToMove.shift());
 		selectedCells[0].classList.remove('selected');
 	}
 
@@ -279,10 +317,13 @@ function gameOver() {
 	elem('guesses_section').classList.add('hide');
 	elem('results_section').classList.add('show-block');
 	elem('puzzle').classList.add('all-solved');
+
+	var resultElems = document.querySelectorAll('#results td');
+	resultElems.forEach(e => resizeText(e));
 }
 
 function share() {
-	var text = 'Connections\nPuzzle #' + (puzzleNumber + 1) + '\n' + toEmojis();
+	var text = 'Connections\nPuzzle #' + puzzleNumber + '\n' + toEmojis();
 	
 	navigator.clipboard.writeText(text)
 		.then(() => showTip('Results copied to clipboard'))

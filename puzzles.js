@@ -1499,4 +1499,204 @@ var puzzles =
         ["BANGLE", "RING", "FIELD", "DELIGHT"],
         ["PURGE", "ANKLET", "RINK", "BROOCH"]
     ]
+}, {
+    groups: {
+        "THEORETICAL PHYSICISTS": {
+            level: 0,
+            members: ["EINSTEIN", "FEYNMAN", "HAWKING", "OPPENHEIMER"]
+        },
+        TALENT: {
+            level: 1,
+            members: ["FACULTY", "FLAIR", "GENIUS", "GIFT"]
+        },
+        "AUSTRALIAN TERMS": {
+            level: 2,
+            members: ["BARBIE", "BUSH", "CRIKEY", "MATE"]
+        },
+        "___ POINT": {
+            level: 3,
+            members: ["MATCH", "MOOT", "SELLING", "WEST"]
+        }
+    },
+    startingGroups: [["BARBIE", "OPPENHEIMER", "MATCH", "GENIUS"], ["WEST", "BUSH", "SELLING", "HAWKING"], ["FACULTY", "EINSTEIN", "MATE", "MOOT"], ["CRIKEY", "GIFT", "FEYNMAN", "FLAIR"]]
+}, {
+    groups: {
+        "STATE ABBREVIATIONS": {
+            level: 0,
+            members: ["CO", "MA", "ME", "PA"]
+        },
+        "MUSICAL NOTES": {
+            level: 1,
+            members: ["DO", "FA", "LA", "TI"]
+        },
+        "GREEK LETTERS": {
+            level: 2,
+            members: ["MU", "NU", "PI", "XI"]
+        },
+        "PERIODIC TABLE SYMBOLS": {
+            level: 3,
+            members: ["FE", "HE", "NA", "NI"]
+        }
+    },
+    startingGroups: [["MA", "LA", "NA", "NU"], ["PI", "NI", "TI", "HE"], ["FA", "XI", "PA", "FE"], ["DO", "CO", "MU", "ME"]]
+}, {
+    groups: {
+        "FASTENING VERBS": {
+            level: 0,
+            members: ["BUCKLE", "BUTTON", "SNAP", "ZIP"]
+        },
+        "SLANG FOR ZERO": {
+            level: 1,
+            members: ["JACK", "NADA", "NOTHING", "SQUAT"]
+        },
+        "GYM EXERCISES": {
+            level: 2,
+            members: ["CURL", "LUNGE", "PLANK", "PRESS"]
+        },
+        '"CAPTAINS"': {
+            level: 3,
+            members: ["CRUNCH", "KANGAROO", "OBVIOUS", "PLANET"]
+        }
+    },
+    startingGroups: [["JACK", "PRESS", "PLANET", "BUTTON"], ["PLANK", "SQUAT", "SNAP", "OBVIOUS"], ["CRUNCH", "BUCKLE", "NOTHING", "CURL"], ["ZIP", "KANGAROO", "LUNGE", "NADA"]]
+}, {
+    groups: {
+        "CLASSIC DOG NAMES": {
+            level: 0,
+            members: ["FIDO", "LUCKY", "ROVER", "SPOT"]
+        },
+        PERCEIVE: {
+            level: 1,
+            members: ["CATCH", "NOTICE", "OBSERVE", "SEE"]
+        },
+        "FISHING TERMS": {
+            level: 2,
+            members: ["BAIT", "CHUM", "FLY", "SINKER"]
+        },
+        "T-___": {
+            level: 3,
+            members: ["BONE", "REX", "SHIRT", "STORM"]
+        }
+    },
+    startingGroups: [["CATCH", "SPOT", "BONE", "LUCKY"], ["SEE", "SHIRT", "FLY", "STORM"], ["CHUM", "NOTICE", "REX", "BAIT"], ["FIDO", "SINKER", "OBSERVE", "ROVER"]]
+}, {
+    groups: {
+        "STATES OF MATTER": {
+            level: 0,
+            members: ["GAS", "LIQUID", "PLASMA", "SOLID"]
+        },
+        ENERGY: {
+            level: 1,
+            members: ["JUICE", "SPIRIT", "STEAM", "VIGOR"]
+        },
+        "CLASSICAL ELEMENTS": {
+            level: 2,
+            members: ["AIR", "EARTH", "FIRE", "WATER"]
+        },
+        "THINGS WITH RINGS": {
+            level: 3,
+            members: ["CIRCUS", "SATURN", "TREE", "WEDDING"]
+        }
+    },
+    startingGroups: [["JUICE", "WATER", "TREE", "EARTH"], ["GAS", "CIRCUS", "STEAM", "LIQUID"], ["SATURN", "FIRE", "SOLID", "SPIRIT"], ["PLASMA", "VIGOR", "AIR", "WEDDING"]]
+}, {
+    groups: {
+        "TIME PERIODS": {
+            level: 0,
+            members: ["CENTURY", "DECADE", "MILLENNIUM", "YEAR"]
+        },
+        "BREAKFAST FOODS": {
+            level: 1,
+            members: ["CEREAL", "OMELET", "PANCAKE", "WAFFLE"]
+        },
+        PAINTERS: {
+            level: 2,
+            members: ["BACON", "CLOSE", "MUNCH", "WHISTLER"]
+        },
+        "ONE IN A DOZEN": {
+            level: 3,
+            members: ["EGG", "JUROR", "MONTH", "ROSE"]
+        }
+    },
+    startingGroups: [["ROSE", "CLOSE", "BACON", "YEAR"], ["PANCAKE", "MONTH", "MUNCH", "EGG"], ["DECADE", "CEREAL", "CENTURY", "OMELET"], ["WHISTLER", "MILLENNIUM", "JUROR", "WAFFLE"]]
+}, {
+    groups: {
+        DESSERTS: {
+            level: 0,
+            members: ["CAKE", "COBBLER", "PIE", "TART"]
+        },
+        "OCCUPATIONAL SURNAMES": {
+            level: 1,
+            members: ["FISHER", "MASON", "MILLER", "SMITH"]
+        },
+        "ALTER DECEPTIVELY": {
+            level: 2,
+            members: ["DISTORT", "DOCTOR", "FUDGE", "TWIST"]
+        },
+        "SQUARE ___": {
+            level: 3,
+            members: ["DANCE", "MEAL", "ONE", "ROOT"]
+        }
+    },
+    startingGroups: [["FUDGE", "MEAL", "COBBLER", "SMITH"], ["PIE", "DOCTOR", "ROOT", "TWIST"], ["DANCE", "ONE", "FISHER", "TART"], ["MASON", "CAKE", "DISTORT", "MILLER"]]
+}, {
+    groups: {
+        "UNITS OF VOLUME": {
+            level: 0,
+            members: ["CUP", "GALLON", "PINT", "QUART"]
+        },
+        EXTREMELY: {
+            level: 1,
+            members: ["AWFUL", "QUITE", "SUPER", "VERY"]
+        },
+        "WORLD CURRENCIES": {
+            level: 2,
+            members: ["RAND", "REAL", "STERLING", "WON"]
+        },
+        "___ CAKE": {
+            level: 3,
+            members: ["CARROT", "COFFEE", "POUND", "SPONGE"]
+        }
+    },
+    startingGroups: [["PINT", "REAL", "CARROT", "AWFUL"], ["SPONGE", "CUP", "WON", "SUPER"], ["GALLON", "COFFEE", "VERY", "POUND"], ["RAND", "QUITE", "QUART", "STERLING"]]
+}, {
+    groups: {
+        FRIEND: {
+            level: 0,
+            members: ["BUD", "CHUM", "MATE", "PAL"]
+        },
+        COOKWEAR: {
+            level: 1,
+            members: ["CROCK", "POT", "SKILLET", "WOK"]
+        },
+        SHOES: {
+            level: 2,
+            members: ["CLOG", "PUMP", "SLIDE", "WEDGE"]
+        },
+        "SLANG FOR CANNABIS": {
+            level: 3,
+            members: ["GRASS", "HERB", "MARY JANE", "WEED"]
+        }
+    },
+    startingGroups: [["BUD", "PUMP", "CROCK", "HERB"], ["POT", "MATE", "WEDGE", "GRASS"], ["WOK", "MARY JANE", "CHUM", "SLIDE"], ["CLOG", "PAL", "SKILLET", "WEED"]]
+}, {
+    groups: {
+        "CAMPING SUPPLIES": {
+            level: 0,
+            members: ["COOLER", "LANTERN", "SLEEPING BAG", "TENT"]
+        },
+        INSULT: {
+            level: 1,
+            members: ["BARB", "DIG", "DISS", "JAB"]
+        },
+        TINY: {
+            level: 2,
+            members: ["MINUTE", "SLIGHT", "SMALL", "WEE"]
+        },
+        "HAPPY ___": {
+            level: 3,
+            members: ["CAMPER", "HOUR", "MEAL", "MEDIUM"]
+        }
+    },
+    startingGroups: [["MINUTE", "DIG", "MEAL", "COOLER"], ["HOUR", "TENT", "SLIGHT", "MEDIUM"], ["SMALL", "BARB", "CAMPER", "LANTERN"], ["JAB", "SLEEPING BAG", "DISS", "WEE"]]
 }];

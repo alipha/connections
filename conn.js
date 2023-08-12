@@ -1,6 +1,7 @@
 var puzzleNumber;
 var todayNumber;
 var customId;
+var adhocId = null;
 var puzzle;
 var groups;
 var selectedWords = [];
@@ -29,7 +30,7 @@ function resizeText(td) {
 	}
 }
 
-function init() {
+async function init() {
 	const currentDate = new Date();
 	var targetDate = new Date('2023-06-11 00:00:00');
 	const timeDifference = currentDate - targetDate;
@@ -38,8 +39,17 @@ function init() {
 
 	const urlParams = new URLSearchParams(window.location.search);
 	customId = urlParams.get('custom');
+	const adhocStr = urlParams.get('adhoc');
 
-	if(customId === null) {
+	if(adhocStr !== null) {
+		var adhoc = atob(adhocStr.replace(/_/g, '/').replace(/-/g, '+').replace(/~/g, '='));
+		puzzle = JSON.parse(adhoc);
+	   adhocId = await getAdhocId(adhoc);
+		puzzleNumber = 'adhoc_' + adhocId;
+		elem('previous').classList.add('hide');
+		elem('next').classList.add('hide');
+		elem('date').innerText = 'Puzzle ' + adhocId;
+	} else if(customId === null) {
 		const puzzleId = urlParams.get('id');
 
 		puzzleNumber = puzzleId === null ? todayNumber : Number(puzzleId);
@@ -90,7 +100,7 @@ function init() {
 		}
 	}
 
-	const puzzleStorageId = customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
+	const puzzleStorageId = adhocId !== null ? puzzleNumber : customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
 	var storedState = localStorage.getItem('puzzle_' + puzzleStorageId);
 	if(storedState) {
 		state = JSON.parse(storedState);
@@ -113,7 +123,7 @@ function init() {
 function saveState() {
 	if(loadedState) {
 		state = { guesses, solved, selected: selectedWords };
-		const puzzleId = customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
+		const puzzleId = adhocId !== null ? puzzleNumber: customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
 		localStorage.setItem("puzzle_" + puzzleId, JSON.stringify(state));
 	}
 }
@@ -345,7 +355,9 @@ function gameOver() {
 }
 
 function share() {
-	var text = customId === null ?
+	var text = adhocId !== null ?
+		'Connections\nPuzzle ' + adhocId + '\n' + toEmojis() 
+		: customId === null ?
 		'Connections\nPuzzle #' + puzzleNumber + '\n' + toEmojis() :
 		'Connections\nCustom Puzzle #' + customId + '\n' + toEmojis();
 	
@@ -380,4 +392,107 @@ function getEmoji(elem) {
 	} else {
 		return undefined;
 	}
+}
+
+async function getResultsFromString(base64) {
+	var byteStr;
+	try {
+		byteStr = atob(base64.replace(/_/g, '/').replace(/-/g, '+') + '='); 
+	} catch(e) {
+		return undefined;
+	}
+	if(byteStr.length !== 14)
+		return undefined;
+
+   var bytes = [];
+   for(var i = 0; i < byteStr.length; ++i) {
+      bytes.push(byteStr.charCodeAt(i)); 
+   }
+   bytes = await xorPuzzleNum(bytes);
+
+	var results = [];
+	for(var i = 0; i < 7; ++i) {
+		var guess = [];
+		guess.push(indexToStartingWord(bytes[i*2] & 15));
+		guess.push(indexToStartingWord(bytes[i*2] >> 4));
+		guess.push(indexToStartingWord(bytes[i*2+1] & 15));
+		guess.push(indexToStartingWord(bytes[i*2+1] >> 4));
+		results.push(guess);
+	}
+	return results;
+}
+
+async function getResultString() {
+	var bytes = Array(14).fill(0);
+	for(var i = 0; i < guesses.length; ++i) {
+		var guess = guesses[i];
+		bytes[i*2] = indexInStartingGroup(guess[0]) + 
+			(indexInStartingGroup(guess[1]) << 4);
+		bytes[i*2+1] = indexInStartingGroup(guess[2]) +
+			(indexInStartingGroup(guess[3]) << 4);
+	}
+
+	bytes = await xorPuzzleNum(bytes);
+	var byteStr = String.fromCharCode(...bytes);
+   return btoa(byteStr).replace(/\//g, '_').replace(/\+/g, '-').slice(0, -1);
+}
+
+async function xorPuzzleNum(bytes) {
+	 var answer = puzzleNumber.toString();
+    bytes = await xorHalf(answer, bytes, true);
+    bytes = await xorHalf(answer, bytes, false);
+    return xorHalf(answer, bytes, true);
+}
+
+async function xorHalf(answer, bytes, xorFirstHalf) {
+    var keyBytes = [];
+
+    var keyStart = 0;
+    var keyEnd = Math.floor(bytes.length / 2);
+    var xorStart = Math.floor(bytes.length / 2);
+    var xorEnd = bytes.length;
+    if(xorFirstHalf) {
+        keyStart = xorStart;
+        keyEnd = xorEnd;
+        xorStart = 0;
+        xorEnd = Math.floor(bytes.length / 2);
+    }
+
+    for(var i = keyStart; i < keyEnd; ++i) {
+        keyBytes.push(bytes[i]);
+    }
+    for(var i = 0; i < answer.length; ++i) {
+        keyBytes.push(answer.charCodeAt(i));
+    }
+
+    var buffer = await window.crypto.subtle.digest("SHA-256", new Uint8Array(keyBytes).buffer);
+    var hashBytes = Array.from(new Uint8Array(buffer));
+    for(var i = xorStart; i < xorEnd; ++i) {
+        bytes[i] ^= hashBytes[i];
+    }
+    bytes[bytes.length - 1] &= 0xfc;
+    return bytes;
+}
+
+async function getAdhocId(message) {
+  const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
+  const hashBuffer = await crypto.subtle.digest("SHA-256", msgUint8); // hash the message
+  const hashArray = Array.from(new Uint8Array(hashBuffer)); // convert buffer to byte array
+  const hashHex = hashArray
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join(""); // convert bytes to hex string
+  return hashHex.substring(0, 16);
+}
+
+function indexInStartingGroups(word) {
+	for(var g = 0; g < puzzle.startingGroups.length; ++g) {
+		var i = puzzle.startingGroups[g].indexOf(word);
+		if(i >= 0)
+			return g * puzzle.startingGroups.length + i;
+	}
+	throw new Error('word ' + word + ' not found in startingGroups');
+}
+
+function indexToStartingWord(index) {
+	return puzzle.startingGroups[index >> 2][index & 3];
 }

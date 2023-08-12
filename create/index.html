@@ -1,0 +1,135 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<title>Connections - Create</title>
+
+	<script src="create.js"></script>
+
+	<link href="../conn.css?v=2" rel="stylesheet"></link>
+	<link href="create.css" rel="stylesheet"></link>
+</head>
+<body onload="init();">
+	<table class="create level-0">
+		<tr>
+			<td><label for="category_0">Category:</label></td>
+			<td><input class="category" type="text" id="category_0" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_0_0">Word:</label></td>
+			<td><input type="text" id="word_0_0" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_0_1">Word:</label></td>
+			<td><input type="text" id="word_0_1" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_0_2">Word:</label></td>
+			<td><input type="text" id="word_0_2" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_0_3">Word:</label></td>
+			<td><input type="text" id="word_0_3" /></td>
+		</tr>
+	</table>
+	<table class="create level-1">
+		<tr>
+			<td><label for="category_1">Category:</label></td>
+			<td><input class="category" type="text" id="category_1" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_1_0">Word:</label></td>
+			<td><input type="text" id="word_1_0" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_1_1">Word:</label></td>
+			<td><input type="text" id="word_1_1" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_1_2">Word:</label></td>
+			<td><input type="text" id="word_1_2" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_1_3">Word:</label></td>
+			<td><input type="text" id="word_1_3" /></td>
+		</tr>
+	</table>
+	<table class="create level-2">
+		<tr>
+			<td><label for="category_2">Category:</label></td>
+			<td><input class="category" type="text" id="category_2" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_2_0">Word:</label></td>
+			<td><input type="text" id="word_2_0" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_2_1">Word:</label></td>
+			<td><input type="text" id="word_2_1" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_2_2">Word:</label></td>
+			<td><input type="text" id="word_2_2" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_2_3">Word:</label></td>
+			<td><input type="text" id="word_2_3" /></td>
+		</tr>
+	</table>
+	<table class="create level-3">
+		<tr>
+			<td><label for="category_3">Category:</label></td>
+			<td><input class="category" type="text" id="category_3" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_3_0">Word:</label></td>
+			<td><input type="text" id="word_3_0" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_3_1">Word:</label></td>
+			<td><input type="text" id="word_3_1" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_3_2">Word:</label></td>
+			<td><input type="text" id="word_3_2" /></td>
+		</tr>
+		<tr>
+			<td><label for="word_3_3">Word:</label></td>
+			<td><input type="text" id="word_3_3" /></td>
+		</tr>
+	</table>
+	<div id="buttons" class="buttons">
+		<span onclick="generate();" id="submit" class="enabled">Generate</span>
+		<br />
+		<a id="link" href="" class="hidden">Link</a>
+	</div>
+	<br />
+	<table class="grid" id="puzzle">
+		<tr class="unsolved" id="row_0">
+			<td id="cell_0_0"><span></span></td>
+			<td id="cell_0_1"><span></span></td>
+			<td id="cell_0_2"><span></span></td>
+			<td id="cell_0_3"><span></span></td>
+		</tr>
+		<tr class="unsolved" id="row_1">
+			<td id="cell_1_0"><span></span></td>
+			<td id="cell_1_1"><span></span></td>
+			<td id="cell_1_2"><span></span></td>
+			<td id="cell_1_3"><span></span></td>
+		</tr>
+		<tr class="unsolved" id="row_2">
+			<td id="cell_2_0"><span></span></td>
+			<td id="cell_2_1"><span></span></td>
+			<td id="cell_2_2"><span></span></td>
+			<td id="cell_2_3"><span></span></td>
+		</tr>
+		<tr class="unsolved" id="row_3">
+			<td id="cell_3_0"><span></span></td>
+			<td id="cell_3_1"><span></span></td>
+			<td id="cell_3_2"><span></span></td>
+			<td id="cell_3_3"><span></span></td>
+		</tr>
+	</table>
+	<br />
+	<br />
+</body>
+</html>

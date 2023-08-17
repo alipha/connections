@@ -4,13 +4,14 @@ var customId;
 var adhocId = null;
 var puzzle;
 var groups;
-var selectedWords = [];
 var guesses = [];
 var solvedCount = 0;
 var mistakesLeft = 4;
 var solved = [false, false, false, false];
-var state = { guesses, solved, selectedWords };
 var loadedState = false;
+var marker = 'selected';
+var markerWords = { selected: [], red: [], blue: [], yellow: [] };
+var state;
 
 function elem(id) { return document.getElementById(id); }
 function cellElem(row, col) { return elem('cell_' + row + '_' + col); }
@@ -112,9 +113,16 @@ async function init() {
 			submit();
 			deselect();
 		}
-		for(var i = 0; i < state.selected.length; ++i) {
-			wordClick(findWord(state.selected[i]));
+		for(var i = 0; i < state.selectedWords.length; ++i) {
+			wordClick(findWord(state.selectedWords[i]));
 		}
+		for(var c = 0; c < 3; ++c) {
+			marker = ['red', 'blue', 'yellow'][c];
+			for(var i = 0; state[marker] && i < state[marker].length; ++i) {
+				wordClick(findWord(state[marker][i]));
+			}
+		}
+		marker = 'selected';
 	}
 
 	loadedState = true;
@@ -122,7 +130,15 @@ async function init() {
 
 function saveState() {
 	if(loadedState) {
-		state = { guesses, solved, selected: selectedWords };
+		state = { 
+			guesses, 
+			solved, 
+			selectedWords: markerWords.selected, 
+			red: markerWords.red,
+			blue: markerWords.blue,
+			yellow: markerWords.yellow
+		};
+	
 		const puzzleId = adhocId !== null ? puzzleNumber: customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
 		localStorage.setItem("puzzle_" + puzzleId, JSON.stringify(state));
 	}
@@ -139,48 +155,75 @@ function findWord(word) {
 }
 
 function wordClick(wordElem) {
-	if(wordElem.classList.contains('selected')) {
-		wordElem.classList.remove('selected');
-		selectedWords = selectedWords.filter(word => word !== getText(wordElem));
-	} else if(selectedWords.length < 4) {
-		wordElem.classList.add('selected');
-		selectedWords.push(getText(wordElem));
+	if(wordElem.classList.contains(marker)) {
+		wordElem.classList.remove(marker);
+		markerWords[marker] = markerWords[marker].filter(word => word !== getText(wordElem));
+	} else if(marker !== 'selected' || markerWords.selected.length < 4) {
+		wordElem.classList.add(marker);
+		markerWords[marker].push(getText(wordElem));
 	}
 
 	saveState();
 
-	if(selectedWords.length === 4) {
+	if(markerWords.selected.length === 4) {
 		elem('submit').classList.add('enabled');
 	} else {
 		elem('submit').classList.remove('enabled');
 	}
 }
 
+function setMarker(m) {
+	if(marker === m)
+		return;
+
+	if(marker === 'selected') {
+		var selectedCells = document.getElementsByClassName('selected');
+		while(selectedCells.length > 0) {
+			selectedCells[0].classList.add(m);
+			selectedCells[0].classList.remove('selected');
+		}
+		for(var i = 0; i < markerWords.selected.length; ++i) {
+			var word = markerWords.selected[i];
+			if(markerWords[m].indexOf(word) === -1)
+				markerWords[m].push(word);
+		}
+		markerWords.selected = [];
+		elem('submit').classList.remove('enabled');
+		saveState();
+	}
+
+	elem('marker_' + marker).classList.remove('picked');
+	elem('marker_' + m).classList.add('picked');
+	marker = m;
+}
+
 function shuffle() {
 	var words = [];
 	var cells = document.querySelectorAll(':not(.hide).unsolved td');
 	cells.forEach(c => {
-		words.push({ selected: c.classList.contains('selected'), word: getText(c) });
+		words.push({ classes: c.className, word: getText(c) });
 	});
 
 	shuffleArray(words);
 
 	var i = 0;
 	cells.forEach(c => {
-		words[i].selected ? c.classList.add('selected') : c.classList.remove('selected');
+		c.className = words[i].classes;
 		setText(c, words[i].word);
 		++i;
 	});
 }
 
-function deselect() {
-	selectedWords = [];
+function deselect(m) {
+	m = m ?? marker;
+	markerWords[m] = [];
 	saveState();
-	const elements = document.getElementsByClassName('selected');
+	const elements = document.getElementsByClassName(m);
 	while(elements.length > 0) {
-		elements[0].classList.remove('selected');
+		elements[0].classList.remove(m);
 	}
-	elem('submit').classList.remove('enabled');
+	if(m === 'selected')
+		elem('submit').classList.remove('enabled');
 }
 
 function showTip(tip) {
@@ -193,7 +236,7 @@ function showTip(tip) {
 }
 
 function submit() {
-	if(selectedWords.length !== 4)
+	if(markerWords.selected.length !== 4)
 		return;
 	
 	if(alreadyGuessed()) {
@@ -204,7 +247,7 @@ function submit() {
 	addToResults();
 
 	for(var i = 0; i < groups.length; ++i) {
-		var count = matchCount(groups[i].members, selectedWords);
+		var count = matchCount(groups[i].members, markerWords.selected);
 		if(count === 4) {
 			processMatch(groups[i]);
 			return;
@@ -220,8 +263,8 @@ function submit() {
 function addToResults() {
 	var row = guesses.length;
 
-	for(var col = 0; col < selectedWords.length; ++col) {
-		var word = selectedWords[col];
+	for(var col = 0; col < markerWords.selected.length; ++col) {
+		var word = markerWords.selected[col];
 
 		for(var i = 0; i < groups.length; ++i) {
 			var group = groups[i];
@@ -238,7 +281,7 @@ function addToResults() {
 
 function alreadyGuessed() {
 	for(var i = 0; i < guesses.length; ++i)
-		if(matchCount(guesses[i], selectedWords) === 4)
+		if(matchCount(guesses[i], markerWords.selected) === 4)
 			return true;
 	return false;
 }
@@ -260,15 +303,23 @@ function processMatch(group) {
 
 	var cellsToMove = document.querySelectorAll('#row_' + solvedCount + ' td:not(.selected)');
 	var wordsToMove = [];
-	cellsToMove.forEach(e => { wordsToMove.push(getText(e)); });
+	cellsToMove.forEach(e => { 
+		wordsToMove.push({ classes: e.className, word: getText(e) });
+		e.className = '';
+	});
 
 	var selectedCellsInRow = document.querySelectorAll('#row_' + solvedCount + ' .selected');
-	selectedCellsInRow.forEach(cell => cell.classList.remove('selected'));
+	selectedCellsInRow.forEach(cell => {
+		cell.className = '';
+		removeFromLists(cell);
+	});
 
 	var selectedCells = document.getElementsByClassName('selected');
 	while(selectedCells.length > 0) {
-		setText(selectedCells[0], wordsToMove.shift());
-		selectedCells[0].classList.remove('selected');
+		removeFromLists(selectedCells[0]);
+		var word = wordsToMove.shift();
+		setText(selectedCells[0], word.word);
+		selectedCells[0].className = word.classes;
 	}
 
 	elem('row_' + solvedCount).classList.add('hide');
@@ -281,9 +332,16 @@ function processMatch(group) {
 	});
 
 	++solvedCount;
-	deselect();
+	deselect('selected');
 	if(solvedCount === 4)
 		gameOver();
+}
+
+function removeFromLists(cell) {
+	for(var i = 0; i < 3; ++i) {
+		var c = ['red', 'blue', 'yellow'][i];
+		markerWords[c] = markerWords[c].filter(w => w !== getText(cell));
+	}
 }
 
 function processOneAway() {
@@ -301,9 +359,9 @@ function processMiss() {
 function addToGuesses(fn) {
 	var row = 6 - guesses.length;
 	elem('no_guesses').classList.add('hide');
-	elem('guess_words_' + row).innerText = selectedWords.join(', ');
+	elem('guess_words_' + row).innerText = markerWords.selected.join(', ');
 	fn(elem('guess_outcome_' + row));
-	guesses.push([...selectedWords]);
+	guesses.push([...markerWords.selected]);
 	elem('guess_' + row).classList.add('show-row');
 	saveState();
 }

@@ -5,9 +5,9 @@
 
 	<script src="puzzles.js?v=2"></script>
 	<script src="custom.js?v=2"></script>
-	<script src="conn.js?v=4"></script>
+	<script src="conn.js?v=5"></script>
 
-	<link href="conn.css?v=2" rel="stylesheet"></link>
+	<link href="conn.css?v=3" rel="stylesheet"></link>
 </head>
 <body onload="init();">
 	<!--<div class="title">Connections <span id="date"></span></div>-->
@@ -24,6 +24,13 @@
 			<span class="bubble level-2"></span>
 			<span class="bubble level-3"></span>
 		</span>
+	</div>
+
+	<div class="buttons marker-buttons">
+		<span id="marker_selected" onclick="setMarker('selected');" class="picked">Guess</span>
+		<span id="marker_red"      onclick="setMarker('red');">Mark</span>
+		<span id="marker_blue"     onclick="setMarker('blue');">Mark</span>
+		<span id="marker_yellow"   onclick="setMarker('yellow');">Mark</span>
 	</div>
 
 	<table class="grid" id="puzzle">

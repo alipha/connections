@@ -10,7 +10,7 @@ body {
 }
 
 .instructions {
-	height: 3.5em;
+	height: 2.5em;
 	/*flex-direction: column;*/
 	justify-content: center; /*space-around;*/
 	align-items: center;
@@ -67,6 +67,11 @@ body {
 	background-color: #5a594e !important;
 }
 
+#marker_selected {
+	color: white !important;
+	background-color: #96968e !important;
+}
+
 .level-0 {
 	background-color: #fbd400 !important;
 }
@@ -86,7 +91,7 @@ body {
 #mistakes {
 	display: flex;
    justify-content: center;
-   margin-top: 24px;
+   margin-top: 16px;
 }
 
 .mistake-counter, .solved-counter {
@@ -142,7 +147,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	margin: 24px 0 0 0;
+	margin: 16px 0 0 0;
 	display: flex;
 }
 
@@ -162,6 +167,48 @@ body {
     font-weight: 600;
     line-height: 1.5em;
     display: flex;
+}
+
+.buttons.marker-buttons {
+	margin: 0 0 16px 0;
+}
+
+.buttons.marker-buttons span {
+	min-width: 3.5em;
+	height: 1em;
+	border: 3px solid #fff;
+}
+
+.picked {
+	border: 3px solid #000 !important;
+}
+
+.grid td.red, #marker_red {
+	background-color: #f7b5b5;
+}
+
+.grid td.blue, #marker_blue {
+	background-color: #b5def7;
+}
+
+.grid td.yellow, #marker_yellow {
+	background-color: #f5f7b5;
+}
+
+.grid td.blue.yellow {
+	background-color: #bdf7b5;
+}
+
+.grid td.red.blue {
+	background-color: #cbb5f7;
+}
+
+.grid td.red.yellow {
+	background-color: #f7cbb5;
+}
+
+.grid td.red.blue.yellow {
+	background-color: #cf8357;
 }
 
 .deselect {

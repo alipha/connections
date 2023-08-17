@@ -114,7 +114,7 @@ async function init() {
 				wordClick(findWord(guess[w]));
 			}
 			submit();
-			deselect();
+			deselect(undefined, true);
 		}
 		for(var i = 0; i < state.selectedWords.length; ++i) {
 			wordClick(findWord(state.selectedWords[i]));
@@ -351,7 +351,7 @@ function processMatch(group) {
 	});
 
 	++solvedCount;
-	deselect('selected');
+	deselect('selected', true);
 	if(solvedCount === 4)
 		gameOver();
 }

@@ -12,6 +12,9 @@ var loadedState = false;
 var marker = 'selected';
 var markerWords = { selected: [], red: [], blue: [], yellow: [] };
 var state;
+var doubleTap = false;
+var timeoutFade;
+var timeoutClear;
 
 function elem(id) { return document.getElementById(id); }
 function cellElem(row, col) { return elem('cell_' + row + '_' + col); }
@@ -214,11 +217,24 @@ function shuffle() {
 	});
 }
 
-function deselect(m) {
+function deselect(m, ignoreDoubleTap) {
 	m = m ?? marker;
 	markerWords[m] = [];
 	saveState();
 	const elements = document.getElementsByClassName(m);
+	if(!ignoreDoubleTap && elements.length === 0) {
+		if(doubleTap) {
+			deselect('selected', true);
+			deselect('red', true);
+			deselect('blue', true);
+			deselect('yellow', true);
+			doubleTap = false;
+		} else {
+			showTip('Tap again to clear all');
+			doubleTap = true;
+			setTimeout(() => doubleTap = false, 2000);
+		}
+	}
 	while(elements.length > 0) {
 		elements[0].classList.remove(m);
 	}
@@ -232,7 +248,10 @@ function showTip(tip) {
 	elem('toast-contents').innerText = tip;
 	elem('toast').classList.remove('fade');
 	elem('toast').classList.add('visible');
-	setTimeout(() => elem('toast').classList.add('fade'), 2000);
+	clearTimeout(timeoutFade);
+	clearTimeout(timeoutClear);
+	timeoutFade =  setTimeout(() => elem('toast').classList.add('fade'), 2000);
+	timeoutClear = setTimeout(() => elem('toast-contents').innerText = '', 2500);
 }
 
 function submit() {

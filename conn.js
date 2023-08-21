@@ -147,14 +147,21 @@ function saveState() {
 	}
 }
 
-function findWord(word) {
+function tryFindWord(word) {
 	var cells = document.querySelectorAll(':not(.hide).unsolved td');
 	for(var i = 0; i < cells.length; ++i) {
 		if(getText(cells[i]) === word) {
 			return cells[i];
 		}
 	}
-	throw new Error('Cannot find word ' + word);
+	return undefined;
+}
+
+function findWord(word) {
+	var cell = tryFindWord(word);
+	if(!cell)
+		throw new Error('Cannot find word ' + word);
+	return cell;
 }
 
 function wordClick(wordElem) {
@@ -228,6 +235,7 @@ function deselect(m, ignoreDoubleTap) {
 			deselect('red', true);
 			deselect('blue', true);
 			deselect('yellow', true);
+			clearPreviousGuess();
 			doubleTap = false;
 		} else {
 			showTip('Tap again to clear all');
@@ -240,6 +248,30 @@ function deselect(m, ignoreDoubleTap) {
 	}
 	if(m === 'selected')
 		elem('submit').classList.remove('enabled');
+}
+
+function clearPreviousGuess() {
+	var guessCells = document.getElementsByClassName('previous-guess');
+	while(guessCells.length > 0)
+		guessCells[0].classList.remove('previous-guess');
+}
+
+function previousGuess(guessIndex) {
+	if(elem('guess_outcome_' + guessIndex).innerText === 'Correct')
+		return;
+	var guessCell = elem('guess_words_' + guessIndex);
+	if(guessCell.classList.contains('previous-guess')) {
+		clearPreviousGuess();
+	} else {
+		clearPreviousGuess();
+		guessCell.classList.add('previous-guess');
+		var words = guesses[6 - guessIndex];
+		for(var i = 0; i < words.length; ++i) {
+			var cell = tryFindWord(words[i]);
+			if(cell)
+				cell.classList.add('previous-guess');
+		}
+	}
 }
 
 function showTip(tip) {

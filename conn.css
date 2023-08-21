@@ -303,3 +303,7 @@ body {
 	text-align: right;
 	display: block;
 }
+
+.previous-guess {
+	border: 2px magenta solid !important;
+}

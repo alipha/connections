@@ -10,7 +10,7 @@ var mistakesLeft = 4;
 var solved = [false, false, false, false];
 var loadedState = false;
 var marker = 'selected';
-var markerWords = { selected: [], red: [], blue: [], yellow: [] };
+var markerWords = { selected: [], red: [], blue: [], yellow: [], red_border: [], blue_border: [], yellow_border: [] };
 var state;
 var doubleTap = false;
 var timeoutFade;
@@ -119,8 +119,8 @@ async function init() {
 		for(var i = 0; i < state.selectedWords.length; ++i) {
 			wordClick(findWord(state.selectedWords[i]));
 		}
-		for(var c = 0; c < 3; ++c) {
-			marker = ['red', 'blue', 'yellow'][c];
+		for(var c = 0; c < 6; ++c) {
+			marker = ['red', 'blue', 'yellow', 'red_border', 'blue_border', 'yellow_border'][c];
 			for(var i = 0; state[marker] && i < state[marker].length; ++i) {
 				wordClick(findWord(state[marker][i]));
 			}
@@ -139,7 +139,10 @@ function saveState() {
 			selectedWords: markerWords.selected, 
 			red: markerWords.red,
 			blue: markerWords.blue,
-			yellow: markerWords.yellow
+			yellow: markerWords.yellow,
+			red_border: markerWords.red_border,
+			blue_border: markerWords.blue_border,
+			yellow_border: markerWords.yellow_border
 		};
 	
 		const puzzleId = adhocId !== null ? puzzleNumber: customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
@@ -235,6 +238,9 @@ function deselect(m, ignoreDoubleTap) {
 			deselect('red', true);
 			deselect('blue', true);
 			deselect('yellow', true);
+			deselect('red_border', true);
+			deselect('blue_border', true);
+			deselect('yellow_border', true);
 			clearPreviousGuess();
 			doubleTap = false;
 		} else {
@@ -389,8 +395,8 @@ function processMatch(group) {
 }
 
 function removeFromLists(cell) {
-	for(var i = 0; i < 3; ++i) {
-		var c = ['red', 'blue', 'yellow'][i];
+	for(var i = 0; i < 6; ++i) {
+		var c = ['red', 'blue', 'yellow', 'red_border', 'blue_border', 'yellow_border'][i];
 		markerWords[c] = markerWords[c].filter(w => w !== getText(cell));
 	}
 }

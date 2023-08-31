@@ -10,11 +10,11 @@ body {
 }
 
 .instructions {
-	height: 2.5em;
+	height: 2em;
 	/*flex-direction: column;*/
 	justify-content: center; /*space-around;*/
 	align-items: center;
-	padding: 6px;
+	padding: 3px;
 	font-size: 18px;
 	display: flex;
 }
@@ -170,7 +170,7 @@ body {
 }
 
 .buttons.marker-buttons {
-	margin: 0 0 16px 0;
+	margin: 0 0 8px 0;
 }
 
 .buttons.marker-buttons span {
@@ -209,6 +209,34 @@ body {
 
 .grid td.red.blue.yellow {
 	background-color: #cf8357;
+}
+
+.grid td.red_border, #marker_red_border {
+	box-shadow: inset 0px 0px 0px 6px red;
+}
+
+.grid td.blue_border, #marker_blue_border {
+	box-shadow: inset 0px 0px 0px 6px blue;
+}
+
+.grid td.yellow_border, #marker_yellow_border {
+	box-shadow: inset 0px 0px 0px 6px yellow;
+}
+
+.grid td.red_border.blue_border {
+	box-shadow: inset 0px 0px 0px 6px purple;
+}
+
+.grid td.red_border.yellow_border {
+	box-shadow: inset 0px 0px 0px 6px orange;
+}
+
+.grid td.blue_border.yellow_border {
+	box-shadow: inset 0px 0px 0px 6px green;
+}
+
+.grid td.red_border.blue_border.yellow_border {
+	box-shadow: inset 0px 0px 0px 6px brown;
 }
 
 .deselect {
@@ -305,5 +333,5 @@ body {
 }
 
 .previous-guess {
-	border: 2px magenta solid !important;
+	box-shadow: inset 0px 0px 0px 4px magenta !important;
 }

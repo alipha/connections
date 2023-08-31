@@ -5,9 +5,9 @@
 
 	<script src="puzzles.js?v=3"></script>
 	<script src="custom.js?v=2"></script>
-	<script src="conn.js?v=6"></script>
+	<script src="conn.js?v=7"></script>
 
-	<link href="conn.css?v=4" rel="stylesheet"></link>
+	<link href="conn.css?v=5" rel="stylesheet"></link>
 </head>
 <body onload="init();">
 	<!--<div class="title">Connections <span id="date"></span></div>-->
@@ -26,12 +26,19 @@
 		</span>
 	</div>
 
-	<div class="buttons marker-buttons">
-		<span id="marker_selected" onclick="setMarker('selected');" class="picked">Guess</span>
-		<span id="marker_red"      onclick="setMarker('red');">Mark</span>
-		<span id="marker_blue"     onclick="setMarker('blue');">Mark</span>
-		<span id="marker_yellow"   onclick="setMarker('yellow');">Mark</span>
-	</div>
+	<table class="buttons marker-buttons">
+	<tr>
+		<td rowspan="2"><span id="marker_selected" onclick="setMarker('selected');" class="picked">Guess</span></td>
+		<td><span id="marker_red"    onclick="setMarker('red');">Mark</span></td>
+		<td><span id="marker_blue"   onclick="setMarker('blue');">Mark</span></td>
+		<td><span id="marker_yellow" onclick="setMarker('yellow');">Mark</span></td>
+	</tr>
+	<tr>
+		<td><span id="marker_red_border"    onclick="setMarker('red_border');">Mark</span></td>
+		<td><span id="marker_blue_border"   onclick="setMarker('blue_border');">Mark</span></td>
+		<td><span id="marker_yellow_border" onclick="setMarker('yellow_border');">Mark</span></td>
+	</tr>
+	</table>
 
 	<table class="grid" id="puzzle">
 		<tr class="solved" id="solved_row_0">

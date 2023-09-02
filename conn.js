@@ -1,6 +1,7 @@
 var puzzleNumber;
 var todayNumber;
-var customId;
+var customId = null;
+var changedId = null;
 var adhocId = null;
 var puzzle;
 var groups;
@@ -34,6 +35,13 @@ function resizeText(td) {
 	}
 }
 
+function puzzleId() {
+	return adhocId !== null ? puzzleNumber 
+	   : changedId !== null ? 'changed_' + (changedId - 1)
+		: customId !== null ? 'custom_' + (customId - 1) 
+		: puzzleNumber - 1;
+}
+
 async function init() {
 	const currentDate = new Date();
 	var targetDate = new Date('2023-06-11 00:00:00');
@@ -43,6 +51,7 @@ async function init() {
 
 	const urlParams = new URLSearchParams(window.location.search);
 	customId = urlParams.get('custom');
+	changedId = urlParams.get('changed');
 	const adhocStr = urlParams.get('adhoc');
 
 	if(adhocStr !== null) {
@@ -53,7 +62,45 @@ async function init() {
 		elem('previous').classList.add('hide');
 		elem('next').classList.add('hide');
 		elem('date').innerText = 'Puzzle ' + adhocId;
-	} else if(customId === null) {
+	} else if(customId !== null) {
+		customId = Number(customId);
+		puzzleNumber = 'custom_' + customId;
+		if(customId === 1) {
+			elem('previous').classList.add('hide');
+		}
+		if(customId === customPuzzles.length) {
+			elem('next').classList.add('hide');
+		}
+		elem('previous').href = '?custom=' + (customId - 1);
+		elem('next').href = '?custom=' + (customId + 1);
+		elem('date').innerText = 'Custom #' + customId;
+
+		puzzle = customPuzzles[customId - 1];
+	} else if(changedId !== null) {
+		changedId = Number(changedId);
+		puzzleNumber = 'changed_' + changedId;
+		puzzle = changedPuzzles[changedId - 1];
+
+		if(changedId === 1) {
+			elem('previous').classList.add('hide');
+		}
+		if(changedId === changedPuzzles.length) {
+			elem('next').classList.add('hide');
+		}
+		elem('previous').href = '?changed=' + (changedId - 1);
+		elem('next').href = '?changed=' + (changedId + 1);
+		
+		var date = targetDate;
+		date.setDate(targetDate.getDate() + puzzle.id + 1);
+
+    	var formattedDate = date.getDate();
+    	var formattedMonth = date.getMonth() + 1;
+   	var formattedYear = date.getFullYear().toString().substr(2,2);
+
+	   var dateString =  ' (' + formattedMonth + '/' + formattedDate + '/' + formattedYear + ')';
+
+		elem('date').innerText = 'Official #' + (puzzle.id + 1) + dateString;
+	} else {
 		const puzzleId = urlParams.get('id');
 
 		puzzleNumber = puzzleId === null ? todayNumber : Number(puzzleId);
@@ -76,20 +123,6 @@ async function init() {
 		elem('date').innerText = new Intl.DateTimeFormat('en-US', dateOptions).format(targetDate);
 
 		puzzle = puzzles[puzzleNumber - 1];
-	} else {
-		customId = Number(customId);
-		puzzleNumber = 'custom_' + customId;
-		if(customId === 1) {
-			elem('previous').classList.add('hide');
-		}
-		if(customId === customPuzzles.length) {
-			elem('next').classList.add('hide');
-		}
-		elem('previous').href = '?custom=' + (customId - 1);
-		elem('next').href = '?custom=' + (customId + 1);
-		elem('date').innerText = 'Custom #' + customId;
-
-		puzzle = customPuzzles[customId - 1];
 	}
 
 	groups = Object.entries(puzzle.groups).map((entry) => ({ solved: false, category: entry[0], ...entry[1] }));
@@ -104,7 +137,7 @@ async function init() {
 		}
 	}
 
-	const puzzleStorageId = adhocId !== null ? puzzleNumber : customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
+	const puzzleStorageId = puzzleId();
 	var storedState = localStorage.getItem('puzzle_' + puzzleStorageId);
 	if(storedState) {
 		state = JSON.parse(storedState);
@@ -116,6 +149,10 @@ async function init() {
 			submit();
 			deselect(undefined, true);
 		}
+		if(state.selectedWords === undefined)
+			state.selectedWords = state.selected;
+		if(state.selectedWords === undefined)
+			state.selectedWords = [];
 		for(var i = 0; i < state.selectedWords.length; ++i) {
 			wordClick(findWord(state.selectedWords[i]));
 		}
@@ -145,8 +182,7 @@ function saveState() {
 			yellow_border: markerWords.yellow_border
 		};
 	
-		const puzzleId = adhocId !== null ? puzzleNumber: customId === null ? puzzleNumber - 1 : 'custom_' + (customId - 1);
-		localStorage.setItem("puzzle_" + puzzleId, JSON.stringify(state));
+		localStorage.setItem("puzzle_" + puzzleId(), JSON.stringify(state));
 	}
 }
 
@@ -470,11 +506,10 @@ function gameOver() {
 }
 
 function share() {
-	var text = adhocId !== null ?
-		'Connections\nPuzzle ' + adhocId + '\n' + toEmojis() 
-		: customId === null ?
-		'Connections\nPuzzle #' + puzzleNumber + '\n' + toEmojis() :
-		'Connections\nCustom Puzzle #' + customId + '\n' + toEmojis();
+	var text = adhocId !== null ? 'Connections\nPuzzle ' + adhocId + '\n' + toEmojis() 
+		: customId !== null ? 'Connections\nCustom Puzzle #' + customId + '\n' + toEmojis()
+		: changedId !== null ? 'Connections\nOfficial Puzzle #' + (puzzle.id + 1) + '\n' + toEmojis()
+		: 'Connections\nPuzzle #' + puzzleNumber + '\n' + toEmojis();
 	
 	navigator.clipboard.writeText(text)
 		.then(() => showTip('Results copied to clipboard'))

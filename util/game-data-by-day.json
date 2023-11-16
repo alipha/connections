@@ -1,0 +1,4278 @@
+[
+  {
+    "id": 0,
+    "groups": {
+      "WET WEATHER": {
+        "level": 0,
+        "members": ["HAIL", "RAIN", "SLEET", "SNOW"]
+      },
+      "NBA TEAMS": {
+        "level": 1,
+        "members": ["BUCKS", "HEAT", "JAZZ", "NETS"]
+      },
+      "KEYBOARD KEYS": {
+        "level": 2,
+        "members": ["OPTION", "RETURN", "SHIFT", "TAB"]
+      },
+      "PALINDROMES": {
+        "level": 3,
+        "members": ["KAYAK", "LEVEL", "MOM", "RACE CAR"]
+      }
+    },
+    "startingGroups": [
+      ["SNOW", "LEVEL", "SHIFT", "KAYAK"],
+      ["HEAT", "TAB", "BUCKS", "RETURN"],
+      ["JAZZ", "HAIL", "OPTION", "RAIN"],
+      ["SLEET", "RACE CAR", "MOM", "NETS"]
+    ]
+  },
+  {
+    "id": 1,
+    "groups": {
+      "FOOTWEAR": {
+        "level": 0,
+        "members": ["BOOT", "LOAFER", "PUMP", "SNEAKER"]
+      },
+      "UNITS OF LENGTH": {
+        "level": 1,
+        "members": ["FOOT", "LEAGUE", "MILE", "YARD"]
+      },
+      "MAGAZINES": {
+        "level": 2,
+        "members": ["ESSENCE", "PEOPLE", "TIME", "US"]
+      },
+      "LETTER HOMOPHONES": {
+        "level": 3,
+        "members": ["ARE", "QUEUE", "SEA", "WHY"]
+      }
+    },
+    "startingGroups": [
+      ["PUMP", "FOOT", "TIME", "SEA"],
+      ["LEAGUE", "LOAFER", "WHY", "US"],
+      ["BOOT", "YARD", "PEOPLE", "ARE"],
+      ["MILE", "SNEAKER", "QUEUE", "ESSENCE"]
+    ]
+  },
+  {
+    "id": 2,
+    "groups": {
+      "FACIAL FEATURES": {
+        "level": 0,
+        "members": ["CHEEK", "EYE", "MOUTH", "NOSE"]
+      },
+      "SYNONYMS FOR EAT": {
+        "level": 1,
+        "members": ["CHOW", "GOBBLE", "SCARF", "WOLF"]
+      },
+      "DOG BREEDS, INFORMALLY": {
+        "level": 2,
+        "members": ["LAB", "PEKE", "PIT", "POM"]
+      },
+      "MEMBERS OF A TRIO": {
+        "level": 3,
+        "members": ["AMIGO", "KING", "STOOGE", "TENOR"]
+      }
+    },
+    "startingGroups": [
+      ["AMIGO", "MOUTH", "LAB", "STOOGE"],
+      ["WOLF", "KING", "NOSE", "CHOW"],
+      ["TENOR", "POM", "SCARF", "EYE"],
+      ["PIT", "GOBBLE", "PEKE", "CHEEK"]
+    ]
+  },
+  {
+    "id": 3,
+    "groups": {
+      "SNEAKER BRANDS": {
+        "level": 0,
+        "members": ["ADIDAS", "NIKE", "PUMA", "REEBOK"]
+      },
+      "MUSICALS BEGINNING WITH “C”": {
+        "level": 1,
+        "members": ["CABARET", "CAROUSEL", "CATS", "CHICAGO"]
+      },
+      "CLEANING VERBS": {
+        "level": 2,
+        "members": ["DUST", "MOP", "SWEEP", "VACUUM"]
+      },
+      "___ MAN SUPERHEROES": {
+        "level": 3,
+        "members": ["BAT", "IRON", "SPIDER", "SUPER"]
+      }
+    },
+    "startingGroups": [
+      ["DUST", "CATS", "SPIDER", "CAROUSEL"],
+      ["PUMA", "IRON", "NIKE", "MOP"],
+      ["CHICAGO", "SWEEP", "SUPER", "BAT"],
+      ["REEBOK", "CABARET", "VACUUM", "ADIDAS"]
+    ]
+  },
+  {
+    "id": 4,
+    "groups": {
+      "STREAMING SERVICES": {
+        "level": 0,
+        "members": ["HULU", "NETFLIX", "PEACOCK", "PRIME"]
+      },
+      "CONDIMENTS": {
+        "level": 1,
+        "members": ["KETCHUP", "MAYO", "RELISH", "TARTAR"]
+      },
+      "SYNONYMS FOR SAD": {
+        "level": 2,
+        "members": ["BLUE", "DOWN", "GLUM", "LOW"]
+      },
+      "CLUE CHARACTERS": {
+        "level": 3,
+        "members": ["GREEN", "MUSTARD", "PLUM", "SCARLET"]
+      }
+    },
+    "startingGroups": [
+      ["MUSTARD", "TARTAR", "PLUM", "BLUE"],
+      ["GREEN", "PRIME", "GLUM", "RELISH"],
+      ["DOWN", "PEACOCK", "KETCHUP", "LOW"],
+      ["HULU", "SCARLET", "MAYO", "NETFLIX"]
+    ]
+  },
+  {
+    "id": 5,
+    "groups": {
+      "MONOPOLY SQUARES": {
+        "level": 0,
+        "members": ["BOARDWALK", "CHANCE", "GO", "JAIL"]
+      },
+      "SHADES OF BLUE": {
+        "level": 1,
+        "members": ["BABY", "MIDNIGHT", "POWDER", "ROYAL"]
+      },
+      "RAPPERS": {
+        "level": 2,
+        "members": ["COMMON", "FUTURE", "ICE CUBE", "Q-TIP"]
+      },
+      "MEMBERS OF A SEPTET": {
+        "level": 3,
+        "members": ["SEA", "SIN", "SISTER", "WONDER"]
+      }
+    },
+    "startingGroups": [
+      ["WONDER", "FUTURE", "BABY", "GO"],
+      ["SIN", "CHANCE", "ROYAL", "ICE CUBE"],
+      ["MIDNIGHT", "JAIL", "SEA", "POWDER"],
+      ["Q-TIP", "SISTER", "BOARDWALK", "COMMON"]
+    ]
+  },
+  {
+    "id": 6,
+    "groups": {
+      "LEG PARTS": {
+        "level": 0,
+        "members": ["ANKLE", "KNEE", "SHIN", "THIGH"]
+      },
+      "BABY ANIMALS": {
+        "level": 1,
+        "members": ["CALF", "CUB", "JOEY", "KID"]
+      },
+      "SLANG FOR TOILET": {
+        "level": 2,
+        "members": ["CAN", "HEAD", "JOHN", "THRONE"]
+      },
+      "___ FISH THAT AREN’T FISH": {
+        "level": 3,
+        "members": ["CRAY", "JELLY", "SILVER", "STAR"]
+      }
+    },
+    "startingGroups": [
+      ["JOHN", "CUB", "STAR", "SILVER"],
+      ["KNEE", "THRONE", "JOEY", "JELLY"],
+      ["CALF", "ANKLE", "CRAY", "HEAD"],
+      ["SHIN", "CAN", "KID", "THIGH"]
+    ]
+  },
+  {
+    "id": 7,
+    "groups": {
+      "BOARD GAMES": {
+        "level": 0,
+        "members": ["BACKGAMMON", "CHECKERS", "CHESS", "GO"]
+      },
+      "MATTRESS SIZES": {
+        "level": 1,
+        "members": ["FULL", "KING", "QUEEN", "TWIN"]
+      },
+      "THINGS THAT ARE RED": {
+        "level": 2,
+        "members": ["CHERRY", "FIRE TRUCK", "RUBY", "STOP SIGN"]
+      },
+      "THINGS WITH KEYS": {
+        "level": 3,
+        "members": ["CRYPTOGRAPHY", "FLORIDA", "LOCKSMITH", "PIANO"]
+      }
+    },
+    "startingGroups": [
+      ["LOCKSMITH", "FIRE TRUCK", "KING", "PIANO"],
+      ["CHESS", "RUBY", "FLORIDA", "TWIN"],
+      ["CHERRY", "QUEEN", "STOP SIGN", "GO"],
+      ["CHECKERS", "CRYPTOGRAPHY", "FULL", "BACKGAMMON"]
+    ]
+  },
+  {
+    "id": 8,
+    "groups": {
+      "SPORTS": {
+        "level": 0,
+        "members": ["CRICKET", "FENCING", "POLO", "SQUASH"]
+      },
+      "TOPS": {
+        "level": 1,
+        "members": ["CAMI", "HALTER", "TANK", "TEE"]
+      },
+      "VEGETABLES": {
+        "level": 2,
+        "members": ["BEET", "CARROT", "CORN", "ONION"]
+      },
+      "INSECTS": {
+        "level": 3,
+        "members": ["ANT", "BEETLE", "MANTIS", "TERMITE"]
+      }
+    },
+    "startingGroups": [
+      ["SQUASH", "TEE", "CARROT", "ANT"],
+      ["TANK", "CORN", "CRICKET", "MANTIS"],
+      ["POLO", "ONION", "BEETLE", "BEET"],
+      ["CAMI", "TERMITE", "HALTER", "FENCING"]
+    ]
+  },
+  {
+    "id": 9,
+    "groups": {
+      "FRUIT": {
+        "level": 0,
+        "members": ["DATE", "KIWI", "LEMON", "ORANGE"]
+      },
+      "COUNTRIES": {
+        "level": 1,
+        "members": ["CHAD", "GEORGIA", "JORDAN", "TOGO"]
+      },
+      "BIRDS": {
+        "level": 2,
+        "members": ["CRANE", "JAY", "SWALLOW", "TURKEY"]
+      },
+      "ZODIAC SYMBOLS": {
+        "level": 3,
+        "members": ["FISH", "GOAT", "SCALES", "TWINS"]
+      }
+    },
+    "startingGroups": [
+      ["TWINS", "TURKEY", "GOAT", "KIWI"],
+      ["SCALES", "FISH", "JORDAN", "JAY"],
+      ["ORANGE", "GEORGIA", "DATE", "CRANE"],
+      ["TOGO", "SWALLOW", "LEMON", "CHAD"]
+    ]
+  },
+  {
+    "id": 10,
+    "groups": {
+      "SPICES BEGINNING WITH “C”": {
+        "level": 0,
+        "members": ["CARDAMOM", "CLOVE", "CORIANDER", "CUMIN"]
+      },
+      "TERMS OF ENDEARMENT": {
+        "level": 1,
+        "members": ["BOO", "HONEY", "SUGAR", "SWEETIE"]
+      },
+      "THINGS WITH WINGS": {
+        "level": 2,
+        "members": ["AIRPLANE", "ANGEL", "BIRD", "PEGASUS"]
+      },
+      "SPICE GIRLS": {
+        "level": 3,
+        "members": ["BABY", "GINGER", "POSH", "SCARY"]
+      }
+    },
+    "startingGroups": [
+      ["SUGAR", "ANGEL", "GINGER", "BIRD"],
+      ["BABY", "CUMIN", "BOO", "SCARY"],
+      ["SWEETIE", "CORIANDER", "AIRPLANE", "CLOVE"],
+      ["PEGASUS", "HONEY", "CARDAMOM", "POSH"]
+    ]
+  },
+  {
+    "id": 11,
+    "groups": {
+      "ANIMAL GROUP NAMES": {
+        "level": 0,
+        "members": ["FLOCK", "PACK", "POD", "SCHOOL"]
+      },
+      "DEADLY SINS": {
+        "level": 1,
+        "members": ["ENVY", "GREED", "LUST", "PRIDE"]
+      },
+      "SLOW ANIMALS": {
+        "level": 2,
+        "members": ["LORIS", "SLOTH", "SNAIL", "TORTOISE"]
+      },
+      "TRIG FUNCTIONS": {
+        "level": 3,
+        "members": ["COT", "SEC", "SIN", "TAN"]
+      }
+    },
+    "startingGroups": [
+      ["LUST", "PRIDE", "TAN", "SCHOOL"],
+      ["SLOTH", "SEC", "PACK", "COT"],
+      ["SNAIL", "GREED", "SIN", "FLOCK"],
+      ["POD", "LORIS", "ENVY", "TORTOISE"]
+    ]
+  },
+  {
+    "id": 12,
+    "groups": {
+      "AIRLINES": {
+        "level": 0,
+        "members": ["FRONTIER", "SPIRIT", "UNITED", "VIRGIN"]
+      },
+      "GREEK LETTERS": {
+        "level": 1,
+        "members": ["BETA", "CHI", "DELTA", "IOTA"]
+      },
+      "SILENT “G”": {
+        "level": 2,
+        "members": ["GNAT", "GNAW", "GNOCCHI", "GNOME"]
+      },
+      "HOMOPHONES": {
+        "level": 3,
+        "members": ["GNU", "KNEW", "NEW", "NU"]
+      }
+    },
+    "startingGroups": [
+      ["KNEW", "GNOME", "IOTA", "FRONTIER"],
+      ["DELTA", "CHI", "GNOCCHI", "NEW"],
+      ["SPIRIT", "BETA", "VIRGIN", "GNAW"],
+      ["NU", "GNAT", "UNITED", "GNU"]
+    ]
+  },
+  {
+    "id": 13,
+    "groups": {
+      "BEDS": {
+        "level": 0,
+        "members": ["BUNK", "CANOPY", "MURPHY", "TRUNDLE"]
+      },
+      "FAMOUS BROTHERS": {
+        "level": 1,
+        "members": ["JONAS", "MARX", "WARNER", "WRIGHT"]
+      },
+      "HONDAS": {
+        "level": 2,
+        "members": ["ACCORD", "CIVIC", "PASSPORT", "PILOT"]
+      },
+      "VIDEO GAME CHARACTERS": {
+        "level": 3,
+        "members": ["CRASH", "LINK", "MARIO", "SONIC"]
+      }
+    },
+    "startingGroups": [
+      ["CANOPY", "LINK", "PASSPORT", "MARX"],
+      ["PILOT", "SONIC", "WRIGHT", "ACCORD"],
+      ["MURPHY", "CRASH", "CIVIC", "BUNK"],
+      ["MARIO", "JONAS", "TRUNDLE", "WARNER"]
+    ]
+  },
+  {
+    "id": 14,
+    "groups": {
+      "BIRD SOUNDS": {
+        "level": 0,
+        "members": ["CAW", "CHIRP", "CLUCK", "TWEET"]
+      },
+      "COLORS": {
+        "level": 1,
+        "members": ["BROWN", "PINK", "TURQUOISE", "VIOLET"]
+      },
+      "FISHING GEAR": {
+        "level": 2,
+        "members": ["LURE", "REEL", "ROD", "TACKLE"]
+      },
+      "FICTIONAL PIRATES": {
+        "level": 3,
+        "members": ["HOOK", "JONES", "SILVER", "SPARROW"]
+      }
+    },
+    "startingGroups": [
+      ["SILVER", "TWEET", "ROD", "SPARROW"],
+      ["BROWN", "TACKLE", "HOOK", "PINK"],
+      ["CAW", "JONES", "VIOLET", "REEL"],
+      ["TURQUOISE", "CHIRP", "LURE", "CLUCK"]
+    ]
+  },
+  {
+    "id": 15,
+    "groups": {
+      "COFFEE DRINKS": {
+        "level": 0,
+        "members": ["AMERICANO", "CAPPUCCINO", "ESPRESSO", "LATTE"]
+      },
+      "TREE NUTS": {
+        "level": 1,
+        "members": ["ALMOND", "CASHEW", "PECAN", "WALNUT"]
+      },
+      "SHADES OF GREEN": {
+        "level": 2,
+        "members": ["EMERALD", "FOREST", "KELLY", "OLIVE"]
+      },
+      "MR. ___": {
+        "level": 3,
+        "members": ["BEAN", "CLEAN", "FOX", "PEANUT"]
+      }
+    },
+    "startingGroups": [
+      ["BEAN", "ESPRESSO", "ALMOND", "FOREST"],
+      ["PECAN", "CLEAN", "KELLY", "LATTE"],
+      ["PEANUT", "EMERALD", "AMERICANO", "FOX"],
+      ["OLIVE", "WALNUT", "CAPPUCCINO", "CASHEW"]
+    ]
+  },
+  {
+    "id": 16,
+    "groups": {
+      "NECKWEAR": {
+        "level": 0,
+        "members": ["ASCOT", "BOLO", "SCARF", "TIE"]
+      },
+      "SHIP DIRECTIONS": {
+        "level": 1,
+        "members": ["BOW", "PORT", "STARBOARD", "STERN"]
+      },
+      "DETERGENTS": {
+        "level": 2,
+        "members": ["ALL", "ERA", "GAIN", "TIDE"]
+      },
+      "___ TRIANGLE": {
+        "level": 3,
+        "members": ["ACUTE", "BERMUDA", "LOVE", "RIGHT"]
+      }
+    },
+    "startingGroups": [
+      ["TIDE", "BERMUDA", "STERN", "SCARF"],
+      ["LOVE", "ASCOT", "GAIN", "BOW"],
+      ["RIGHT", "ERA", "PORT", "BOLO"],
+      ["ACUTE", "TIE", "ALL", "STARBOARD"]
+    ]
+  },
+  {
+    "id": 17,
+    "groups": {
+      "MUSCLES, INFORMALLY": {
+        "level": 0,
+        "members": ["LAT", "PEC", "QUAD", "TRI"]
+      },
+      "AWARDS": {
+        "level": 1,
+        "members": ["CUP", "MEDAL", "RIBBON", "TROPHY"]
+      },
+      "TITLE TV DOCTORS": {
+        "level": 2,
+        "members": ["GREY", "HOUSE", "HOWSER", "QUINN"]
+      },
+      "NFL PLAYERS": {
+        "level": 3,
+        "members": ["BEAR", "BILL", "BROWN", "COMMANDER"]
+      }
+    },
+    "startingGroups": [
+      ["GREY", "CUP", "BILL", "RIBBON"],
+      ["QUAD", "BEAR", "HOUSE", "LAT"],
+      ["QUINN", "TRI", "MEDAL", "COMMANDER"],
+      ["BROWN", "TROPHY", "PEC", "HOWSER"]
+    ]
+  },
+  {
+    "id": 18,
+    "groups": {
+      "OFF-WHITE SHADES": {
+        "level": 0,
+        "members": ["CREAM", "EGGSHELL", "IVORY", "VANILLA"]
+      },
+      "ANTI-VAMPIRE": {
+        "level": 1,
+        "members": ["CRUCIFIX", "GARLIC", "MIRROR", "STAKE"]
+      },
+      "KINDS OF MEAT": {
+        "level": 2,
+        "members": ["BEEF", "PORK", "POULTRY", "VENISON"]
+      },
+      "SYNONYMS FOR ARGUMENT": {
+        "level": 3,
+        "members": ["ROW", "QUARREL", "SPAT", "TIFF"]
+      }
+    },
+    "startingGroups": [
+      ["CREAM", "GARLIC", "PORK", "ROW"],
+      ["MIRROR", "BEEF", "SPAT", "EGGSHELL"],
+      ["POULTRY", "STAKE", "TIFF", "VANILLA"],
+      ["IVORY", "QUARREL", "VENISON", "CRUCIFIX"]
+    ]
+  },
+  {
+    "id": 19,
+    "groups": {
+      "GRAINS": {
+        "level": 0,
+        "members": ["BARLEY", "OAT", "RYE", "SPELT"]
+      },
+      "ROYAL TITLES": {
+        "level": 1,
+        "members": ["BARON", "EARL", "KING", "PRINCE"]
+      },
+      "UNIVERSITIES": {
+        "level": 2,
+        "members": ["BROWN", "DUKE", "HOWARD", "RICE"]
+      },
+      "BEST DIRECTOR OSCAR WINNERS": {
+        "level": 3,
+        "members": ["BONG", "FORD", "LEE", "STONE"]
+      }
+    },
+    "startingGroups": [
+      ["KING", "OAT", "STONE", "RICE"],
+      ["BARLEY", "BONG", "DUKE", "FORD"],
+      ["BROWN", "SPELT", "LEE", "EARL"],
+      ["HOWARD", "BARON", "RYE", "PRINCE"]
+    ]
+  },
+  {
+    "id": 20,
+    "groups": {
+      "MUSIC GENRES": {
+        "level": 0,
+        "members": ["JAZZ", "POP", "PUNK", "RAP"]
+      },
+      "WEB BROWSERS": {
+        "level": 1,
+        "members": ["CHROME", "EDGE", "OPERA", "SAFARI"]
+      },
+      "“LITTLE WOMEN” SISTERS": {
+        "level": 2,
+        "members": ["AMY", "BETH", "JO", "MEG"]
+      },
+      "LIL ___ RAPPERS": {
+        "level": 3,
+        "members": ["BABY", "JON", "KIM", "WAYNE"]
+      }
+    },
+    "startingGroups": [
+      ["OPERA", "BABY", "WAYNE", "JO"],
+      ["POP", "MEG", "SAFARI", "KIM"],
+      ["RAP", "CHROME", "BETH", "JAZZ"],
+      ["PUNK", "JON", "AMY", "EDGE"]
+    ]
+  },
+  {
+    "id": 21,
+    "groups": {
+      "DOG BREEDS": {
+        "level": 0,
+        "members": ["BOXER", "DALMATIAN", "HUSKY", "POODLE"]
+      },
+      "ANIMAL NOSES": {
+        "level": 1,
+        "members": ["BEAK", "MUZZLE", "SNOUT", "TRUNK"]
+      },
+      "TRAFFIC SIGNS": {
+        "level": 2,
+        "members": ["DETOUR", "SLOW", "STOP", "YIELD"]
+      },
+      "SOUND ___": {
+        "level": 3,
+        "members": ["ASLEEP", "BARRIER", "BITE", "WAVE"]
+      }
+    },
+    "startingGroups": [
+      ["BITE", "STOP", "TRUNK", "BOXER"],
+      ["WAVE", "YIELD", "MUZZLE", "BARRIER"],
+      ["DETOUR", "HUSKY", "SNOUT", "ASLEEP"],
+      ["DALMATIAN", "BEAK", "SLOW", "POODLE"]
+    ]
+  },
+  {
+    "id": 22,
+    "groups": {
+      "60’s BAND MEMBERS": {
+        "level": 0,
+        "members": ["BEACH BOY", "BEATLE", "BYRD", "MONKEE"]
+      },
+      "DANCE FADS": {
+        "level": 1,
+        "members": ["DOUGIE", "MACARENA", "MASHED POTATO", "TWIST"]
+      },
+      "MAGAZINES": {
+        "level": 2,
+        "members": ["FORTUNE", "ROLLING STONE", "VOGUE", "WIRED"]
+      },
+      "THINGS WITH LINKS": {
+        "level": 3,
+        "members": ["CHAIN", "GOLF COURSE", "SAUSAGE", "WEBSITE"]
+      }
+    },
+    "startingGroups": [
+      ["BEACH BOY", "TWIST", "CHAIN", "ROLLING STONE"],
+      ["MASHED POTATO", "WIRED", "WEBSITE", "BEATLE"],
+      ["SAUSAGE", "BYRD", "DOUGIE", "FORTUNE"],
+      ["MACARENA", "VOGUE", "GOLF COURSE", "MONKEE"]
+    ]
+  },
+  {
+    "id": 23,
+    "groups": {
+      "CANDY BARS": {
+        "level": 0,
+        "members": ["BOUNTY", "CRUNCH", "HEATH", "MILKY WAY"]
+      },
+      "VIDEO GAME CONSOLES": {
+        "level": 1,
+        "members": ["DREAMCAST", "GENESIS", "SWITCH", "WII"]
+      },
+      "EAR PARTS": {
+        "level": 2,
+        "members": ["ANVIL", "COCHLEA", "HAMMER", "STIRRUP"]
+      },
+      "BAND NAMES MINUS NUMBERS": {
+        "level": 3,
+        "members": ["BLINK", "MAROON", "SUM", "U"]
+      }
+    },
+    "startingGroups": [
+      ["MILKY WAY", "GENESIS", "HAMMER", "SUM"],
+      ["SWITCH", "MAROON", "BOUNTY", "U"],
+      ["ANVIL", "CRUNCH", "BLINK", "STIRRUP"],
+      ["HEATH", "WII", "COCHLEA", "DREAMCAST"]
+    ]
+  },
+  {
+    "id": 24,
+    "groups": {
+      "DESSERTS": {
+        "level": 0,
+        "members": ["CHEESECAKE", "FLAN", "MOUSSE", "TIRAMISU"]
+      },
+      "MILD OATHS": {
+        "level": 1,
+        "members": ["DARN", "FUDGE", "HECK", "SHOOT"]
+      },
+      "ANIMALS WITH TUSKS": {
+        "level": 2,
+        "members": ["ELEPHANT", "HIPPO", "NARWHAL", "WARTHOG"]
+      },
+      "MUSTACHES": {
+        "level": 3,
+        "members": ["HANDLEBAR", "HORSESHOE", "PENCIL", "WALRUS"]
+      }
+    },
+    "startingGroups": [
+      ["MOUSSE", "WALRUS", "FUDGE", "HORSESHOE"],
+      ["SHOOT", "PENCIL", "ELEPHANT", "FLAN"],
+      ["NARWHAL", "HIPPO", "HECK", "HANDLEBAR"],
+      ["TIRAMISU", "DARN", "WARTHOG", "CHEESECAKE"]
+    ]
+  },
+  {
+    "id": 25,
+    "groups": {
+      "EUROPEAN COUNTRIES": {
+        "level": 0,
+        "members": ["DENMARK", "GREECE", "POLAND", "PORTUGAL"]
+      },
+      "SYNONYMS FOR IMITATE": {
+        "level": 1,
+        "members": ["COPY", "ECHO", "MIMIC", "PARROT"]
+      },
+      "TOMS": {
+        "level": 2,
+        "members": ["CRUISE", "HOLLAND", "PETTY", "WAITS"]
+      },
+      "WORDS SPELLED WITH ROMAN NUMERALS": {
+        "level": 3,
+        "members": ["DILL", "LIVID", "MILD", "MIX"]
+      }
+    },
+    "startingGroups": [
+      ["PETTY", "PARROT", "POLAND", "CRUISE"],
+      ["MIX", "MIMIC", "HOLLAND", "GREECE"],
+      ["ECHO", "MILD", "LIVID", "COPY"],
+      ["PORTUGAL", "WAITS", "DENMARK", "DILL"]
+    ]
+  },
+  {
+    "id": 26,
+    "groups": {
+      "HATS": {
+        "level": 0,
+        "members": ["BERET", "BOWLER", "FEDORA", "FEZ"]
+      },
+      "ORGANS": {
+        "level": 1,
+        "members": ["HEART", "KIDNEY", "LIVER", "LUNG"]
+      },
+      "PARTS OF A BOOK": {
+        "level": 2,
+        "members": ["COVER", "JACKET", "PAGE", "SPINE"]
+      },
+      "JACK ___": {
+        "level": 3,
+        "members": ["ASS", "KNIFE", "POT", "RABBIT"]
+      }
+    },
+    "startingGroups": [
+      ["HEART", "BERET", "SPINE", "POT"],
+      ["ASS", "KIDNEY", "FEZ", "JACKET"],
+      ["BOWLER", "RABBIT", "LIVER", "COVER"],
+      ["LUNG", "PAGE", "FEDORA", "KNIFE"]
+    ]
+  },
+  {
+    "id": 27,
+    "groups": {
+      "SEVEN DWARFS": {
+        "level": 0,
+        "members": ["BASHFUL", "DOC", "GRUMPY", "HAPPY"]
+      },
+      "FILE EXTENSIONS": {
+        "level": 1,
+        "members": ["GIF", "PDF", "TIFF", "ZIP"]
+      },
+      "FLIGHTLESS BIRDS": {
+        "level": 2,
+        "members": ["EMU", "KIWI", "OSTRICH", "PENGUIN"]
+      },
+      "TROPICAL FRUITS": {
+        "level": 3,
+        "members": ["BANANA", "COCONUT", "MANGO", "PINEAPPLE"]
+      }
+    },
+    "startingGroups": [
+      ["COCONUT", "ZIP", "PENGUIN", "DOC"],
+      ["KIWI", "HAPPY", "TIFF", "BANANA"],
+      ["EMU", "GRUMPY", "MANGO", "GIF"],
+      ["PDF", "OSTRICH", "BASHFUL", "PINEAPPLE"]
+    ]
+  },
+  {
+    "id": 28,
+    "groups": {
+      "WINGED INSECTS": {
+        "level": 0,
+        "members": ["FLY", "GNAT", "MOTH", "WASP"]
+      },
+      "ARITHMETIC OPERATIONS": {
+        "level": 1,
+        "members": ["ADD", "DIVIDE", "MULTIPLY", "SUBTRACT"]
+      },
+      "FISH": {
+        "level": 2,
+        "members": ["TANG", "TETRA", "SKATE", "SOLE"]
+      },
+      "___ CAT": {
+        "level": 3,
+        "members": ["ALLEY", "COOL", "COPY", "LAP"]
+      }
+    },
+    "startingGroups": [
+      ["SKATE", "ADD", "COPY", "FLY"],
+      ["ALLEY", "TANG", "MOTH", "COOL"],
+      ["DIVIDE", "SOLE", "LAP", "SUBTRACT"],
+      ["TETRA", "GNAT", "MULTIPLY", "WASP"]
+    ]
+  },
+  {
+    "id": 29,
+    "groups": {
+      "NFL PLAYERS": {
+        "level": 0,
+        "members": ["BRONCO", "COWBOY", "PACKER", "RAVEN"]
+      },
+      "PASTA SHAPES": {
+        "level": 1,
+        "members": ["BOWTIE", "ELBOW", "SHELL", "SPIRAL"]
+      },
+      "JOINTS": {
+        "level": 2,
+        "members": ["HIP", "KNEE", "SHOULDER", "WRIST"]
+      },
+      "MOVIES WITH “!”": {
+        "level": 3,
+        "members": ["AIRPLANE", "MOTHER", "OKLAHOMA", "THEM"]
+      }
+    },
+    "startingGroups": [
+      ["SPIRAL", "HIP", "MOTHER", "RAVEN"],
+      ["ELBOW", "AIRPLANE", "KNEE", "SHELL"],
+      ["COWBOY", "SHOULDER", "OKLAHOMA", "BOWTIE"],
+      ["THEM", "PACKER", "WRIST", "BRONCO"]
+    ]
+  },
+  {
+    "id": 30,
+    "groups": {
+      "VEGETABLES THAT ARE ALSO FRUITS": {
+        "level": 0,
+        "members": ["CUCUMBER", "EGGPLANT", "PEPPER", "TOMATO"]
+      },
+      "3-D SHAPES": {
+        "level": 1,
+        "members": ["CONE", "CUBE", "PYRAMID", "SPHERE"]
+      },
+      "WORDS WITH “i”": {
+        "level": 2,
+        "members": ["MAC", "PAD", "PHONE", "POD"]
+      },
+      "WORDS WITH TWO PRONUNCIATIONS": {
+        "level": 3,
+        "members": ["JOB", "LIMA", "MOBILE", "POLISH"]
+      }
+    },
+    "startingGroups": [
+      ["PAD", "LIMA", "CONE", "TOMATO"],
+      ["POLISH", "PEPPER", "PHONE", "PYRAMID"],
+      ["CUBE", "MOBILE", "JOB", "CUCUMBER"],
+      ["EGGPLANT", "MAC", "SPHERE", "POD"]
+    ]
+  },
+  {
+    "id": 31,
+    "groups": {
+      "SHOE PARTS": {
+        "level": 0,
+        "members": ["HEEL", "LACE", "SOLE", "TONGUE"]
+      },
+      "BOARD GAMES": {
+        "level": 1,
+        "members": ["CLUE", "RISK", "SORRY", "TROUBLE"]
+      },
+      "FICTIONAL SPIES": {
+        "level": 2,
+        "members": ["BOND", "HUNT", "RYAN", "SMART"]
+      },
+      "RUBBER ___": {
+        "level": 3,
+        "members": ["BAND", "CEMENT", "DUCKIE", "SOUL"]
+      }
+    },
+    "startingGroups": [
+      ["SOLE", "TROUBLE", "HUNT", "CEMENT"],
+      ["SMART", "TONGUE", "SOUL", "BOND"],
+      ["LACE", "BAND", "SORRY", "RYAN"],
+      ["CLUE", "HEEL", "DUCKIE", "RISK"]
+    ]
+  },
+  {
+    "id": 32,
+    "groups": {
+      "BOATS": {
+        "level": 0,
+        "members": ["FERRY", "JUNK", "TUG", "YACHT"]
+      },
+      "SANDWICHES": {
+        "level": 1,
+        "members": ["CLUB", "CUBAN", "MELT", "SUB"]
+      },
+      "CUTS OF BEEF": {
+        "level": 2,
+        "members": ["FLANK", "LOIN", "ROUND", "SHANK"]
+      },
+      "NICKNAMES THAT ARE VERBS": {
+        "level": 3,
+        "members": ["CHUCK", "JOSH", "ROB", "SUE"]
+      }
+    },
+    "startingGroups": [
+      ["TUG", "CHUCK", "JUNK", "CLUB"],
+      ["SHANK", "ROB", "SUB", "FLANK"],
+      ["CUBAN", "FERRY", "LOIN", "SUE"],
+      ["JOSH", "ROUND", "MELT", "YACHT"]
+    ]
+  },
+  {
+    "id": 33,
+    "groups": {
+      "PLEASANT SMELLS": {
+        "level": 0,
+        "members": ["AROMA", "BOUQUET", "FRAGRANCE", "SCENT"]
+      },
+      "MUSIC GENRES": {
+        "level": 1,
+        "members": ["BLUES", "COUNTRY", "FUNK", "SOUL"]
+      },
+      "ROCK PAPER SCISSORS": {
+        "level": 2,
+        "members": ["PAPER", "ROCK", "SCISSORS", "SHOOT"]
+      },
+      "MALE ANIMALS": {
+        "level": 3,
+        "members": ["BOAR", "BUCK", "BULL", "JACK"]
+      }
+    },
+    "startingGroups": [
+      ["ROCK", "FUNK", "BUCK", "BOUQUET"],
+      ["SHOOT", "BULL", "COUNTRY", "JACK"],
+      ["SOUL", "SCENT", "SCISSORS", "BOAR"],
+      ["FRAGRANCE", "PAPER", "BLUES", "AROMA"]
+    ]
+  },
+  {
+    "id": 34,
+    "groups": {
+      "U.S. COINS": {
+        "level": 0,
+        "members": ["DIME", "NICKEL", "PENNY", "QUARTER"]
+      },
+      "METAL ELEMENTS": {
+        "level": 1,
+        "members": ["IRON", "LEAD", "TIN", "ZINC"]
+      },
+      "LUCKY CHARMS MARSHMALLOWS": {
+        "level": 2,
+        "members": ["CLOVER", "HORSESHOE", "MOON", "RAINBOW"]
+      },
+      "___ AND ___": {
+        "level": 3,
+        "members": ["AGAIN", "HALF", "NECK", "SO"]
+      }
+    },
+    "startingGroups": [
+      ["NICKEL", "HALF", "HORSESHOE", "TIN"],
+      ["RAINBOW", "QUARTER", "NECK", "LEAD"],
+      ["PENNY", "CLOVER", "IRON", "SO"],
+      ["ZINC", "AGAIN", "DIME", "MOON"]
+    ]
+  },
+  {
+    "id": 35,
+    "groups": {
+      "MARSUPIALS": {
+        "level": 0,
+        "members": ["KANGAROO", "KOALA", "WALLABY", "WOMBAT"]
+      },
+      "CHOCOLATE BARS": {
+        "level": 1,
+        "members": ["CHUNKY", "CRUNCH", "MARS", "MOUNDS"]
+      },
+      "SLANG FOR MONEY": {
+        "level": 2,
+        "members": ["CHEDDAR", "DOUGH", "PAPER", "STACKS"]
+      },
+      "NAKED ___": {
+        "level": 3,
+        "members": ["EYE", "GUN", "MOLE RAT", "TRUTH"]
+      }
+    },
+    "startingGroups": [
+      ["EYE", "MARS", "PAPER", "TRUTH"],
+      ["WOMBAT", "GUN", "MOLE RAT", "CHUNKY"],
+      ["CHEDDAR", "CRUNCH", "KANGAROO", "DOUGH"],
+      ["KOALA", "STACKS", "MOUNDS", "WALLABY"]
+    ]
+  },
+  {
+    "id": 36,
+    "groups": {
+      "MARINE MAMMALS": {
+        "level": 0,
+        "members": ["DOLPHIN", "MANATEE", "OTTER", "SEAL"]
+      },
+      "BIKE PARTS": {
+        "level": 1,
+        "members": ["BRAKE", "CHAIN", "SADDLE", "SPOKE"]
+      },
+      "SYNONYMS FOR SELL": {
+        "level": 2,
+        "members": ["HAWK", "MOVE", "PEDDLE", "VEND"]
+      },
+      "COUNTRIES WHEN “A” IS ADDED": {
+        "level": 3,
+        "members": ["CHIN", "CUB", "MALT", "TONG"]
+      }
+    },
+    "startingGroups": [
+      ["SPOKE", "MOVE", "CUB", "SEAL"],
+      ["HAWK", "CHAIN", "DOLPHIN", "CHIN"],
+      ["SADDLE", "PEDDLE", "MALT", "OTTER"],
+      ["MANATEE", "BRAKE", "VEND", "TONG"]
+    ]
+  },
+  {
+    "id": 37,
+    "groups": {
+      "TREES": {
+        "level": 0,
+        "members": ["ASH", "CEDAR", "MAPLE", "PINE"]
+      },
+      "LAND FORMATIONS": {
+        "level": 1,
+        "members": ["HILL", "MOUNTAIN", "PLATEAU", "VALLEY"]
+      },
+      "BAGEL FLAVORS": {
+        "level": 2,
+        "members": ["EVERYTHING", "ONION", "PLAIN", "POPPY"]
+      },
+      "STREETS ON SCREEN": {
+        "level": 3,
+        "members": ["ELM", "FEAR", "JUMP", "SESAME"]
+      }
+    },
+    "startingGroups": [
+      ["MOUNTAIN", "ELM", "ONION", "JUMP"],
+      ["PLAIN", "VALLEY", "MAPLE", "POPPY"],
+      ["PINE", "SESAME", "HILL", "FEAR"],
+      ["PLATEAU", "ASH", "EVERYTHING", "CEDAR"]
+    ]
+  },
+  {
+    "id": 38,
+    "groups": {
+      "TIMEKEEPING DEVICES": {
+        "level": 0,
+        "members": ["CLOCK", "HOURGLASS", "SUNDIAL", "WATCH"]
+      },
+      "HAIRSTYLES": {
+        "level": 1,
+        "members": ["BOB", "CROP", "PIXIE", "SHAG"]
+      },
+      "UNITS OF MEASURE": {
+        "level": 2,
+        "members": ["HERTZ", "MOLE", "NEWTON", "SECOND"]
+      },
+      "DR. ___": {
+        "level": 3,
+        "members": ["EVIL", "J", "NO", "PEPPER"]
+      }
+    },
+    "startingGroups": [
+      ["PEPPER", "MOLE", "WATCH", "BOB"],
+      ["SECOND", "EVIL", "CROP", "CLOCK"],
+      ["NO", "NEWTON", "SUNDIAL", "PIXIE"],
+      ["HERTZ", "HOURGLASS", "SHAG", "J"]
+    ]
+  },
+  {
+    "id": 39,
+    "groups": {
+      "WOODWINDS": {
+        "level": 0,
+        "members": ["BASSOON", "CLARINET", "FLUTE", "OBOE"]
+      },
+      "COVERINGS": {
+        "level": 1,
+        "members": ["CAP", "COVER", "LID", "TOP"]
+      },
+      "SUNGLASSES": {
+        "level": 2,
+        "members": ["AVIATOR", "CAT EYE", "WAYFARER", "WRAPAROUND"]
+      },
+      "SEALS": {
+        "level": 3,
+        "members": ["HARBOR", "HARP", "HOODED", "MONK"]
+      }
+    },
+    "startingGroups": [
+      ["AVIATOR", "FLUTE", "MONK", "LID"],
+      ["HARBOR", "HARP", "CLARINET", "CAT EYE"],
+      ["TOP", "HOODED", "BASSOON", "COVER"],
+      ["OBOE", "WAYFARER", "CAP", "WRAPAROUND"]
+    ]
+  },
+  {
+    "id": 40,
+    "groups": {
+      "BOTTLED WATER BRANDS": {
+        "level": 0,
+        "members": ["DASANI", "EVIAN", "FIJI", "VOSS"]
+      },
+      "SLANG FOR COFFEE": {
+        "level": 1,
+        "members": ["BREW", "JAVA", "JOE", "MUD"]
+      },
+      "ISLAND COUNTRIES": {
+        "level": 2,
+        "members": ["CUBA", "JAPAN", "MALTA", "PALAU"]
+      },
+      "CEREAL MASCOTS": {
+        "level": 3,
+        "members": ["LUCKY", "POP", "SAM", "TONY"]
+      }
+    },
+    "startingGroups": [
+      ["FIJI", "MUD", "POP", "PALAU"],
+      ["JOE", "SAM", "JAPAN", "BREW"],
+      ["CUBA", "VOSS", "TONY", "JAVA"],
+      ["DASANI", "MALTA", "EVIAN", "LUCKY"]
+    ]
+  },
+  {
+    "id": 41,
+    "groups": {
+      "SCUBA GEAR": {
+        "level": 0,
+        "members": ["FINS", "MASK", "SNORKEL", "TANK"]
+      },
+      "PUNCTUATION MARKS": {
+        "level": 1,
+        "members": ["COLON", "COMMA", "HYPHEN", "PERIOD"]
+      },
+      "RUN QUICKLY": {
+        "level": 2,
+        "members": ["BOLT", "DASH", "RACE", "SPRINT"]
+      },
+      "___ CAT": {
+        "level": 3,
+        "members": ["DOJA", "FAT", "HOUSE", "JUNGLE"]
+      }
+    },
+    "startingGroups": [
+      ["DASH", "MASK", "JUNGLE", "PERIOD"],
+      ["HOUSE", "HYPHEN", "SNORKEL", "BOLT"],
+      ["FAT", "TANK", "COLON", "RACE"],
+      ["FINS", "SPRINT", "DOJA", "COMMA"]
+    ]
+  },
+  {
+    "id": 42,
+    "groups": {
+      "SYNONYMS FOR ANGRY": {
+        "level": 0,
+        "members": ["FURIOUS", "INCENSED", "IRATE", "LIVID"]
+      },
+      "THINGS THAT ARE YELLOW": {
+        "level": 1,
+        "members": ["BANANA", "CANARY", "SCHOOL BUS", "SUNFLOWER"]
+      },
+      "MARINE BIRDS": {
+        "level": 2,
+        "members": ["BOOBY", "GULL", "PELICAN", "PUFFIN"]
+      },
+      "___ BOYS": {
+        "level": 3,
+        "members": ["BEACH", "BEASTIE", "HARDY", "LOST"]
+      }
+    },
+    "startingGroups": [
+      ["CANARY", "IRATE", "LOST", "SCHOOL BUS"],
+      ["BEACH", "GULL", "FURIOUS", "BOOBY"],
+      ["BANANA", "BEASTIE", "SUNFLOWER", "LIVID"],
+      ["HARDY", "PELICAN", "INCENSED", "PUFFIN"]
+    ]
+  },
+  {
+    "id": 43,
+    "groups": {
+      "STATES OF MATTER": {
+        "level": 0,
+        "members": ["GAS", "LIQUID", "PLASMA", "SOLID"]
+      },
+      "EDIT MENU COMMANDS": {
+        "level": 1,
+        "members": ["COPY", "CUT", "PASTE", "UNDO"]
+      },
+      "DEFEAT BADLY": {
+        "level": 2,
+        "members": ["CRUSH", "ROUT", "SHELLAC", "TRASH"]
+      },
+      "ANAGRAMS": {
+        "level": 3,
+        "members": ["LEAST", "SLATE", "STALE", "TESLA"]
+      }
+    },
+    "startingGroups": [
+      ["SOLID", "PASTE", "SLATE", "TRASH"],
+      ["TESLA", "CUT", "PLASMA", "CRUSH"],
+      ["GAS", "SHELLAC", "STALE", "UNDO"],
+      ["COPY", "LIQUID", "ROUT", "LEAST"]
+    ]
+  },
+  {
+    "id": 44,
+    "groups": {
+      "MODES OF TRANSPORTATION": {
+        "level": 0,
+        "members": ["BOAT", "CAR", "PLANE", "TRAIN"]
+      },
+      "NBA PLAYERS": {
+        "level": 1,
+        "members": ["KING", "MAGIC", "SUN", "THUNDER"]
+      },
+      "FAST FOOD CHAINS": {
+        "level": 2,
+        "members": ["CHECKERS", "OUTBACK", "SONIC", "SUBWAY"]
+      },
+      "BAND NAMES MINUS COLORS": {
+        "level": 3,
+        "members": ["DAY", "FLOYD", "SABBATH", "STRIPES"]
+      }
+    },
+    "startingGroups": [
+      ["PLANE", "SUN", "DAY", "THUNDER"],
+      ["SONIC", "BOAT", "STRIPES", "CHECKERS"],
+      ["CAR", "SUBWAY", "FLOYD", "TRAIN"],
+      ["OUTBACK", "KING", "SABBATH", "MAGIC"]
+    ]
+  },
+  {
+    "id": 45,
+    "groups": {
+      "MOVIE TITLE CITIES": {
+        "level": 0,
+        "members": ["CHICAGO", "MUNICH", "PHILADELPHIA", "RIO"]
+      },
+      "FASHION MAGAZINES": {
+        "level": 1,
+        "members": ["ALLURE", "ELLE", "GLAMOUR", "W"]
+      },
+      "STORMS": {
+        "level": 2,
+        "members": ["BLIZZARD", "CYCLONE", "SQUALL", "TORNADO"]
+      },
+      "COCKTAILS": {
+        "level": 3,
+        "members": [
+          "COSMOPOLITAN",
+          "HURRICANE",
+          "MANHATTAN",
+          "SCREWDRIVER"
+        ]
+      }
+    },
+    "startingGroups": [
+      ["HURRICANE", "CYCLONE", "CHICAGO", "W"],
+      ["MANHATTAN", "GLAMOUR", "TORNADO", "PHILADELPHIA"],
+      ["COSMOPOLITAN", "SQUALL", "ALLURE", "SCREWDRIVER"],
+      ["RIO", "BLIZZARD", "MUNICH", "ELLE"]
+    ]
+  },
+  {
+    "id": 46,
+    "groups": {
+      "BIOMES": {
+        "level": 0,
+        "members": ["DESERT", "FOREST", "GRASSLAND", "TUNDRA"]
+      },
+      "LIZARDS": {
+        "level": 1,
+        "members": ["CHAMELEON", "GECKO", "IGUANA", "MONITOR"]
+      },
+      "YOGA POSES": {
+        "level": 2,
+        "members": ["COBRA", "LOTUS", "TREE", "WARRIOR"]
+      },
+      "DANCES WHEN DOUBLED": {
+        "level": 3,
+        "members": ["CAN", "CHA", "GO", "NAE"]
+      }
+    },
+    "startingGroups": [
+      ["TREE", "GECKO", "FOREST", "GO"],
+      ["MONITOR", "DESERT", "LOTUS", "CAN"],
+      ["IGUANA", "CHA", "TUNDRA", "COBRA"],
+      ["GRASSLAND", "WARRIOR", "NAE", "CHAMELEON"]
+    ]
+  },
+  {
+    "id": 47,
+    "groups": {
+      "FABRICS": {
+        "level": 0,
+        "members": ["CORDUROY", "DENIM", "LINEN", "TWEED"]
+      },
+      "APPARITIONS": {
+        "level": 1,
+        "members": ["GHOST", "PHANTOM", "SPECTER", "SPIRIT"]
+      },
+      "SYNONYMS FOR BOTHER": {
+        "level": 2,
+        "members": ["NEEDLE", "POKE", "RIB", "TEASE"]
+      },
+      "DISNEY CHARACTERS": {
+        "level": 3,
+        "members": ["BEAST", "GENIE", "SCAR", "STITCH"]
+      }
+    },
+    "startingGroups": [
+      ["RIB", "SPECTER", "TWEED", "SCAR"],
+      ["SPIRIT", "BEAST", "NEEDLE", "LINEN"],
+      ["STITCH", "POKE", "DENIM", "GENIE"],
+      ["CORDUROY", "GHOST", "TEASE", "PHANTOM"]
+    ]
+  },
+  {
+    "id": 48,
+    "groups": {
+      "RELATIVES": {
+        "level": 0,
+        "members": ["AUNT", "COUSIN", "MOTHER", "NEPHEW"]
+      },
+      "SYNONYMS FOR OFFBEAT": {
+        "level": 1,
+        "members": ["DAFFY", "KOOKY", "QUIRKY", "WACKY"]
+      },
+      "DISNEY DUCKS": {
+        "level": 2,
+        "members": ["DAISY", "DEWEY", "DONALD", "SCROOGE"]
+      },
+      "___ CLOCK": {
+        "level": 3,
+        "members": ["ALARM", "BIOLOGICAL", "CUCKOO", "GRANDFATHER"]
+      }
+    },
+    "startingGroups": [
+      ["DAISY", "AUNT", "ALARM", "QUIRKY"],
+      ["SCROOGE", "GRANDFATHER", "KOOKY", "BIOLOGICAL"],
+      ["NEPHEW", "DAFFY", "CUCKOO", "MOTHER"],
+      ["DEWEY", "WACKY", "COUSIN", "DONALD"]
+    ]
+  },
+  {
+    "id": 49,
+    "groups": {
+      "UNITS OF LENGTH": {
+        "level": 0,
+        "members": ["FOOT", "INCH", "MILE", "YARD"]
+      },
+      "TYPES OF PAINT": {
+        "level": 1,
+        "members": ["ACRYLIC", "OIL", "TEMPERA", "WATERCOLOR"]
+      },
+      "DEEP-FRIED FOOD": {
+        "level": 2,
+        "members": ["FALAFEL", "KATSU", "SAMOSA", "SCHNITZEL"]
+      },
+      "STARTS OF U.S. COINS": {
+        "level": 3,
+        "members": ["DIM", "NICK", "PEN", "QUART"]
+      }
+    },
+    "startingGroups": [
+      ["OIL", "FOOT", "SAMOSA", "DIM"],
+      ["QUART", "KATSU", "MILE", "WATERCOLOR"],
+      ["PEN", "INCH", "ACRYLIC", "FALAFEL"],
+      ["YARD", "NICK", "SCHNITZEL", "TEMPERA"]
+    ]
+  },
+  {
+    "id": 50,
+    "groups": {
+      "LONG SANDWICHES": {
+        "level": 0,
+        "members": ["HERO", "HOAGIE", "GRINDER", "SUB"]
+      },
+      "DATING APPS": {
+        "level": 1,
+        "members": ["BUMBLE", "HINGE", "MATCH", "TINDER"]
+      },
+      "VAMPIRE MOVIES": {
+        "level": 2,
+        "members": ["BLADE", "LOST BOYS", "NEAR DARK", "TWILIGHT"]
+      },
+      "ADAMS": {
+        "level": 3,
+        "members": ["ANT", "DRIVER", "SCOTT", "WEST"]
+      }
+    },
+    "startingGroups": [
+      ["MATCH", "HERO", "BLADE", "DRIVER"],
+      ["GRINDER", "SCOTT", "HINGE", "TWILIGHT"],
+      ["WEST", "TINDER", "ANT", "SUB"],
+      ["BUMBLE", "LOST BOYS", "HOAGIE", "NEAR DARK"]
+    ]
+  },
+  {
+    "id": 51,
+    "groups": {
+      "COMPUTER EQUIPMENT": {
+        "level": 0,
+        "members": ["KEYBOARD", "MONITOR", "MOUSE", "SPEAKER"]
+      },
+      "RODENTS": {
+        "level": 1,
+        "members": ["GERBIL", "HAMSTER", "RAT", "VOLE"]
+      },
+      "MUSICAL INSTRUMENTS": {
+        "level": 2,
+        "members": ["HARP", "HORN", "ORGAN", "TRIANGLE"]
+      },
+      "SYNONYMS FOR COMPLAIN": {
+        "level": 3,
+        "members": ["CARP", "GRIPE", "GROUSE", "MOAN"]
+      }
+    },
+    "startingGroups": [
+      ["RAT", "HORN", "SPEAKER", "TRIANGLE"],
+      ["CARP", "HARP", "ORGAN", "VOLE"],
+      ["GROUSE", "HAMSTER", "MOUSE", "MONITOR"],
+      ["KEYBOARD", "MOAN", "GERBIL", "GRIPE"]
+    ]
+  },
+  {
+    "id": 52,
+    "groups": {
+      "ANIMAL GROUP NAMES": {
+        "level": 0,
+        "members": ["COLONY", "HERD", "PRIDE", "SWARM"]
+      },
+      "STONED": {
+        "level": 1,
+        "members": ["BAKED", "BLAZED", "HIGH", "LIT"]
+      },
+      "AP CLASSES": {
+        "level": 2,
+        "members": ["BIO", "CHEM", "GOV", "STATS"]
+      },
+      "TAXONOMY RANKS": {
+        "level": 3,
+        "members": ["CLASS", "DOMAIN", "FAMILY", "ORDER"]
+      }
+    },
+    "startingGroups": [
+      ["HIGH", "PRIDE", "CLASS", "GOV"],
+      ["ORDER", "CHEM", "LIT", "FAMILY"],
+      ["SWARM", "DOMAIN", "BIO", "COLONY"],
+      ["BAKED", "STATS", "HERD", "BLAZED"]
+    ]
+  },
+  {
+    "id": 53,
+    "groups": {
+      "PLACES FOR WORSHIP": {
+        "level": 0,
+        "members": ["ALTAR", "RELIQUARY", "SHRINE", "TEMPLE"]
+      },
+      "CARTOON CATS": {
+        "level": 1,
+        "members": ["FELIX", "GARFIELD", "SYLVESTER", "TOM"]
+      },
+      "PRESIDENTIAL FIRST NAMES": {
+        "level": 2,
+        "members": ["CALVIN", "CHESTER", "GROVER", "HARRY"]
+      },
+      "___ ROAD": {
+        "level": 3,
+        "members": ["ABBEY", "HIGH", "ROCKY", "SILK"]
+      }
+    },
+    "startingGroups": [
+      ["TOM", "ROCKY", "TEMPLE", "HARRY"],
+      ["HIGH", "ALTAR", "SYLVESTER", "GROVER"],
+      ["SILK", "CALVIN", "ABBEY", "GARFIELD"],
+      ["CHESTER", "RELIQUARY", "FELIX", "SHRINE"]
+    ]
+  },
+  {
+    "id": 54,
+    "groups": {
+      "CLASSIC TOYS": {
+        "level": 0,
+        "members": ["BLOCKS", "DOLL", "TOP", "YO-YO"]
+      },
+      "WORDS WITH THREE G’S": {
+        "level": 1,
+        "members": ["BAGGAGE", "EGGNOG", "GIGGLE", "LEGGINGS"]
+      },
+      "SHAKESPEARE CHARACTERS": {
+        "level": 2,
+        "members": ["DUNCAN", "JULIET", "PUCK", "VIOLA"]
+      },
+      "___ STICK": {
+        "level": 3,
+        "members": ["FISH", "HOCKEY", "MEMORY", "SELFIE"]
+      }
+    },
+    "startingGroups": [
+      ["VIOLA", "TOP", "GIGGLE", "MEMORY"],
+      ["EGGNOG", "BLOCKS", "SELFIE", "PUCK"],
+      ["DOLL", "HOCKEY", "DUNCAN", "LEGGINGS"],
+      ["JULIET", "BAGGAGE", "YO-YO", "FISH"]
+    ]
+  },
+  {
+    "id": 55,
+    "groups": {
+      "CLASSIC ARCADE GAMES": {
+        "level": 0,
+        "members": ["ASTEROIDS", "BREAKOUT", "FROGGER", "PONG"]
+      },
+      "DANCES": {
+        "level": 1,
+        "members": ["HUSTLE", "SALSA", "SWING", "TANGO"]
+      },
+      "TOUCHSCREEN GESTURES": {
+        "level": 2,
+        "members": ["PINCH", "SPREAD", "SWIPE", "TAP"]
+      },
+      "RAPPERS MINUS NUMBERS": {
+        "level": 3,
+        "members": ["CENT", "CHAINZ", "PAC", "SAVAGE"]
+      }
+    },
+    "startingGroups": [
+      ["PINCH", "SALSA", "SAVAGE", "BREAKOUT"],
+      ["CENT", "SWIPE", "SWING", "TAP"],
+      ["ASTEROIDS", "PAC", "PONG", "HUSTLE"],
+      ["TANGO", "SPREAD", "CHAINZ", "FROGGER"]
+    ]
+  },
+  {
+    "id": 56,
+    "groups": {
+      "MOVIE GENRES": {
+        "level": 0,
+        "members": ["HORROR", "MUSICAL", "ROMANCE", "WESTERN"]
+      },
+      "PATTERNS": {
+        "level": 1,
+        "members": ["HOUNDSTOOTH", "PAISLEY", "PLAID", "STRIPES"]
+      },
+      "SYNONYMS FOR FALSEHOOD": {
+        "level": 2,
+        "members": ["FIB", "FICTION", "LIE", "TALE"]
+      },
+      "CANDY PIECES": {
+        "level": 3,
+        "members": ["DOT", "GOOBER", "KISS", "WHOPPER"]
+      }
+    },
+    "startingGroups": [
+      ["KISS", "ROMANCE", "STRIPES", "FICTION"],
+      ["PAISLEY", "HORROR", "DOT", "LIE"],
+      ["MUSICAL", "WHOPPER", "PLAID", "FIB"],
+      ["GOOBER", "TALE", "WESTERN", "HOUNDSTOOTH"]
+    ]
+  },
+  {
+    "id": 57,
+    "groups": {
+      "ARACHNIDS": {
+        "level": 0,
+        "members": ["MITE", "SCORPION", "SPIDER", "TICK"]
+      },
+      "FISH": {
+        "level": 1,
+        "members": ["CHAR", "EEL", "PERCH", "SHARK"]
+      },
+      "SUPERHEROES": {
+        "level": 2,
+        "members": ["BLACK WIDOW", "BLADE", "FLASH", "STORM"]
+      },
+      "MTV SHOWS": {
+        "level": 3,
+        "members": ["CATFISH", "CRIBS", "JACKASS", "STATE"]
+      }
+    },
+    "startingGroups": [
+      ["BLADE", "CATFISH", "TICK", "CHAR"],
+      ["STATE", "EEL", "STORM", "FLASH"],
+      ["BLACK WIDOW", "JACKASS", "PERCH", "SCORPION"],
+      ["MITE", "SHARK", "SPIDER", "CRIBS"]
+    ]
+  },
+  {
+    "id": 58,
+    "groups": {
+      "UNSPECIFIED QUANTITIES": {
+        "level": 0,
+        "members": ["FEW", "HANDFUL", "SEVERAL", "SOME"]
+      },
+      "CELESTIAL OBJECTS": {
+        "level": 1,
+        "members": ["ASTEROID", "COMET", "MOON", "PLANET"]
+      },
+      "NEWSPAPERS": {
+        "level": 2,
+        "members": ["GLOBE", "JOURNAL", "POST", "SUN"]
+      },
+      "FRUIT HOMOPHONES": {
+        "level": 3,
+        "members": ["LYME", "MELLON", "PAIR", "PLUMB"]
+      }
+    },
+    "startingGroups": [
+      ["MOON", "GLOBE", "SOME", "LYME"],
+      ["FEW", "PAIR", "POST", "COMET"],
+      ["PLUMB", "HANDFUL", "SUN", "PLANET"],
+      ["JOURNAL", "MELLON", "ASTEROID", "SEVERAL"]
+    ]
+  },
+  {
+    "id": 59,
+    "groups": {
+      "HORROR FRANCHISES": {
+        "level": 0,
+        "members": ["PURGE", "RING", "SAW", "SCREAM"]
+      },
+      "SPORTS VENUES": {
+        "level": 1,
+        "members": ["COURT", "DIAMOND", "FIELD", "RINK"]
+      },
+      "MAKE HAPPY": {
+        "level": 2,
+        "members": ["CHARM", "DELIGHT", "PLEASE", "TICKLE"]
+      },
+      "JEWELRY": {
+        "level": 3,
+        "members": ["ANKLET", "BANGLE", "BROOCH", "PENDANT"]
+      }
+    },
+    "startingGroups": [
+      ["DIAMOND", "PENDANT", "CHARM", "SAW"],
+      ["PLEASE", "COURT", "SCREAM", "TICKLE"],
+      ["BANGLE", "RING", "FIELD", "DELIGHT"],
+      ["PURGE", "ANKLET", "RINK", "BROOCH"]
+    ]
+  },
+  {
+    "id": 60,
+    "groups": {
+      "THEORETICAL PHYSICISTS": {
+        "level": 0,
+        "members": ["EINSTEIN", "FEYNMAN", "HAWKING", "OPPENHEIMER"]
+      },
+      "TALENT": {
+        "level": 1,
+        "members": ["FACULTY", "FLAIR", "GENIUS", "GIFT"]
+      },
+      "AUSTRALIAN TERMS": {
+        "level": 2,
+        "members": ["BARBIE", "BUSH", "CRIKEY", "MATE"]
+      },
+      "___ POINT": {
+        "level": 3,
+        "members": ["MATCH", "MOOT", "SELLING", "WEST"]
+      }
+    },
+    "startingGroups": [
+      ["BARBIE", "OPPENHEIMER", "MATCH", "GENIUS"],
+      ["WEST", "BUSH", "SELLING", "HAWKING"],
+      ["FACULTY", "EINSTEIN", "MATE", "MOOT"],
+      ["CRIKEY", "GIFT", "FEYNMAN", "FLAIR"]
+    ]
+  },
+  {
+    "id": 61,
+    "groups": {
+      "STATE ABBREVIATIONS": {
+        "level": 0,
+        "members": ["CO", "MA", "ME", "PA"]
+      },
+      "MUSICAL NOTES": {
+        "level": 1,
+        "members": ["DO", "FA", "LA", "TI"]
+      },
+      "GREEK LETTERS": {
+        "level": 2,
+        "members": ["MU", "NU", "PI", "XI"]
+      },
+      "PERIODIC TABLE SYMBOLS": {
+        "level": 3,
+        "members": ["FE", "HE", "NA", "NI"]
+      }
+    },
+    "startingGroups": [
+      ["MA", "LA", "NA", "NU"],
+      ["PI", "NI", "TI", "HE"],
+      ["FA", "XI", "PA", "FE"],
+      ["DO", "CO", "MU", "ME"]
+    ]
+  },
+  {
+    "id": 62,
+    "groups": {
+      "FASTENING VERBS": {
+        "level": 0,
+        "members": ["BUCKLE", "BUTTON", "SNAP", "ZIP"]
+      },
+      "SLANG FOR ZERO": {
+        "level": 1,
+        "members": ["JACK", "NADA", "NOTHING", "SQUAT"]
+      },
+      "GYM EXERCISES": {
+        "level": 2,
+        "members": ["CURL", "LUNGE", "PLANK", "PRESS"]
+      },
+      "“CAPTAINS”": {
+        "level": 3,
+        "members": ["CRUNCH", "KANGAROO", "OBVIOUS", "PLANET"]
+      }
+    },
+    "startingGroups": [
+      ["JACK", "PRESS", "PLANET", "BUTTON"],
+      ["PLANK", "SQUAT", "SNAP", "OBVIOUS"],
+      ["CRUNCH", "BUCKLE", "NOTHING", "CURL"],
+      ["ZIP", "KANGAROO", "LUNGE", "NADA"]
+    ]
+  },
+  {
+    "id": 63,
+    "groups": {
+      "CLASSIC DOG NAMES": {
+        "level": 0,
+        "members": ["FIDO", "LUCKY", "ROVER", "SPOT"]
+      },
+      "PERCEIVE": {
+        "level": 1,
+        "members": ["CATCH", "NOTICE", "OBSERVE", "SEE"]
+      },
+      "FISHING TERMS": {
+        "level": 2,
+        "members": ["BAIT", "CHUM", "FLY", "SINKER"]
+      },
+      "T-___": {
+        "level": 3,
+        "members": ["BONE", "REX", "SHIRT", "STORM"]
+      }
+    },
+    "startingGroups": [
+      ["CATCH", "SPOT", "BONE", "LUCKY"],
+      ["SEE", "SHIRT", "FLY", "STORM"],
+      ["CHUM", "NOTICE", "REX", "BAIT"],
+      ["FIDO", "SINKER", "OBSERVE", "ROVER"]
+    ]
+  },
+  {
+    "id": 64,
+    "groups": {
+      "STATES OF MATTER": {
+        "level": 0,
+        "members": ["GAS", "LIQUID", "PLASMA", "SOLID"]
+      },
+      "ENERGY": {
+        "level": 1,
+        "members": ["JUICE", "SPIRIT", "STEAM", "VIGOR"]
+      },
+      "CLASSICAL ELEMENTS": {
+        "level": 2,
+        "members": ["AIR", "EARTH", "FIRE", "WATER"]
+      },
+      "THINGS WITH RINGS": {
+        "level": 3,
+        "members": ["CIRCUS", "SATURN", "TREE", "WEDDING"]
+      }
+    },
+    "startingGroups": [
+      ["JUICE", "WATER", "TREE", "EARTH"],
+      ["GAS", "CIRCUS", "STEAM", "LIQUID"],
+      ["SATURN", "FIRE", "SOLID", "SPIRIT"],
+      ["PLASMA", "VIGOR", "AIR", "WEDDING"]
+    ]
+  },
+  {
+    "id": 65,
+    "groups": {
+      "TIME PERIODS": {
+        "level": 0,
+        "members": ["CENTURY", "DECADE", "MILLENNIUM", "YEAR"]
+      },
+      "BREAKFAST FOODS": {
+        "level": 1,
+        "members": ["CEREAL", "OMELET", "PANCAKE", "WAFFLE"]
+      },
+      "PAINTERS": {
+        "level": 2,
+        "members": ["BACON", "CLOSE", "MUNCH", "WHISTLER"]
+      },
+      "ONE IN A DOZEN": {
+        "level": 3,
+        "members": ["EGG", "JUROR", "MONTH", "ROSE"]
+      }
+    },
+    "startingGroups": [
+      ["ROSE", "CLOSE", "BACON", "YEAR"],
+      ["PANCAKE", "MONTH", "MUNCH", "EGG"],
+      ["DECADE", "CEREAL", "CENTURY", "OMELET"],
+      ["WHISTLER", "MILLENNIUM", "JUROR", "WAFFLE"]
+    ]
+  },
+  {
+    "id": 66,
+    "groups": {
+      "DESSERTS": {
+        "level": 0,
+        "members": ["CAKE", "COBBLER", "PIE", "TART"]
+      },
+      "OCCUPATIONAL SURNAMES": {
+        "level": 1,
+        "members": ["FISHER", "MASON", "MILLER", "SMITH"]
+      },
+      "ALTER DECEPTIVELY": {
+        "level": 2,
+        "members": ["DISTORT", "DOCTOR", "FUDGE", "TWIST"]
+      },
+      "SQUARE ___": {
+        "level": 3,
+        "members": ["DANCE", "MEAL", "ONE", "ROOT"]
+      }
+    },
+    "startingGroups": [
+      ["FUDGE", "MEAL", "COBBLER", "SMITH"],
+      ["PIE", "DOCTOR", "ROOT", "TWIST"],
+      ["DANCE", "ONE", "FISHER", "TART"],
+      ["MASON", "CAKE", "DISTORT", "MILLER"]
+    ]
+  },
+  {
+    "id": 67,
+    "groups": {
+      "UNITS OF VOLUME": {
+        "level": 0,
+        "members": ["CUP", "GALLON", "PINT", "QUART"]
+      },
+      "EXTREMELY": {
+        "level": 1,
+        "members": ["AWFUL", "QUITE", "SUPER", "VERY"]
+      },
+      "WORLD CURRENCIES": {
+        "level": 2,
+        "members": ["RAND", "REAL", "STERLING", "WON"]
+      },
+      "___ CAKE": {
+        "level": 3,
+        "members": ["CARROT", "COFFEE", "POUND", "SPONGE"]
+      }
+    },
+    "startingGroups": [
+      ["PINT", "REAL", "CARROT", "AWFUL"],
+      ["SPONGE", "CUP", "WON", "SUPER"],
+      ["GALLON", "COFFEE", "VERY", "POUND"],
+      ["RAND", "QUITE", "QUART", "STERLING"]
+    ]
+  },
+  {
+    "id": 68,
+    "groups": {
+      "FRIEND": {
+        "level": 0,
+        "members": ["BUD", "CHUM", "MATE", "PAL"]
+      },
+      "COOKWEAR": {
+        "level": 1,
+        "members": ["CROCK", "POT", "SKILLET", "WOK"]
+      },
+      "SHOES": {
+        "level": 2,
+        "members": ["CLOG", "PUMP", "SLIDE", "WEDGE"]
+      },
+      "SLANG FOR CANNABIS": {
+        "level": 3,
+        "members": ["GRASS", "HERB", "MARY JANE", "WEED"]
+      }
+    },
+    "startingGroups": [
+      ["BUD", "PUMP", "CROCK", "HERB"],
+      ["POT", "MATE", "WEDGE", "GRASS"],
+      ["WOK", "MARY JANE", "CHUM", "SLIDE"],
+      ["CLOG", "PAL", "SKILLET", "WEED"]
+    ]
+  },
+  {
+    "id": 69,
+    "groups": {
+      "CAMPING SUPPLIES": {
+        "level": 0,
+        "members": ["COOLER", "LANTERN", "SLEEPING BAG", "TENT"]
+      },
+      "INSULT": {
+        "level": 1,
+        "members": ["BARB", "DIG", "DISS", "JAB"]
+      },
+      "TINY": {
+        "level": 2,
+        "members": ["MINUTE", "SLIGHT", "SMALL", "WEE"]
+      },
+      "HAPPY ___": {
+        "level": 3,
+        "members": ["CAMPER", "HOUR", "MEAL", "MEDIUM"]
+      }
+    },
+    "startingGroups": [
+      ["MINUTE", "DIG", "MEAL", "COOLER"],
+      ["HOUR", "TENT", "SLIGHT", "MEDIUM"],
+      ["SMALL", "BARB", "CAMPER", "LANTERN"],
+      ["JAB", "SLEEPING BAG", "DISS", "WEE"]
+    ]
+  },
+  {
+    "id": 70,
+    "groups": {
+      "U.S. MOUNTAIN STATES": {
+        "level": 0,
+        "members": ["ARIZONA", "COLORADO", "NEVADA", "UTAH"]
+      },
+      "SODA BRANDS": {
+        "level": 1,
+        "members": ["CRUSH", "MUG", "SPRITE", "SQUIRT"]
+      },
+      "CLASSIC ROCK BANDS": {
+        "level": 2,
+        "members": ["GENESIS", "KANSAS", "RUSH", "YES"]
+      },
+      "TONY ___": {
+        "level": 3,
+        "members": ["HAWK", "MONTANA", "SOPRANO", "STARK"]
+      }
+    },
+    "startingGroups": [
+      ["CRUSH", "UTAH", "RUSH", "HAWK"],
+      ["MONTANA", "MUG", "ARIZONA", "GENESIS"],
+      ["SQUIRT", "STARK", "YES", "COLORADO"],
+      ["KANSAS", "SPRITE", "NEVADA", "SOPRANO"]
+    ]
+  },
+  {
+    "id": 71,
+    "groups": {
+      "PERFORMING ARTISTS": {
+        "level": 0,
+        "members": ["ACTOR", "DANCER", "SINGER", "STAND-UP"]
+      },
+      "SANTA’S REINDEER": {
+        "level": 1,
+        "members": ["COMET", "CUPID", "DASHER", "VIXEN"]
+      },
+      "SEEN ON VALENTINE’S DAY": {
+        "level": 2,
+        "members": ["CARD", "CHOCOLATE", "HEART", "ROSE"]
+      },
+      "“BAD ___” MOVIES": {
+        "level": 3,
+        "members": ["BOYS", "LIEUTENANT", "SANTA", "TASTE"]
+      }
+    },
+    "startingGroups": [
+      ["HEART", "COMET", "TASTE", "SINGER"],
+      ["SANTA", "CUPID", "CARD", "DANCER"],
+      ["ROSE", "BOYS", "STAND-UP", "VIXEN"],
+      ["LIEUTENANT", "ACTOR", "DASHER", "CHOCOLATE"]
+    ]
+  },
+  {
+    "id": 72,
+    "groups": {
+      "FACIAL HAIR": {
+        "level": 0,
+        "members": ["BEARD", "GOATEE", "MUSTACHE", "STUBBLE"]
+      },
+      "BIKE PARTS": {
+        "level": 1,
+        "members": ["GEAR", "HANDLEBAR", "PEDAL", "WHEEL"]
+      },
+      "PURSUE": {
+        "level": 2,
+        "members": ["DOG", "FOLLOW", "TAIL", "TRACK"]
+      },
+      "THINGS THAT ARE CAST": {
+        "level": 3,
+        "members": ["DOUBT", "MOVIE", "SHADOW", "VOTE"]
+      }
+    },
+    "startingGroups": [
+      ["SHADOW", "GEAR", "DOG", "BEARD"],
+      ["HANDLEBAR", "TRACK", "GOATEE", "VOTE"],
+      ["TAIL", "MOVIE", "WHEEL", "DOUBT"],
+      ["MUSTACHE", "PEDAL", "FOLLOW", "STUBBLE"]
+    ]
+  },
+  {
+    "id": 73,
+    "groups": {
+      "EXTINCT ANIMALS": {
+        "level": 0,
+        "members": ["DODO", "MAMMOTH", "MASTODON", "TRILOBITE"]
+      },
+      "FAILURES": {
+        "level": 1,
+        "members": ["BUSTS", "FLOPS", "MISSES", "TURKEYS"]
+      },
+      "SLANG FOR CLOTHES": {
+        "level": 2,
+        "members": ["DUDS", "GETUP", "OUTFIT", "THREADS"]
+      },
+      "KISS": {
+        "level": 3,
+        "members": ["PECK", "SMACK", "SMOOCH", "X"]
+      }
+    },
+    "startingGroups": [
+      ["MASTODON", "X", "SMACK", "THREADS"],
+      ["BUSTS", "PECK", "DODO", "DUDS"],
+      ["SMOOCH", "MAMMOTH", "OUTFIT", "FLOPS"],
+      ["MISSES", "GETUP", "TURKEYS", "TRILOBITE"]
+    ]
+  },
+  {
+    "id": 74,
+    "groups": {
+      "SOCIAL GATHERING": {
+        "level": 0,
+        "members": ["BASH", "BLOWOUT", "PARTY", "SHINDIG"]
+      },
+      "FOUND IN A KITCHEN": {
+        "level": 1,
+        "members": ["COUNTER", "MIXER", "RANGE", "SINK"]
+      },
+      "“PINOCCHIO” FIGURES": {
+        "level": 2,
+        "members": ["CRICKET", "PUPPET", "WHALE", "WOODCARVER"]
+      },
+      "EASTER ___": {
+        "level": 3,
+        "members": ["BUNNY", "EGG", "ISLAND", "SUNDAY"]
+      }
+    },
+    "startingGroups": [
+      ["MIXER", "WHALE", "ISLAND", "BASH"],
+      ["BUNNY", "PARTY", "RANGE", "PUPPET"],
+      ["BLOWOUT", "EGG", "CRICKET", "COUNTER"],
+      ["SINK", "WOODCARVER", "SUNDAY", "SHINDIG"]
+    ]
+  },
+  {
+    "id": 75,
+    "groups": {
+      "BOARD GAMES": {
+        "level": 0,
+        "members": ["RISK", "SORRY", "TABOO", "TROUBLE"]
+      },
+      "NEWSPAPER SECTIONS": {
+        "level": 1,
+        "members": ["BUSINESS", "NATIONAL", "OPINION", "STYLE"]
+      },
+      "FIGURES IN GREEK MYTH": {
+        "level": 2,
+        "members": ["ATLAS", "HERMES", "NIKE", "PARIS"]
+      },
+      "FIRST WORDS IN RAPPERS’ NAMES": {
+        "level": 3,
+        "members": ["FOXY", "GUCCI", "KILLER", "NOTORIOUS"]
+      }
+    },
+    "startingGroups": [
+      ["PARIS", "STYLE", "FOXY", "TROUBLE"],
+      ["KILLER", "RISK", "NATIONAL", "GUCCI"],
+      ["BUSINESS", "ATLAS", "SORRY", "NIKE"],
+      ["HERMES", "TABOO", "OPINION", "NOTORIOUS"]
+    ]
+  },
+  {
+    "id": 76,
+    "groups": {
+      "PIECES OF CHICKEN": {
+        "level": 0,
+        "members": ["BREAST", "DRUMSTICK", "TENDER", "WING"]
+      },
+      "GOLF TERMS": {
+        "level": 1,
+        "members": ["DRIVER", "EAGLE", "HOLE", "STROKE"]
+      },
+      "DRUM SET COMPONENTS": {
+        "level": 2,
+        "members": ["CYMBAL", "KICK", "SNARE", "TOM"]
+      },
+      "ASSOCIATED WITH “CRAWL”": {
+        "level": 3,
+        "members": ["INFANT", "PUB", "SWIMMING", "TICKER"]
+      }
+    },
+    "startingGroups": [
+      ["TOM", "INFANT", "DRIVER", "WING"],
+      ["PUB", "EAGLE", "TENDER", "SNARE"],
+      ["CYMBAL", "SWIMMING", "STROKE", "TICKER"],
+      ["BREAST", "KICK", "HOLE", "DRUMSTICK"]
+    ]
+  },
+  {
+    "id": 77,
+    "groups": {
+      "STATES OF ELATION": {
+        "level": 0,
+        "members": ["BLISS", "CLOUD NINE", "HEAVEN", "PARADISE"]
+      },
+      "SCAM": {
+        "level": 1,
+        "members": ["CON", "FAST ONE", "HUSTLE", "RACKET"]
+      },
+      "GREETING GESTURES": {
+        "level": 2,
+        "members": ["HIGH FIVE", "HUG", "SHAKE", "WAVE"]
+      },
+      "___ LIST": {
+        "level": 3,
+        "members": ["BUCKET", "GUEST", "TOP TEN", "WISH"]
+      }
+    },
+    "startingGroups": [
+      ["TOP TEN", "WAVE", "RACKET", "GUEST"],
+      ["SHAKE", "CLOUD NINE", "BUCKET", "BLISS"],
+      ["HUSTLE", "WISH", "HIGH FIVE", "CON"],
+      ["HEAVEN", "HUG", "PARADISE", "FAST ONE"]
+    ]
+  },
+  {
+    "id": 78,
+    "groups": {
+      "DEPART QUICKLY": {
+        "level": 0,
+        "members": ["BOOK", "BOUNCE", "RUN", "SPLIT"]
+      },
+      "ANIMALS THAT END WITH “X”": {
+        "level": 1,
+        "members": ["FOX", "IBEX", "LYNX", "ORYX"]
+      },
+      "SHADES OF BLACK": {
+        "level": 2,
+        "members": ["EBONY", "JET", "ONYX", "RAVEN"]
+      },
+      "WORDS BEFORE DAYS OF THE WEEK": {
+        "level": 3,
+        "members": ["ASH", "BLACK", "CYBER", "FAT"]
+      }
+    },
+    "startingGroups": [
+      ["JET", "FOX", "BOOK", "ONYX"],
+      ["LYNX", "ASH", "BLACK", "BOUNCE"],
+      ["CYBER", "ORYX", "RUN", "RAVEN"],
+      ["EBONY", "SPLIT", "FAT", "IBEX"]
+    ]
+  },
+  {
+    "id": 79,
+    "groups": {
+      "PLAYGROUND FIXTURES": {
+        "level": 0,
+        "members": ["SANDBOX", "SEESAW", "SLIDE", "SWING"]
+      },
+      "INFLUENCE": {
+        "level": 1,
+        "members": ["CLOUT", "PULL", "SWAY", "WEIGHT"]
+      },
+      "EGYPTIAN SYMBOLS": {
+        "level": 2,
+        "members": ["ANKH", "CROOK", "EYE", "SCARAB"]
+      },
+      "FONTS": {
+        "level": 3,
+        "members": ["COURIER", "IMPACT", "PAPYRUS", "TIMES"]
+      }
+    },
+    "startingGroups": [
+      ["SWING", "TIMES", "EYE", "IMPACT"],
+      ["WEIGHT", "PAPYRUS", "SLIDE", "PULL"],
+      ["SCARAB", "SEESAW", "SWAY", "CROOK"],
+      ["CLOUT", "COURIER", "ANKH", "SANDBOX"]
+    ]
+  },
+  {
+    "id": 80,
+    "groups": {
+      "APPETIZER UNIT": {
+        "level": 0,
+        "members": ["FRY", "NACHO", "POPPER", "WING"]
+      },
+      "RESPONSE TO A CORRECT ANSWER": {
+        "level": 1,
+        "members": ["BINGO", "CORRECT", "RIGHT", "YES"]
+      },
+      "MAR": {
+        "level": 2,
+        "members": ["CHIP", "DING", "NICK", "SCRATCH"]
+      },
+      "___JACK": {
+        "level": 3,
+        "members": ["APPLE", "CRACKER", "FLAP", "LUMBER"]
+      }
+    },
+    "startingGroups": [
+      ["CHIP", "APPLE", "FRY", "RIGHT"],
+      ["CRACKER", "WING", "DING", "FLAP"],
+      ["BINGO", "SCRATCH", "NACHO", "YES"],
+      ["NICK", "LUMBER", "CORRECT", "POPPER"]
+    ]
+  },
+  {
+    "id": 81,
+    "groups": {
+      "DRINK VESSELS": {
+        "level": 0,
+        "members": ["GOBLET", "SNIFTER", "TUMBLER", "STEIN"]
+      },
+      "WOODWINDS": {
+        "level": 1,
+        "members": ["CLARINET", "FLUTE", "OBOE", "SAXOPHONE"]
+      },
+      "AMERICAN POETS": {
+        "level": 2,
+        "members": ["BISHOP", "FROST", "OLDS", "POUND"]
+      },
+      "CONSECUTIVE DOUBLE LETTERS": {
+        "level": 3,
+        "members": ["BALLOON", "BASSOON", "COFFEE", "FRICASSEE"]
+      }
+    },
+    "startingGroups": [
+      ["FLUTE", "COFFEE", "POUND", "OBOE"],
+      ["STEIN", "FRICASSEE", "BISHOP", "TUMBLER"],
+      ["BASSOON", "FROST", "GOBLET", "CLARINET"],
+      ["OLDS", "SNIFTER", "SAXOPHONE", "BALLOON"]
+    ]
+  },
+  {
+    "id": 82,
+    "groups": {
+      "AU NATUREL": {
+        "level": 0,
+        "members": ["BARE", "NAKED", "NUDE", "UNCLAD"]
+      },
+      "BAKED GOODS": {
+        "level": 1,
+        "members": ["BUN", "DANISH", "MUFFIN", "TURNOVER"]
+      },
+      "AMERICAN FOOTBALL ACTIONS": {
+        "level": 2,
+        "members": ["FUMBLE", "PUNT", "SACK", "SNAP"]
+      },
+      "MANICURE STEPS": {
+        "level": 3,
+        "members": ["BUFF", "CLIP", "FILE", "POLISH"]
+      }
+    },
+    "startingGroups": [
+      ["BUN", "SNAP", "CLIP", "BARE"],
+      ["BUFF", "MUFFIN", "POLISH", "SACK"],
+      ["DANISH", "NUDE", "FUMBLE", "TURNOVER"],
+      ["NAKED", "PUNT", "FILE", "UNCLAD"]
+    ]
+  },
+  {
+    "id": 83,
+    "groups": {
+      "FEMALE ANIMALS": {
+        "level": 0,
+        "members": ["COW", "DOE", "HEN", "MARE"]
+      },
+      "PRONOUNS": {
+        "level": 1,
+        "members": ["I", "IT", "THEY", "WE"]
+      },
+      "ROMAN NUMERALS": {
+        "level": 2,
+        "members": ["D", "L", "M", "V"]
+      },
+      "HOMOPHONES": {
+        "level": 3,
+        "members": ["EWE", "U", "YEW", "YOU"]
+      }
+    },
+    "startingGroups": [
+      ["I", "L", "U", "V"],
+      ["YOU", "WE", "D", "DOE"],
+      ["M", "EWE", "HEN", "IT"],
+      ["COW", "THEY", "YEW", "MARE"]
+    ]
+  },
+  {
+    "id": 84,
+    "groups": {
+      "PAINTING ACCESSORIES": {
+        "level": 0,
+        "members": ["BRUSH", "CANVAS", "EASEL", "PALETTE"]
+      },
+      "AUTOMATIC TRANSMISSION SETTINGS": {
+        "level": 1,
+        "members": ["DRIVE", "NEUTRAL", "PARK", "REVERSE"]
+      },
+      "THINGS WITH TEETH": {
+        "level": 2,
+        "members": ["COMB", "GEAR", "SAW", "ZIPPER"]
+      },
+      "___ CHAIR": {
+        "level": 3,
+        "members": ["FIRST", "FOLDING", "HIGH", "LAWN"]
+      }
+    },
+    "startingGroups": [
+      ["PARK", "FOLDING", "GEAR", "BRUSH"],
+      ["HIGH", "COMB", "NEUTRAL", "LAWN"],
+      ["CANVAS", "DRIVE", "SAW", "FIRST"],
+      ["ZIPPER", "EASEL", "REVERSE", "PALETTE"]
+    ]
+  },
+  {
+    "id": 85,
+    "groups": {
+      "INFORMATION DISPLAYS": {
+        "level": 0,
+        "members": ["CHART", "DIAGRAM", "GRAPH", "MAP"]
+      },
+      "ADDITIONAL BENEFIT": {
+        "level": 1,
+        "members": ["BONUS", "EXTRA", "ICING", "PERK"]
+      },
+      "THANKSGIVING FOOD": {
+        "level": 2,
+        "members": ["GRAVY", "PIE", "STUFFING", "TURKEY"]
+      },
+      "SONG TITLES WITH PARENTHESES": {
+        "level": 3,
+        "members": ["I RAN", "ISTANBUL", "MONTERO", "SATISFACTION"]
+      }
+    },
+    "startingGroups": [
+      ["TURKEY", "MAP", "EXTRA", "SATISFACTION"],
+      ["ICING", "PIE", "CHART", "GRAVY"],
+      ["ISTANBUL", "GRAPH", "I RAN", "BONUS"],
+      ["DIAGRAM", "MONTERO", "PERK", "STUFFING"]
+    ]
+  },
+  {
+    "id": 86,
+    "groups": {
+      "CREATURES IN FOLKLORE": {
+        "level": 0,
+        "members": ["GNOME", "GOBLIN", "OGRE", "TROLL"]
+      },
+      "FLOWER PARTS": {
+        "level": 1,
+        "members": ["BUD", "LEAF", "PETAL", "STALK"]
+      },
+      "ONE INVOLVED IN ESPIONAGE": {
+        "level": 2,
+        "members": ["AGENT", "MOLE", "PLANT", "SPY"]
+      },
+      "CHINESE ZODIAC ANIMALS": {
+        "level": 3,
+        "members": ["DRAGON", "HORSE", "RABBIT", "TIGER"]
+      }
+    },
+    "startingGroups": [
+      ["LEAF", "HORSE", "GNOME", "MOLE"],
+      ["DRAGON", "STALK", "SPY", "TROLL"],
+      ["PLANT", "GOBLIN", "RABBIT", "PETAL"],
+      ["OGRE", "AGENT", "BUD", "TIGER"]
+    ]
+  },
+  {
+    "id": 87,
+    "groups": {
+      "ROCKY HORROR PICTURE SHOW": {
+        "level": 0,
+        "members": ["HORROR", "PICTURE", "ROCKY", "SHOW"]
+      },
+      "WHO FRAMED ROGER RABBIT": {
+        "level": 1,
+        "members": ["FRAMED", "RABBIT", "ROGER", "WHO"]
+      },
+      "WHEN HARRY MET SALLY": {
+        "level": 2,
+        "members": ["HARRY", "MET", "SALLY", "WHEN"]
+      },
+      "MAD MAX FURY ROAD": {
+        "level": 3,
+        "members": ["FURY", "MAD", "MAX", "ROAD"]
+      }
+    },
+    "startingGroups": [
+      ["FURY", "HORROR", "HARRY", "ROGER"],
+      ["MET", "MAX", "WHO", "MAD"],
+      ["PICTURE", "FRAMED", "ROAD", "SHOW"],
+      ["RABBIT", "WHEN", "ROCKY", "SALLY"]
+    ]
+  },
+  {
+    "id": 88,
+    "groups": {
+      "INHERENT NATURE": {
+        "level": 0,
+        "members": ["ESSENCE", "HEART", "SPIRIT", "SOUL"]
+      },
+      "FERMENTED ALCOHOLIC BEVERAGES": {
+        "level": 1,
+        "members": ["CIDER", "PORT", "SAKE", "STOUT"]
+      },
+      "PIXAR MOVIES": {
+        "level": 2,
+        "members": ["BRAVE", "CARS", "COCO", "UP"]
+      },
+      "___ TAPE": {
+        "level": 3,
+        "members": ["DEMO", "RED", "SCOTCH", "TICKER"]
+      }
+    },
+    "startingGroups": [
+      ["SOUL", "SCOTCH", "STOUT", "BRAVE"],
+      ["RED", "HEART", "UP", "SPIRIT"],
+      ["TICKER", "SAKE", "DEMO", "PORT"],
+      ["CARS", "ESSENCE", "CIDER", "COCO"]
+    ]
+  },
+  {
+    "id": 89,
+    "groups": {
+      "BASEBALL CALLS": {
+        "level": 0,
+        "members": ["BALL", "OUT", "SAFE", "STRIKE"]
+      },
+      "HEAT SOURCES": {
+        "level": 1,
+        "members": ["FORGE", "FURNACE", "KILN", "OVEN"]
+      },
+      "FISH THAT ARE VERBS": {
+        "level": 2,
+        "members": ["CARP", "CATFISH", "FLOUNDER", "SMELT"]
+      },
+      "SILENT “L”": {
+        "level": 3,
+        "members": ["COLONEL", "SALMON", "WALK", "YOLK"]
+      }
+    },
+    "startingGroups": [
+      ["SMELT", "OUT", "WALK", "OVEN"],
+      ["YOLK", "CARP", "FORGE", "BALL"],
+      ["CATFISH", "SAFE", "SALMON", "KILN"],
+      ["COLONEL", "FURNACE", "STRIKE", "FLOUNDER"]
+    ]
+  },
+  {
+    "id": 90,
+    "groups": {
+      "AMAZON ANIMALS": {
+        "level": 0,
+        "members": ["ANACONDA", "CAPYBARA", "JAGUAR", "TOUCAN"]
+      },
+      "LOWEST POINT": {
+        "level": 1,
+        "members": ["BASE", "BOTTOM", "FOOT", "FOUNDATION"]
+      },
+      "MUSICALS": {
+        "level": 2,
+        "members": ["COMPANY", "GREASE", "HAIR", "RENT"]
+      },
+      "SEA ___": {
+        "level": 3,
+        "members": ["CHANGE", "CUCUMBER", "LEGS", "LION"]
+      }
+    },
+    "startingGroups": [
+      ["JAGUAR", "COMPANY", "BOTTOM", "LEGS"],
+      ["FOOT", "LION", "TOUCAN", "HAIR"],
+      ["CUCUMBER", "FOUNDATION", "GREASE", "ANACONDA"],
+      ["RENT", "CAPYBARA", "BASE", "CHANGE"]
+    ]
+  },
+  {
+    "id": 91,
+    "groups": {
+      "HALLOWEEN DECORATIONS": {
+        "level": 0,
+        "members": ["BAT", "COBWEB", "PUMPKIN", "TOMBSTONE"]
+      },
+      "TV SHOWS": {
+        "level": 1,
+        "members": ["24", "BONES", "FIREFLY", "WEEDS"]
+      },
+      "SLOT MACHINE SYMBOLS": {
+        "level": 2,
+        "members": ["7", "BAR", "BELL", "CHERRY"]
+      },
+      "NUMBERS IN BOOK TITLES": {
+        "level": 3,
+        "members": ["22", "451", "2001", "20,000"]
+      }
+    },
+    "startingGroups": [
+      ["BELL", "24", "BAT", "7"],
+      ["2001", "TOMBSTONE", "BONES", "22"],
+      ["FIREFLY", "20,000", "CHERRY", "PUMPKIN"],
+      ["451", "COBWEB", "WEEDS", "BAR"]
+    ]
+  },
+  {
+    "id": 92,
+    "groups": {
+      "HOT DRINKS": {
+        "level": 0,
+        "members": ["CHAI", "COCOA", "COFFEE", "TEA"]
+      },
+      "ANIMAL SOUNDS": {
+        "level": 1,
+        "members": ["BUZZ", "CLUCK", "MEOW", "OINK"]
+      },
+      "TREE FEATURES": {
+        "level": 2,
+        "members": ["BARK", "BRANCH", "ROOT", "TRUNK"]
+      },
+      "INSIDE INFO": {
+        "level": 3,
+        "members": ["DIRT", "DISH", "SCOOP", "SKINNY"]
+      }
+    },
+    "startingGroups": [
+      ["BARK", "DIRT", "TEA", "ROOT"],
+      ["BUZZ", "COFFEE", "DISH", "SKINNY"],
+      ["TRUNK", "MEOW", "COCOA", "SCOOP"],
+      ["OINK", "CHAI", "CLUCK", "BRANCH"]
+    ]
+  },
+  {
+    "id": 93,
+    "groups": {
+      "“SKEDADDLE!”": {
+        "level": 0,
+        "members": ["GET OUT", "GO", "LEAVE", "SCRAM"]
+      },
+      "PRONOUNS": {
+        "level": 1,
+        "members": ["ME", "THEM", "US", "YOU"]
+      },
+      "ANAGRAMS": {
+        "level": 2,
+        "members": ["NOPE", "OPEN", "PEON", "PONE"]
+      },
+      "___ BABY": {
+        "level": 3,
+        "members": ["BEANIE", "FUR", "NEPO", "SANTA"]
+      }
+    },
+    "startingGroups": [
+      ["NOPE", "BEANIE", "US", "OPEN"],
+      ["FUR", "GET OUT", "YOU", "SANTA"],
+      ["PEON", "THEM", "GO", "PONE"],
+      ["LEAVE", "NEPO", "ME", "SCRAM"]
+    ]
+  },
+  {
+    "id": 94,
+    "groups": {
+      "EYE PARTS": {
+        "level": 0,
+        "members": ["IRIS", "LENS", "PUPIL", "RETINA"]
+      },
+      "COUNTERFEIT": {
+        "level": 1,
+        "members": ["BOGUS", "FAKE", "PHONY", "SHAM"]
+      },
+      "RADIO LINGO": {
+        "level": 2,
+        "members": ["COPY", "OUT", "OVER", "ROGER"]
+      },
+      "SONGS THAT ARE NAMES": {
+        "level": 3,
+        "members": ["ALEJANDRO", "LOLA", "MICHELLE", "STAN"]
+      }
+    },
+    "startingGroups": [
+      ["IRIS", "OUT", "FAKE", "MICHELLE"],
+      ["COPY", "STAN", "ROGER", "BOGUS"],
+      ["LENS", "OVER", "LOLA", "PUPIL"],
+      ["SHAM", "ALEJANDRO", "RETINA", "PHONY"]
+    ]
+  },
+  {
+    "id": 95,
+    "groups": {
+      "BOVIDS": {
+        "level": 0,
+        "members": ["BUFFALO", "COW", "GOAT", "SHEEP"]
+      },
+      "EMIT LIGHT": {
+        "level": 1,
+        "members": ["BEAM", "GLOW", "RADIATE", "SHINE"]
+      },
+      "GYMNASTICS APPARATUS": {
+        "level": 2,
+        "members": ["FLOOR", "HORSE", "RINGS", "VAULT"]
+      },
+      "WORDS THAT SOUND LIKE TWO LETTERS": {
+        "level": 3,
+        "members": ["CUTIE", "ENVY", "EXCEL", "SEEDY"]
+      }
+    },
+    "startingGroups": [
+      ["FLOOR", "SHINE", "CUTIE", "COW"],
+      ["GLOW", "SEEDY", "HORSE", "BEAM"],
+      ["EXCEL", "GOAT", "VAULT", "ENVY"],
+      ["BUFFALO", "RINGS", "SHEEP", "RADIATE"]
+    ]
+  },
+  {
+    "id": 96,
+    "groups": {
+      "FAIRY TALE FIGURES": {
+        "level": 0,
+        "members": ["GIANT", "PRINCESS", "WITCH", "WOLF"]
+      },
+      "CHESS TERMS": {
+        "level": 1,
+        "members": ["BISHOP", "MATE", "GAMBIT", "QUEEN"]
+      },
+      "“PEANUTS” CHARACTERS": {
+        "level": 2,
+        "members": [
+          "CHARLIE",
+          "PEPPERMINT PATTY",
+          "PIGPEN",
+          "WOODSTOCK"
+        ]
+      },
+      "I LOVE ___": {
+        "level": 3,
+        "members": ["LUCY", "NEW YORK", "ROCK 'N ROLL", "YOU"]
+      }
+    },
+    "startingGroups": [
+      ["WOODSTOCK", "GAMBIT", "NEW YORK", "GIANT"],
+      ["QUEEN", "ROCK 'N ROLL", "WOLF", "CHARLIE"],
+      ["YOU", "PEPPERMINT PATTY", "MATE", "PRINCESS"],
+      ["PIGPEN", "WITCH", "LUCY", "BISHOP"]
+    ]
+  },
+  {
+    "id": 97,
+    "groups": {
+      "FRUITS": {
+        "level": 0,
+        "members": ["APRICOT", "FIG", "GRAPE", "LIME"]
+      },
+      "LUXURIOUS": {
+        "level": 1,
+        "members": ["DELUXE", "GRAND", "LAVISH", "OPULENT"]
+      },
+      "BEST ACTRESS OSCAR WINNERS": {
+        "level": 2,
+        "members": ["BERRY", "FOSTER", "STONE", "SWANK"]
+      },
+      "WHAT “GREEN” MIGHT MEAN": {
+        "level": 3,
+        "members": ["ENVIOUS", "FRESH", "NAIVE", "UNWELL"]
+      }
+    },
+    "startingGroups": [
+      ["SWANK", "FIG", "FRESH", "GRAND"],
+      ["LIME", "STONE", "ENVIOUS", "FOSTER"],
+      ["DELUXE", "NAIVE", "LAVISH", "APRICOT"],
+      ["GRAPE", "OPULENT", "BERRY", "UNWELL"]
+    ]
+  },
+  {
+    "id": 98,
+    "groups": {
+      "INTELLIGENT": {
+        "level": 0,
+        "members": ["BRIGHT", "CLEVER", "QUICK", "SHARP"]
+      },
+      "AIRLINES": {
+        "level": 1,
+        "members": ["ALASKA", "FRONTIER", "SOUTHWEST", "SPIRIT"]
+      },
+      "WESTERN TROPES": {
+        "level": 2,
+        "members": ["COWBOY", "DRIFTER", "OUTLAW", "SHERIFF"]
+      },
+      "TV SHOW TITLE SURNAMES": {
+        "level": 3,
+        "members": ["LASSO", "MARS", "ROGERS", "SMART"]
+      }
+    },
+    "startingGroups": [
+      ["SMART", "COWBOY", "MARS", "LASSO"],
+      ["FRONTIER", "SHARP", "SHERIFF", "ALASKA"],
+      ["QUICK", "SPIRIT", "BRIGHT", "OUTLAW"],
+      ["DRIFTER", "CLEVER", "ROGERS", "SOUTHWEST"]
+    ]
+  },
+  {
+    "id": 99,
+    "groups": {
+      "WEB BROWSER-RELATED": {
+        "level": 0,
+        "members": ["BOOKMARK", "HISTORY", "TAB", "WINDOW"]
+      },
+      "SHIRT FEATURES": {
+        "level": 1,
+        "members": ["BUTTON", "COLLAR", "CUFF", "POCKET"]
+      },
+      "CONNECTION": {
+        "level": 2,
+        "members": ["BOND", "LINK", "RELATION", "TIE"]
+      },
+      "DIRTY ___": {
+        "level": 3,
+        "members": ["DOZEN", "JOKE", "LAUNDRY", "MARTINI"]
+      }
+    },
+    "startingGroups": [
+      ["LINK", "LAUNDRY", "BUTTON", "WINDOW"],
+      ["COLLAR", "TAB", "MARTINI", "BOND"],
+      ["RELATION", "JOKE", "TIE", "HISTORY"],
+      ["CUFF", "BOOKMARK", "POCKET", "DOZEN"]
+    ]
+  },
+  {
+    "id": 100,
+    "groups": {
+      "REPLACEMENT": {
+        "level": 0,
+        "members": ["BACKUP", "COPY", "EXTRA", "SPARE"]
+      },
+      "BOWLING": {
+        "level": 1,
+        "members": ["ALLEY", "BALL", "LANE", "PIN"]
+      },
+      "COMMON MERCH ITEMS": {
+        "level": 2,
+        "members": ["MUG", "PEN", "TEE", "TOTE"]
+      },
+      "NUMBER HOMOPHONES": {
+        "level": 3,
+        "members": ["ATE", "FOR", "TOO", "WON"]
+      }
+    },
+    "startingGroups": [
+      ["EXTRA", "BALL", "WON", "MUG"],
+      ["PIN", "COPY", "TOO", "TEE"],
+      ["ATE", "SPARE", "PEN", "LANE"],
+      ["ALLEY", "TOTE", "FOR", "BACKUP"]
+    ]
+  },
+  {
+    "id": 101,
+    "groups": {
+      "RESTAURANT WORKERS": {
+        "level": 0,
+        "members": ["BARTENDER", "CHEF", "HOST", "SERVER"]
+      },
+      "MOTOR VEHICLES": {
+        "level": 1,
+        "members": ["BUS", "CAR", "MOTORCYCLE", "TRUCK"]
+      },
+      "MUPPETS": {
+        "level": 2,
+        "members": ["ANIMAL", "BEAKER", "GONZO", "SCOOTER"]
+      },
+      "HAND- AND FOOT-RELATED SLANG": {
+        "level": 3,
+        "members": ["DIGIT", "DOG", "MITT", "PIGGY"]
+      }
+    },
+    "startingGroups": [
+      ["CHEF", "DOG", "ANIMAL", "CAR"],
+      ["MITT", "BUS", "HOST", "SCOOTER"],
+      ["TRUCK", "DIGIT", "BEAKER", "PIGGY"],
+      ["BARTENDER", "GONZO", "MOTORCYCLE", "SERVER"]
+    ]
+  },
+  {
+    "id": 102,
+    "groups": {
+      "SODA FOUNTAIN ORDERS": {
+        "level": 0,
+        "members": ["FLOAT", "MALT", "SHAKE", "SUNDAE"]
+      },
+      "SET, AS PLANS": {
+        "level": 1,
+        "members": ["CONCRETE", "FIRM", "SOLID", "TANGIBLE"]
+      },
+      "M. NIGHT SHYAMALAN MOVIES": {
+        "level": 2,
+        "members": ["GLASS", "OLD", "SIGNS", "SPLIT"]
+      },
+      "___BOARD": {
+        "level": 3,
+        "members": ["DASH", "HOVER", "KEY", "STAR"]
+      }
+    },
+    "startingGroups": [
+      ["FLOAT", "STAR", "FIRM", "HOVER"],
+      ["SPLIT", "CONCRETE", "SUNDAE", "GLASS"],
+      ["KEY", "SOLID", "DASH", "SHAKE"],
+      ["OLD", "MALT", "SIGNS", "TANGIBLE"]
+    ]
+  },
+  {
+    "id": 103,
+    "groups": {
+      "ROBUST": {
+        "level": 0,
+        "members": ["FIT", "HEALTHY", "SOUND", "STRONG"]
+      },
+      "DECLINE": {
+        "level": 1,
+        "members": ["DIP", "DROP", "FALL", "SINK"]
+      },
+      "WATER SOURCES": {
+        "level": 2,
+        "members": ["FOUNTAIN", "SPRING", "TAP", "WELL"]
+      },
+      "WOMEN SINGERS": {
+        "level": 3,
+        "members": ["KEYS", "NICKS", "SUMMER", "SWIFT"]
+      }
+    },
+    "startingGroups": [
+      ["FALL", "STRONG", "SWIFT", "DROP"],
+      ["KEYS", "SPRING", "SOUND", "SINK"],
+      ["FIT", "DIP", "SUMMER", "TAP"],
+      ["FOUNTAIN", "NICKS", "HEALTHY", "WELL"]
+    ]
+  },
+  {
+    "id": 104,
+    "groups": {
+      "KITCHEN UTENSILS": {
+        "level": 0,
+        "members": ["GRATER", "LADLE", "PEELER", "WHISK"]
+      },
+      "VERTEBRATES": {
+        "level": 1,
+        "members": ["BIRD", "FISH", "MAMMAL", "REPTILE"]
+      },
+      "SUPER MARIO-RELATED": {
+        "level": 2,
+        "members": ["DINOSAUR", "MUSHROOM", "PLUMBER", "PRINCESS"]
+      },
+      "SITCOM FAMILIES": {
+        "level": 3,
+        "members": ["BUNKER", "CLEAVER", "PARTRIDGE", "TANNER"]
+      }
+    },
+    "startingGroups": [
+      ["CLEAVER", "FISH", "PRINCESS", "LADLE"],
+      ["DINOSAUR", "PARTRIDGE", "BIRD", "MUSHROOM"],
+      ["REPTILE", "PLUMBER", "WHISK", "TANNER"],
+      ["GRATER", "BUNKER", "PEELER", "MAMMAL"]
+    ]
+  },
+  {
+    "id": 105,
+    "groups": {
+      "BRIDAL ACCESSORIES": {
+        "level": 0,
+        "members": ["BOUQUET", "RING", "TRAIN", "VEIL"]
+      },
+      "“C” WORDS FOR “ENVELOP”": {
+        "level": 1,
+        "members": ["CAKE", "COAT", "COVER", "CRUST"]
+      },
+      "JACKS": {
+        "level": 2,
+        "members": ["BLACK", "FROST", "MA", "SPARROW"]
+      },
+      "SOCIAL MEDIA APP ENDINGS": {
+        "level": 3,
+        "members": ["BOOK", "GRAM", "IN", "TUBE"]
+      }
+    },
+    "startingGroups": [
+      ["TRAIN", "COAT", "GRAM", "MA"],
+      ["BLACK", "BOOK", "CAKE", "RING"],
+      ["FROST", "BOUQUET", "TUBE", "CRUST"],
+      ["VEIL", "COVER", "IN", "SPARROW"]
+    ]
+  },
+  {
+    "id": 106,
+    "groups": {
+      "SNAKES": {
+        "level": 0,
+        "members": ["BOA", "MAMBA", "PYTHON", "VIPER"]
+      },
+      "LINGERIE": {
+        "level": 1,
+        "members": ["GARTER", "SLIP", "TEDDY", "THONG"]
+      },
+      "SUMMARY": {
+        "level": 2,
+        "members": ["ABSTRACT", "BRIEF", "DIGEST", "RUNDOWN"]
+      },
+      "FULL ___": {
+        "level": 3,
+        "members": ["CIRCLE", "HOUSE", "MONTY", "MOON"]
+      }
+    },
+    "startingGroups": [
+      ["GARTER", "BRIEF", "MONTY", "PYTHON"],
+      ["DIGEST", "MOON", "SLIP", "ABSTRACT"],
+      ["THONG", "BOA", "RUNDOWN", "CIRCLE"],
+      ["MAMBA", "TEDDY", "HOUSE", "VIPER"]
+    ]
+  },
+  {
+    "id": 107,
+    "groups": {
+      "PRODUCED BY TREES": {
+        "level": 0,
+        "members": ["ACORN", "CONE", "POLLEN", "SAP"]
+      },
+      "CANDY STORE TREATS": {
+        "level": 1,
+        "members": ["CHOCOLATE", "GUM", "LICORICE", "LOLLIPOP"]
+      },
+      "TARGET OF A SCHEME": {
+        "level": 2,
+        "members": ["CHUMP", "FOOL", "MARK", "SUCKER"]
+      },
+      "THINGS WITH EYE(S)": {
+        "level": 3,
+        "members": ["FACE", "HURRICANE", "NEEDLE", "POTATO"]
+      }
+    },
+    "startingGroups": [
+      ["GUM", "CONE", "FOOL", "POTATO"],
+      ["POLLEN", "MARK", "FACE", "CHUMP"],
+      ["SUCKER", "CHOCOLATE", "NEEDLE", "ACORN"],
+      ["LICORICE", "SAP", "LOLLIPOP", "HURRICANE"]
+    ]
+  },
+  {
+    "id": 108,
+    "groups": {
+      "REFLECT LIGHT": {
+        "level": 0,
+        "members": ["FLASH", "GLEAM", "GLITTER", "SPARKLE"]
+      },
+      "WAYS TO GATHER FOOD": {
+        "level": 1,
+        "members": ["FISH", "FORAGE", "HUNT", "TRAP"]
+      },
+      "RAP SUBGENRES": {
+        "level": 2,
+        "members": ["BOUNCE", "CRUNK", "DRILL", "GRIME"]
+      },
+      "LIGHT ___": {
+        "level": 3,
+        "members": ["BEER", "BULB", "RAIL", "YEAR"]
+      }
+    },
+    "startingGroups": [
+      ["FLASH", "DRILL", "FISH", "BULB"],
+      ["BEER", "TRAP", "SPARKLE", "GRIME"],
+      ["GLITTER", "YEAR", "HUNT", "GLEAM"],
+      ["FORAGE", "CRUNK", "RAIL", "BOUNCE"]
+    ]
+  },
+  {
+    "id": 109,
+    "groups": {
+      "VERY IMPORTANT": {
+        "level": 0,
+        "members": ["CENTRAL", "CRITICAL", "KEY", "VITAL"]
+      },
+      "RECYCLING CATEGORIES": {
+        "level": 1,
+        "members": ["GLASS", "METAL", "PAPER", "PLASTIC"]
+      },
+      "HUDSONS": {
+        "level": 2,
+        "members": ["HENRY", "JENNIFER", "KATE", "ROCK"]
+      },
+      "WHAT “BEAT” MAY MEAN": {
+        "level": 3,
+        "members": ["ASSIGNMENT", "DEFEAT", "TEMPO", "TIRED"]
+      }
+    },
+    "startingGroups": [
+      ["METAL", "KEY", "ROCK", "TEMPO"],
+      ["HENRY", "TIRED", "PAPER", "CENTRAL"],
+      ["ASSIGNMENT", "VITAL", "JENNIFER", "DEFEAT"],
+      ["GLASS", "KATE", "PLASTIC", "CRITICAL"]
+    ]
+  },
+  {
+    "id": 110,
+    "groups": {
+      "PLAYING CARD SUITS": {
+        "level": 0,
+        "members": ["CLUB", "DIAMOND", "HEART", "SPADE"]
+      },
+      "GOLF CLUBS": {
+        "level": 1,
+        "members": ["IRON", "PUTTER", "WEDGE", "WOOD"]
+      },
+      "YEARN": {
+        "level": 2,
+        "members": ["ACHE", "LONG", "PINE", "THIRST"]
+      },
+      "INSUFFICIENT": {
+        "level": 3,
+        "members": ["LOW", "SHORT", "SHY", "WANTING"]
+      }
+    },
+    "startingGroups": [
+      ["SHY", "HEART", "ACHE", "WOOD"],
+      ["LONG", "IRON", "CLUB", "PINE"],
+      ["DIAMOND", "SHORT", "THIRST", "WEDGE"],
+      ["WANTING", "SPADE", "PUTTER", "LOW"]
+    ]
+  },
+  {
+    "id": 111,
+    "groups": {
+      "COFFEE COUNTER ITEMS": {
+        "level": 0,
+        "members": ["CUP", "LID", "STIRRER", "STRAW"]
+      },
+      "NOCTURNAL ANIMALS": {
+        "level": 1,
+        "members": ["BAT", "MOTH", "OWL", "WOLF"]
+      },
+      "THINGS THAT ARE RED": {
+        "level": 2,
+        "members": ["BEET", "BRICK", "CARDINAL", "POPPY"]
+      },
+      "___ FIGURE": {
+        "level": 3,
+        "members": ["ACTION", "BALLPARK", "GO", "STICK"]
+      }
+    },
+    "startingGroups": [
+      ["STRAW", "BALLPARK", "BAT", "STICK"],
+      ["GO", "OWL", "BRICK", "CUP"],
+      ["CARDINAL", "LID", "ACTION", "BEET"],
+      ["WOLF", "POPPY", "MOTH", "STIRRER"]
+    ]
+  },
+  {
+    "id": 112,
+    "groups": {
+      "WAYS TO SHOW RESPECT": {
+        "level": 0,
+        "members": ["BOW", "KNEEL", "SALUTE", "STAND"]
+      },
+      "IPHONE APPS": {
+        "level": 1,
+        "members": ["CLOCK", "MAIL", "MAPS", "NOTES"]
+      },
+      "ANIMAL COVERINGS": {
+        "level": 2,
+        "members": ["DOWN", "FUR", "SCALES", "SHELL"]
+      },
+      "“POINTERS”": {
+        "level": 3,
+        "members": ["ARROW", "DOG", "FINGER", "HINT"]
+      }
+    },
+    "startingGroups": [
+      ["DOG", "BOW", "CLOCK", "SHELL"],
+      ["STAND", "DOWN", "ARROW", "NOTES"],
+      ["MAIL", "SALUTE", "SCALES", "FINGER"],
+      ["HINT", "MAPS", "KNEEL", "FUR"]
+    ]
+  },
+  {
+    "id": 113,
+    "groups": {
+      "LONG-HAIRED ANIMALS": {
+        "level": 0,
+        "members": ["AFGHAN", "ALPACA", "ANGORA", "YAK"]
+      },
+      "PRATTLE ON": {
+        "level": 1,
+        "members": ["BLATHER", "CHAT", "JABBER", "GAB"]
+      },
+      "SNEAKER BRANDS": {
+        "level": 2,
+        "members": ["CONVERSE", "JORDAN", "PUMA", "VANS"]
+      },
+      "___ BALLOON": {
+        "level": 3,
+        "members": ["LEAD", "SPEECH", "TRIAL", "WATER"]
+      }
+    },
+    "startingGroups": [
+      ["SPEECH", "PUMA", "AFGHAN", "WATER"],
+      ["LEAD", "YAK", "JORDAN", "JABBER"],
+      ["ANGORA", "BLATHER", "CONVERSE", "ALPACA"],
+      ["CHAT", "VANS", "TRIAL", "GAB"]
+    ]
+  },
+  {
+    "id": 114,
+    "groups": {
+      "CHRISTMAS-RELATED": {
+        "level": 0,
+        "members": ["MISTLETOE", "REINDEER", "SNOWMAN", "STOCKING"]
+      },
+      "MAKE PUBLIC": {
+        "level": 1,
+        "members": ["DISPLAY", "EXHIBIT", "PRESENT", "SHOW"]
+      },
+      "TORUS-SHAPED FOOD": {
+        "level": 2,
+        "members": ["BAGEL", "CHEERIO", "DONUT", "LIFESAVER"]
+      },
+      "THINGS WITH STRIPES": {
+        "level": 3,
+        "members": ["CANDY CANE", "CROSSWALK", "REFEREE", "TIGER"]
+      }
+    },
+    "startingGroups": [
+      ["SHOW", "DONUT", "STOCKING", "TIGER"],
+      ["LIFESAVER", "PRESENT", "CANDY CANE", "SNOWMAN"],
+      ["REINDEER", "CHEERIO", "EXHIBIT", "REFEREE"],
+      ["BAGEL", "DISPLAY", "CROSSWALK", "MISTLETOE"]
+    ]
+  },
+  {
+    "id": 115,
+    "groups": {
+      "DIVISION": {
+        "level": 0,
+        "members": ["ARM", "BRANCH", "CHAPTER", "WING"]
+      },
+      "IMPERIAL UNITS": {
+        "level": 1,
+        "members": ["BUSHEL", "PECK", "STONE", "TON"]
+      },
+      "M.L.B. TEAM MEMBER": {
+        "level": 2,
+        "members": ["ANGEL", "CUB", "MET", "RED"]
+      },
+      "INSECT HOMOPHONES": {
+        "level": 3,
+        "members": ["AUNT", "BEATLE", "FLEE", "NAT"]
+      }
+    },
+    "startingGroups": [
+      ["WING", "STONE", "FLEE", "ANGEL"],
+      ["PECK", "BEATLE", "RED", "AUNT"],
+      ["CHAPTER", "CUB", "BRANCH", "TON"],
+      ["BUSHEL", "ARM", "NAT", "MET"]
+    ]
+  },
+  {
+    "id": 116,
+    "groups": {
+      "LAUGHTER, IN A TEXT": {
+        "level": 0,
+        "members": ["DEAD", "HAHA", "LOL", "ROFL"]
+      },
+      "ART MOVEMENTS": {
+        "level": 1,
+        "members": ["DADA", "DECO", "GOTHIC", "POP"]
+      },
+      "“PETER PAN” CHARACTERS": {
+        "level": 2,
+        "members": ["HOOK", "NANA", "PETER", "WENDY"]
+      },
+      "LADY ___": {
+        "level": 3,
+        "members": ["BIRD", "GAGA", "LUCK", "MACBETH"]
+      }
+    },
+    "startingGroups": [
+      ["GAGA", "HAHA", "DECO", "HOOK"],
+      ["DADA", "NANA", "POP", "LUCK"],
+      ["DEAD", "GOTHIC", "MACBETH", "LOL"],
+      ["PETER", "BIRD", "ROFL", "WENDY"]
+    ]
+  },
+  {
+    "id": 117,
+    "groups": {
+      "RHYMES": {
+        "level": 0,
+        "members": ["DARREN", "KAREN", "SHARON", "AARON"]
+      },
+      "NATURAL FEATURES": {
+        "level": 1,
+        "members": ["DALE", "BROOK", "SAVANNA", "CLIFF"]
+      },
+      "IRREGULAR VERBS": {
+        "level": 2,
+        "members": ["DREW", "ROSE", "WILL", "MAY"]
+      },
+      "PALINDROMES": {
+        "level": 3,
+        "members": ["EVE", "HANNAH", "OTTO", "NATAN"]
+      }
+    },
+    "startingGroups": [
+      ["ROSE", "AARON", "HANNAH", "MAY"],
+      ["KAREN", "DALE", "WILL", "NATAN"],
+      ["DREW", "EVE", "SHARON", "CLIFF"],
+      ["BROOK", "DARREN", "SAVANNA", "OTTO"]
+    ]
+  },
+  {
+    "id": 118,
+    "groups": {
+      "CELEBRATORY OCCASIONS": {
+        "level": 0,
+        "members": ["ANNIVERSARY", "BIRTHDAY", "SHOWER", "WEDDING"]
+      },
+      "PHONE CONNECTIVITY": {
+        "level": 1,
+        "members": ["BARS", "RECEPTION", "SERVICE", "SIGNAL"]
+      },
+      "CITIES AND TOWNS IN ENGLAND": {
+        "level": 2,
+        "members": ["BATH", "DERBY", "READING", "SANDWICH"]
+      },
+      "___ OPERA": {
+        "level": 3,
+        "members": ["COMIC", "MET", "ROCK", "SOAP"]
+      }
+    },
+    "startingGroups": [
+      ["BATH", "ROCK", "BARS", "BIRTHDAY"],
+      ["SOAP", "RECEPTION", "WEDDING", "SANDWICH"],
+      ["ANNIVERSARY", "COMIC", "DERBY", "SHOWER"],
+      ["READING", "SERVICE", "MET", "SIGNAL"]
+    ]
+  },
+  {
+    "id": 119,
+    "groups": {
+      "CROPS": {
+        "level": 0,
+        "members": ["CORN", "CUCUMBER", "PEPPER", "TOMATO"]
+      },
+      "SLANG FOR HEAD": {
+        "level": 1,
+        "members": ["CROWN", "DOME", "MELON", "NOODLE"]
+      },
+      "SONG": {
+        "level": 2,
+        "members": ["CUT", "NUMBER", "SINGLE", "TRACK"]
+      },
+      "THINGS THAT WHISTLE": {
+        "level": 3,
+        "members": ["BIRD", "KETTLE", "REFEREE", "TRAIN"]
+      }
+    },
+    "startingGroups": [
+      ["KETTLE", "CORN", "NUMBER", "NOODLE"],
+      ["TRAIN", "CROWN", "PEPPER", "BIRD"],
+      ["SINGLE", "TOMATO", "REFEREE", "TRACK"],
+      ["DOME", "CUT", "CUCUMBER", "MELON"]
+    ]
+  },
+  {
+    "id": 120,
+    "groups": {
+      "ORIGIN": {
+        "level": 0,
+        "members": ["GENESIS", "GERM", "SEED", "SOURCE"]
+      },
+      "BIBLE BOOKS": {
+        "level": 1,
+        "members": ["ACTS", "JOB", "KINGS", "MARK"]
+      },
+      "N.H.L. TEAMS": {
+        "level": 2,
+        "members": ["FLAMES", "KRAKEN", "STARS", "WILD"]
+      },
+      "POWER ___": {
+        "level": 3,
+        "members": ["NAP", "PLANT", "RANGER", "TRIP"]
+      }
+    },
+    "startingGroups": [
+      ["NAP", "JOB", "SOURCE", "PLANT"],
+      ["ACTS", "WILD", "MARK", "STARS"],
+      ["GERM", "RANGER", "GENESIS", "KRAKEN"],
+      ["TRIP", "FLAMES", "KINGS", "SEED"]
+    ]
+  },
+  {
+    "id": 121,
+    "groups": {
+      "FILM SET DIRECTIVES": {
+        "level": 0,
+        "members": ["ACTION", "CAMERA", "CUT", "LIGHTS"]
+      },
+      "CONDITIONAL WORDS": {
+        "level": 1,
+        "members": ["CAN", "COULD", "MAY", "MIGHT"]
+      },
+      "FOREMOST": {
+        "level": 2,
+        "members": ["HEAD", "LEAD", "PRIME", "TOP"]
+      },
+      "___ PAPER": {
+        "level": 3,
+        "members": ["BUTCHER", "SCRAP", "TOILET", "WAX"]
+      }
+    },
+    "startingGroups": [
+      ["CAN", "BUTCHER", "ACTION", "LEAD"],
+      ["PRIME", "CUT", "WAX", "MAY"],
+      ["TOILET", "TOP", "MIGHT", "CAMERA"],
+      ["HEAD", "LIGHTS", "SCRAP", "COULD"]
+    ]
+  },
+  {
+    "id": 122,
+    "groups": {
+      "CONCEAL": {
+        "level": 0,
+        "members": ["BLOCK", "COVER", "HIDE", "MASK"]
+      },
+      "PARTS OF A WATCH": {
+        "level": 1,
+        "members": ["CROWN", "DIAL", "HAND", "STRAP"]
+      },
+      "WONDER WOMAN’S COSTUME": {
+        "level": 2,
+        "members": ["LASSO", "SHIELD", "SWORD", "TIARA"]
+      },
+      "THINGS THAT CAN RUN": {
+        "level": 3,
+        "members": ["CANDIDATE", "FAUCET", "MASCARA", "NOSE"]
+      }
+    },
+    "startingGroups": [
+      ["NOSE", "CROWN", "SWORD", "MASK"],
+      ["DIAL", "FAUCET", "TIARA", "HAND"],
+      ["BLOCK", "MASCARA", "HIDE", "LASSO"],
+      ["CANDIDATE", "SHIELD", "STRAP", "COVER"]
+    ]
+  },
+  {
+    "id": 123,
+    "groups": {
+      "BEANS": {
+        "level": 0,
+        "members": ["FAVA", "KIDNEY", "LIMA", "PINTO"]
+      },
+      "CITIES BEGINNING WITH “L”": {
+        "level": 1,
+        "members": ["LAGOS", "LIMERICK", "LINCOLN", "LUXOR"]
+      },
+      "POETRY TERMS": {
+        "level": 2,
+        "members": ["LINE", "METER", "RHYME", "VERSE"]
+      },
+      "“THE(E) ___” RAPPERS": {
+        "level": 3,
+        "members": ["CREATOR", "DUDE", "RAPPER", "STALLION"]
+      }
+    },
+    "startingGroups": [
+      ["LINE", "LIMA", "CREATOR", "LIMERICK"],
+      ["LINCOLN", "RAPPER", "PINTO", "VERSE"],
+      ["STALLION", "RHYME", "LAGOS", "KIDNEY"],
+      ["LUXOR", "DUDE", "FAVA", "METER"]
+    ]
+  },
+  {
+    "id": 124,
+    "groups": {
+      "BUTT": {
+        "level": 0,
+        "members": ["BOTTOM", "BUNS", "SEAT", "TAIL"]
+      },
+      "ROTARY PHONE PARTS": {
+        "level": 1,
+        "members": ["CORD", "CRADLE", "DIAL", "HANDSET"]
+      },
+      "SLANG FOR HOME": {
+        "level": 2,
+        "members": ["CRIB", "DIGS", "JOINT", "PAD"]
+      },
+      "PLUNDER": {
+        "level": 3,
+        "members": ["BOOTY", "LOOT", "SPOILS", "SWAG"]
+      }
+    },
+    "startingGroups": [
+      ["CRADLE", "TAIL", "PAD", "SWAG"],
+      ["SEAT", "CRIB", "BOOTY", "CORD"],
+      ["SPOILS", "DIAL", "DIGS", "BUNS"],
+      ["JOINT", "BOTTOM", "HANDSET", "LOOT"]
+    ]
+  },
+  {
+    "id": 125,
+    "groups": {
+      "TOOLS": {
+        "level": 0,
+        "members": ["FILE", "HAMMER", "LEVEL", "SAW"]
+      },
+      "PULL": {
+        "level": 1,
+        "members": ["JERK", "TUG", "WRENCH", "YANK"]
+      },
+      "SHORTCUT COMMANDS": {
+        "level": 2,
+        "members": ["COPY", "FIND", "PRINT", "SAVE"]
+      },
+      "TITLE MOVIE ANIMALS": {
+        "level": 3,
+        "members": ["BABE", "BEETHOVEN", "CHARLOTTE", "WILLY"]
+      }
+    },
+    "startingGroups": [
+      ["FILE", "BABE", "WRENCH", "COPY"],
+      ["WILLY", "YANK", "SAVE", "HAMMER"],
+      ["TUG", "LEVEL", "BEETHOVEN", "PRINT"],
+      ["CHARLOTTE", "FIND", "JERK", "SAW"]
+    ]
+  },
+  {
+    "id": 126,
+    "groups": {
+      "DAYS OF THE WEEK": {
+        "level": 0,
+        "members": ["FRIDAY", "SATURDAY", "SUNDAY", "THURSDAY"]
+      },
+      "GO BAD": {
+        "level": 1,
+        "members": ["ROT", "SOUR", "SPOIL", "TURN"]
+      },
+      "“THE ADDAMS FAMILY” CHARACTERS": {
+        "level": 2,
+        "members": ["FESTER", "LURCH", "THING", "WEDNESDAY"]
+      },
+      "FAT ___": {
+        "level": 3,
+        "members": ["CAT", "CHANCE", "LIP", "TUESDAY"]
+      }
+    },
+    "startingGroups": [
+      ["TURN", "SUNDAY", "CAT", "THING"],
+      ["SATURDAY", "SOUR", "FRIDAY", "SPOIL"],
+      ["CHANCE", "THURSDAY", "LURCH", "LIP"],
+      ["WEDNESDAY", "ROT", "TUESDAY", "FESTER"]
+    ]
+  },
+  {
+    "id": 127,
+    "groups": {
+      "TAUNTS": {
+        "level": 0,
+        "members": ["BOO", "HISS", "JEER", "RASPBERRY"]
+      },
+      "FAILURE": {
+        "level": 1,
+        "members": ["BOMB", "DUD", "FLOP", "LEMON"]
+      },
+      "RUDELY BREAK OFF CONTACT": {
+        "level": 2,
+        "members": ["DESERT", "GHOST", "IGNORE", "JILT"]
+      },
+      "ROCK ___": {
+        "level": 3,
+        "members": ["BOTTOM", "CANDY", "GARDEN", "STAR"]
+      }
+    },
+    "startingGroups": [
+      ["GHOST", "LEMON", "GARDEN", "DESERT"],
+      ["STAR", "RASPBERRY", "CANDY", "BOMB"],
+      ["FLOP", "HISS", "IGNORE", "BOO"],
+      ["BOTTOM", "DUD", "JEER", "JILT"]
+    ]
+  },
+  {
+    "id": 128,
+    "groups": {
+      "SOMETHING TIRESOME": {
+        "level": 0,
+        "members": ["BORE", "DRAG", "SNOOZE", "YAWN"]
+      },
+      "BIT OF WIND": {
+        "level": 1,
+        "members": ["BREEZE", "DRAFT", "GUST", "PUFF"]
+      },
+      "PIQUANCY": {
+        "level": 2,
+        "members": ["BITE", "KICK", "TANG", "ZIP"]
+      },
+      "SINGULAR OF THINGS SEEN IN PAIRS": {
+        "level": 3,
+        "members": ["BOXER", "GOGGLE", "PANT", "TONG"]
+      }
+    },
+    "startingGroups": [
+      ["PUFF", "KICK", "BOXER", "YAWN"],
+      ["BITE", "PANT", "DRAG", "ZIP"],
+      ["SNOOZE", "DRAFT", "GOGGLE", "BORE"],
+      ["BREEZE", "TONG", "TANG", "GUST"]
+    ]
+  },
+  {
+    "id": 129,
+    "groups": {
+      "FALSIFY": {
+        "level": 0,
+        "members": ["FABRICATE", "FAKE", "FIX", "FORGE"]
+      },
+      "MILD OATHS": {
+        "level": 1,
+        "members": ["FIDDLESTICKS", "FIE", "FRICK", "FUDGE"]
+      },
+      "TV SHOWS": {
+        "level": 2,
+        "members": ["FARGO", "FIREFLY", "FLEABAG", "FLIPPER"]
+      },
+      "FAST ___": {
+        "level": 3,
+        "members": ["FASHION", "FOOD", "FORWARD", "FRIENDS"]
+      }
+    },
+    "startingGroups": [
+      ["FAKE", "FOOD", "FUDGE", "FIREFLY"],
+      ["FASHION", "FORWARD", "FORGE", "FRIENDS"],
+      ["FIE", "FLEABAG", "FRICK", "FLIPPER"],
+      ["FABRICATE", "FIDDLESTICKS", "FARGO", "FIX"]
+    ]
+  },
+  {
+    "id": 130,
+    "groups": {
+      "ANIMAL HOMES": {
+        "level": 0,
+        "members": ["DEN", "HIVE", "LAIR", "NEST"]
+      },
+      "VIRTUAL SPACES": {
+        "level": 1,
+        "members": ["CLOUD", "METAVERSE", "NET", "WEB"]
+      },
+      "EQUITABLE": {
+        "level": 2,
+        "members": ["EQUAL", "EVEN", "FAIR", "JUST"]
+      },
+      "___ BURGER": {
+        "level": 3,
+        "members": ["GOOD", "IMPOSSIBLE", "NOTHING", "WARREN"]
+      }
+    },
+    "startingGroups": [
+      ["IMPOSSIBLE", "EVEN", "CLOUD", "HIVE"],
+      ["GOOD", "WEB", "JUST", "DEN"],
+      ["FAIR", "LAIR", "NOTHING", "NET"],
+      ["NEST", "EQUAL", "METAVERSE", "WARREN"]
+    ]
+  },
+  {
+    "id": 131,
+    "groups": {
+      "TABLEWARE": {
+        "level": 0,
+        "members": ["BOWL", "DISH", "PLATE", "SAUCER"]
+      },
+      "NONSENSE": {
+        "level": 1,
+        "members": ["BALONEY", "BUNK", "CROCK", "TRIPE"]
+      },
+      "BRA PARTS": {
+        "level": 2,
+        "members": ["CUP", "HOOK", "STRAP", "WIRE"]
+      },
+      "ACRONYMS": {
+        "level": 3,
+        "members": ["LASER", "RADAR", "SCUBA", "SPAM"]
+      }
+    },
+    "startingGroups": [
+      ["HOOK", "SPAM", "PLATE", "WIRE"],
+      ["RADAR", "CUP", "BALONEY", "DISH"],
+      ["CROCK", "SAUCER", "LASER", "BUNK"],
+      ["BOWL", "STRAP", "TRIPE", "SCUBA"]
+    ]
+  },
+  {
+    "id": 132,
+    "groups": {
+      "RELAX": {
+        "level": 0,
+        "members": ["CHILL", "HANG", "LOAF", "LOUNGE"]
+      },
+      "CATCHY SONG": {
+        "level": 1,
+        "members": ["BANGER", "BOP", "GROOVE", "JAM"]
+      },
+      "BRITISH CUISINE": {
+        "level": 2,
+        "members": ["MASH", "ROAST", "SCONE", "TRIFLE"]
+      },
+      "STICKY SITUATION": {
+        "level": 3,
+        "members": ["BIND", "PICKLE", "SCRAPE", "SPOT"]
+      }
+    },
+    "startingGroups": [
+      ["JAM", "LOUNGE", "SCONE", "PICKLE"],
+      ["LOAF", "TRIFLE", "BANGER", "HANG"],
+      ["MASH", "SCRAPE", "CHILL", "GROOVE"],
+      ["BIND", "BOP", "ROAST", "SPOT"]
+    ]
+  },
+  {
+    "id": 133,
+    "groups": {
+      "CELL PHONE MODES": {
+        "level": 0,
+        "members": ["FOCUS", "RING", "SILENT", "VIBRATE"]
+      },
+      "IMPEL": {
+        "level": 1,
+        "members": ["DRIVE", "INSPIRE", "MOTIVATE", "SPUR"]
+      },
+      "ROMANTIC BEGINNINGS": {
+        "level": 2,
+        "members": ["CONNECTION", "FEELINGS", "SPARK", "VIBE"]
+      },
+      "HARD ___": {
+        "level": 3,
+        "members": ["CANDY", "COPY", "KNOCKS", "SELTZER"]
+      }
+    },
+    "startingGroups": [
+      ["CANDY", "SPUR", "RING", "FEELINGS"],
+      ["FOCUS", "MOTIVATE", "SPARK", "COPY"],
+      ["DRIVE", "VIBE", "VIBRATE", "SELTZER"],
+      ["CONNECTION", "SILENT", "KNOCKS", "INSPIRE"]
+    ]
+  },
+  {
+    "id": 134,
+    "groups": {
+      "ANIMAL GROUPS": {
+        "level": 0,
+        "members": ["COLONY", "HERD", "PRIDE", "SCHOOL"]
+      },
+      "SMALL OPENING": {
+        "level": 1,
+        "members": ["CRANNY", "NICHE", "NOOK", "RECESS"]
+      },
+      "PARADIGMATIC": {
+        "level": 2,
+        "members": ["CLASSIC", "DEFINITIVE", "MODEL", "TEXTBOOK"]
+      },
+      "RHYMING COMPOUND WORDS": {
+        "level": 3,
+        "members": ["BACKPACK", "BIGWIG", "DOWNTOWN", "RAGTAG"]
+      }
+    },
+    "startingGroups": [
+      ["SCHOOL", "MODEL", "DOWNTOWN", "PRIDE"],
+      ["TEXTBOOK", "RAGTAG", "CRANNY", "CLASSIC"],
+      ["NOOK", "COLONY", "BIGWIG", "RECESS"],
+      ["BACKPACK", "DEFINITIVE", "NICHE", "HERD"]
+    ]
+  },
+  {
+    "id": 135,
+    "groups": {
+      "GRAMMAR TENSE TERMS": {
+        "level": 0,
+        "members": ["FUTURE", "PAST", "PERFECT", "PRESENT"]
+      },
+      "“GRACIOUS ME!”": {
+        "level": 1,
+        "members": ["GOODNESS", "HEAVENS", "LORD", "MERCY"]
+      },
+      "12 DAYS OF CHRISTMAS": {
+        "level": 2,
+        "members": ["DRUMMER", "LADY", "RING", "SWAN"]
+      },
+      "___ SYRUP": {
+        "level": 3,
+        "members": ["CORN", "COUGH", "MAPLE", "SIMPLE"]
+      }
+    },
+    "startingGroups": [
+      ["LADY", "PERFECT", "GOODNESS", "MAPLE"],
+      ["FUTURE", "MERCY", "DRUMMER", "SIMPLE"],
+      ["RING", "COUGH", "HEAVENS", "SWAN"],
+      ["PRESENT", "LORD", "CORN", "PAST"]
+    ]
+  },
+  {
+    "id": 136,
+    "groups": {
+      "INCREASE": {
+        "level": 0,
+        "members": ["BUILD", "GROW", "SWELL", "MOUNT"]
+      },
+      "EXCELLENT, IN OLD SLANG": {
+        "level": 1,
+        "members": ["ACES", "KEEN", "NEATO", "NIFTY"]
+      },
+      "FINE BUBBLES": {
+        "level": 2,
+        "members": ["FOAM", "FROTH", "HEAD", "LATHER"]
+      },
+      "SPHERICAL THINGS": {
+        "level": 3,
+        "members": ["BUBBLE", "GLOBE", "MARBLE", "PEARL"]
+      }
+    },
+    "startingGroups": [
+      ["ACES", "GLOBE", "HEAD", "GROW"],
+      ["BUBBLE", "SWELL", "NEATO", "LATHER"],
+      ["NIFTY", "MARBLE", "FOAM", "MOUNT"],
+      ["FROTH", "BUILD", "PEARL", "KEEN"]
+    ]
+  },
+  {
+    "id": 137,
+    "groups": {
+      "SHAMELESS BOLDNESS": {
+        "level": 0,
+        "members": ["BRASS", "CHEEK", "GALL", "NERVE"]
+      },
+      "METAL ELEMENTS": {
+        "level": 1,
+        "members": ["COPPER", "GOLD", "NICKEL", "SILVER"]
+      },
+      "W.N.B.A. TEAMS": {
+        "level": 2,
+        "members": ["MERCURY", "SKY", "SPARKS", "LIBERTY"]
+      },
+      "THINGS WITH TRUNKS": {
+        "level": 3,
+        "members": ["CARS", "ELEPHANTS", "SWIMMERS", "TREES"]
+      }
+    },
+    "startingGroups": [
+      ["ELEPHANTS", "CHEEK", "LIBERTY", "GOLD"],
+      ["BRASS", "CARS", "MERCURY", "NERVE"],
+      ["SILVER", "SKY", "TREES", "COPPER"],
+      ["SPARKS", "SWIMMERS", "NICKEL", "GALL"]
+    ]
+  },
+  {
+    "id": 138,
+    "groups": {
+      "SENSES": {
+        "level": 0,
+        "members": ["SIGHT", "SMELL", "TASTE", "TOUCH"]
+      },
+      "APPEARANCE": {
+        "level": 1,
+        "members": ["DRESS", "LOOK", "MANNER", "STYLE"]
+      },
+      "“AGREE!”": {
+        "level": 2,
+        "members": ["DITTO", "LIKEWISE", "SAME", "SECOND"]
+      },
+      "___ MOON": {
+        "level": 3,
+        "members": ["BLUE", "HARVEST", "NEW", "SAILOR"]
+      }
+    },
+    "startingGroups": [
+      ["NEW", "LOOK", "SAME", "TASTE"],
+      ["SECOND", "SAILOR", "TOUCH", "STYLE"],
+      ["SIGHT", "DITTO", "DRESS", "HARVEST"],
+      ["MANNER", "SMELL", "BLUE", "LIKEWISE"]
+    ]
+  },
+  {
+    "id": 139,
+    "groups": {
+      "MISHMASH": {
+        "level": 0,
+        "members": ["HASH", "JUMBLE", "MEDLEY", "STEW"]
+      },
+      "GO UP AGAINST": {
+        "level": 1,
+        "members": ["CHALLENGE", "CONFRONT", "FACE", "OPPOSE"]
+      },
+      "GROUP OF OFFSPRING": {
+        "level": 2,
+        "members": ["BROOD", "CLUTCH", "HATCH", "LITTER"]
+      },
+      "GUITAR PARTS": {
+        "level": 3,
+        "members": ["BODY", "BRIDGE", "FRET", "NECK"]
+      }
+    },
+    "startingGroups": [
+      ["NECK", "CLUTCH", "STEW", "FACE"],
+      ["HASH", "FRET", "HATCH", "BRIDGE"],
+      ["CHALLENGE", "JUMBLE", "BODY", "BROOD"],
+      ["OPPOSE", "LITTER", "MEDLEY", "CONFRONT"]
+    ]
+  },
+  {
+    "id": 140,
+    "groups": {
+      "BIRD FEATURES": {
+        "level": 0,
+        "members": ["BEAK", "FEATHER", "TALON", "WING"]
+      },
+      "BLINK OF AN EYE": {
+        "level": 1,
+        "members": ["FLASH", "HEARTBEAT", "SECOND", "WINK"]
+      },
+      "MAHJONG TILES": {
+        "level": 2,
+        "members": ["BAMBOO", "DRAGON", "SEASON", "WIND"]
+      },
+      "___ BUTTON": {
+        "level": 3,
+        "members": ["BELLY", "HOT", "PANIC", "SNOOZE"]
+      }
+    },
+    "startingGroups": [
+      ["TALON", "HEARTBEAT", "HOT", "FLASH"],
+      ["BELLY", "WING", "DRAGON", "SNOOZE"],
+      ["SECOND", "SEASON", "WINK", "FEATHER"],
+      ["BAMBOO", "BEAK", "PANIC", "WIND"]
+    ]
+  },
+  {
+    "id": 141,
+    "groups": {
+      "FLOWERS": {
+        "level": 0,
+        "members": ["DAISY", "ROSE", "TULIP", "VIOLET"]
+      },
+      "SEEN ON A FARM": {
+        "level": 1,
+        "members": ["BARN", "CHICKEN", "FARMER", "TRACTOR"]
+      },
+      "HORROR DIRECTORS": {
+        "level": 2,
+        "members": ["ASTER", "CARPENTER", "CRAVEN", "WAN"]
+      },
+      "___ JACKET": {
+        "level": 3,
+        "members": ["DUST", "LIFE", "SPORTS", "YELLOW"]
+      }
+    },
+    "startingGroups": [
+      ["FARMER", "DAISY", "CARPENTER", "YELLOW"],
+      ["TULIP", "SPORTS", "TRACTOR", "ROSE"],
+      ["CRAVEN", "LIFE", "VIOLET", "WAN"],
+      ["BARN", "ASTER", "DUST", "CHICKEN"]
+    ]
+  },
+  {
+    "id": 142,
+    "groups": {
+      "SOCIAL MEDIA ACTIONS": {
+        "level": 0,
+        "members": ["FOLLOW", "LIKE", "SHARE", "SUBSCRIBE"]
+      },
+      "USE A NEEDLE AND THREAD": {
+        "level": 1,
+        "members": ["DARN", "HEM", "SEAM", "SEW"]
+      },
+      "SHOWS SET IN HOSPITALS": {
+        "level": 2,
+        "members": ["ER", "HOUSE", "RATCHED", "SCRUBS"]
+      },
+      "EXPRESSIONS OF HESITATION": {
+        "level": 3,
+        "members": ["ERM", "UH", "UM", "WELL"]
+      }
+    },
+    "startingGroups": [
+      ["WELL", "LIKE", "UM", "HOUSE"],
+      ["HEM", "ER", "DARN", "FOLLOW"],
+      ["SEAM", "SHARE", "ERM", "SCRUBS"],
+      ["SUBSCRIBE", "RATCHED", "UH", "SEW"]
+    ]
+  },
+  {
+    "id": 143,
+    "groups": {
+      "IGNITE": {
+        "level": 0,
+        "members": ["BURN", "KINDLE", "LIGHT", "TORCH"]
+      },
+      "INFORMATION": {
+        "level": 1,
+        "members": ["DATA", "INFO", "INTEL", "NEWS"]
+      },
+      "SMALL WOODED AREA": {
+        "level": 2,
+        "members": ["DELL", "GLEN", "HOLLOW", "VALLEY"]
+      },
+      "THINGS WITH CORES": {
+        "level": 3,
+        "members": ["APPLE", "COMPUTER", "PLANET", "REACTOR"]
+      }
+    },
+    "startingGroups": [
+      ["NEWS", "COMPUTER", "LIGHT", "VALLEY"],
+      ["APPLE", "KINDLE", "PLANET", "INTEL"],
+      ["TORCH", "DELL", "DATA", "GLEN"],
+      ["INFO", "BURN", "HOLLOW", "REACTOR"]
+    ]
+  },
+  {
+    "id": 144,
+    "groups": {
+      "NEVERTHELESS": {
+        "level": 0,
+        "members": ["HOWEVER", "STILL", "THOUGH", "YET"]
+      },
+      "REPEATED WORDS IN EXPRESSIONS": {
+        "level": 1,
+        "members": ["HEAR", "KNOCK", "THERE", "TUT"]
+      },
+      "WORDS ABBREVIATED WITH LETTERS": {
+        "level": 2,
+        "members": ["ARE", "SEE", "WHY", "YOU"]
+      },
+      "ROYAL ___": {
+        "level": 3,
+        "members": ["FAMILY", "FLUSH", "JELLY", "WE"]
+      }
+    },
+    "startingGroups": [
+      ["ARE", "WE", "THERE", "YET"],
+      ["YOU", "SEE", "JELLY", "TUT"],
+      ["STILL", "FAMILY", "KNOCK", "HOWEVER"],
+      ["HEAR", "WHY", "THOUGH", "FLUSH"]
+    ]
+  },
+  {
+    "id": 145,
+    "groups": {
+      "WAYS TO PREPARE": {
+        "level": 0,
+        "members": ["DRILL", "PRACTICE", "STUDY", "TRAIN"]
+      },
+      "HOLLOW CYLINDERS": {
+        "level": 1,
+        "members": ["HOSE", "PIPE", "STRAW", "TUBE"]
+      },
+      "CLUE WEAPONS": {
+        "level": 2,
+        "members": ["CANDLESTICK", "KNIFE", "ROPE", "WRENCH"]
+      },
+      "“E-” THINGS": {
+        "level": 3,
+        "members": ["CIGARETTE", "BIKE", "TICKET", "SPORTS"]
+      }
+    },
+    "startingGroups": [
+      ["TRAIN", "STRAW", "TICKET", "ROPE"],
+      ["STUDY", "BIKE", "TUBE", "SPORTS"],
+      ["KNIFE", "CIGARETTE", "PIPE", "DRILL"],
+      ["WRENCH", "HOSE", "PRACTICE", "CANDLESTICK"]
+    ]
+  },
+  {
+    "id": 146,
+    "groups": {
+      "UNCHANGING": {
+        "level": 0,
+        "members": ["EVEN", "LEVEL", "STABLE", "STEADY"]
+      },
+      "LONG, SHARP OBJECTS": {
+        "level": 1,
+        "members": ["LANCE", "PICK", "SKEWER", "SPIT"]
+      },
+      "MUSIC PUBLICATIONS": {
+        "level": 2,
+        "members": ["BILLBOARD", "PITCHFORK", "ROLLING STONE", "SPIN"]
+      },
+      "WORDS WITH NUMERICAL PREFIXES": {
+        "level": 3,
+        "members": ["UNIFORM", "BICYCLE", "TRILOGY", "QUADRANT"]
+      }
+    },
+    "startingGroups": [
+      ["BICYCLE", "SPIN", "STABLE", "PICK"],
+      ["EVEN", "LANCE", "TRILOGY", "PITCHFORK"],
+      ["UNIFORM", "ROLLING STONE", "SKEWER", "LEVEL"],
+      ["BILLBOARD", "STEADY", "QUADRANT", "SPIT"]
+    ]
+  },
+  {
+    "id": 147,
+    "groups": {
+      "INVESTMENTS": {
+        "level": 0,
+        "members": ["BOND", "CD", "OPTION", "STOCK"]
+      },
+      "TERMS FOR RECORDS": {
+        "level": 1,
+        "members": ["LP", "PLATTER", "VINYL", "WAX"]
+      },
+      "CUBE-SHAPED": {
+        "level": 2,
+        "members": ["BOUILLON", "DIE", "ICE", "SUGAR"]
+      },
+      "WORDS THAT GO WITH “BONE”": {
+        "level": 3,
+        "members": ["FUNNY", "HERRING", "SOUP", "WISH"]
+      }
+    },
+    "startingGroups": [
+      ["ICE", "WAX", "SOUP", "STOCK"],
+      ["HERRING", "PLATTER", "CD", "VINYL"],
+      ["BOND", "BOUILLON", "LP", "SUGAR"],
+      ["WISH", "OPTION", "DIE", "FUNNY"]
+    ]
+  },
+  {
+    "id": 148,
+    "groups": {
+      "GROUP WITHIN A GROUP": {
+        "level": 0,
+        "members": ["CAMP", "DIVISION", "FACTION", "WING"]
+      },
+      "DIGITAL NOTIFICATION SOUNDS": {
+        "level": 1,
+        "members": ["PING", "DING", "RING", "CHIME"]
+      },
+      "TELL ON": {
+        "level": 2,
+        "members": ["SNITCH", "RAT", "SQUEAL", "SING"]
+      },
+      "MICROSOFT PRODUCTS": {
+        "level": 3,
+        "members": ["BING", "EDGE", "SURFACE", "WORD"]
+      }
+    },
+    "startingGroups": [
+      ["BING", "CAMP", "PING", "RAT"],
+      ["WORD", "SING", "DIVISION", "CHIME"],
+      ["WING", "EDGE", "DING", "SNITCH"],
+      ["SURFACE", "RING", "SQUEAL", "FACTION"]
+    ]
+  },
+  {
+    "id": 149,
+    "groups": {
+      "SEEN AT THE BEACH": {
+        "level": 0,
+        "members": ["COOLER", "FLIP-FLOP", "TOWEL", "UMBRELLA"]
+      },
+      "EQUIVOCATE": {
+        "level": 1,
+        "members": ["HEDGE", "SEE-SAW", "WAVER", "YO-YO"]
+      },
+      "TYPES OF FRENCH FRIES": {
+        "level": 2,
+        "members": ["CURLY", "SHOESTRING", "WAFFLE", "WEDGE"]
+      },
+      "SECOND WORDS OF VODKA COCKTAILS": {
+        "level": 3,
+        "members": ["BREEZE", "MARY", "MULE", "RUSSIAN"]
+      }
+    },
+    "startingGroups": [
+      ["WAFFLE", "TOWEL", "WAVER", "MARY"],
+      ["FLIP-FLOP", "WEDGE", "MULE", "UMBRELLA"],
+      ["BREEZE", "HEDGE", "COOLER", "CURLY"],
+      ["YO-YO", "SHOESTRING", "RUSSIAN", "SEE-SAW"]
+    ]
+  },
+  {
+    "id": 150,
+    "groups": {
+      "DOCTORS’ ORDERS": {
+        "level": 0,
+        "members": ["DIET", "EXERCISE", "FRESH AIR", "SLEEP"]
+      },
+      "EMAIL ACTIONS": {
+        "level": 1,
+        "members": ["COMPOSE", "FORWARD", "SEND", "STAR"]
+      },
+      "PODCASTS": {
+        "level": 2,
+        "members": ["RADIOLAB", "REPLY ALL", "SERIAL", "WTF"]
+      },
+      "___ COMEDY": {
+        "level": 3,
+        "members": ["BLACK", "DIVINE", "PROP", "SKETCH"]
+      }
+    },
+    "startingGroups": [
+      ["BLACK", "STAR", "EXERCISE", "FRESH AIR"],
+      ["FORWARD", "SLEEP", "SERIAL", "SKETCH"],
+      ["WTF", "SEND", "PROP", "DIET"],
+      ["DIVINE", "RADIOLAB", "COMPOSE", "REPLY ALL"]
+    ]
+  },
+  {
+    "id": 151,
+    "groups": {
+      "SPICES": {
+        "level": 0,
+        "members": ["ANISE", "DILL", "NUTMEG", "SAGE"]
+      },
+      "INTELLIGENT": {
+        "level": 1,
+        "members": ["BRIGHT", "QUICK", "SHARP", "SMART"]
+      },
+      "DEODORANTS": {
+        "level": 2,
+        "members": ["AXE", "DEGREE", "OLD SPICE", "SECRET"]
+      },
+      "MEDIEVAL WEAPONS": {
+        "level": 3,
+        "members": ["CLUB", "FLAIL", "MACE", "SWORD"]
+      }
+    },
+    "startingGroups": [
+      ["SHARP", "SWORD", "AXE", "SAGE"],
+      ["OLD SPICE", "MACE", "QUICK", "DEGREE"],
+      ["DILL", "SECRET", "CLUB", "BRIGHT"],
+      ["FLAIL", "ANISE", "SMART", "NUTMEG"]
+    ]
+  },
+  {
+    "id": 152,
+    "groups": {
+      "FILMMAKING EQUIPMENT": {
+        "level": 0,
+        "members": ["BOOM", "DOLLY", "LENS", "TRIPOD"]
+      },
+      "FUN TIME": {
+        "level": 1,
+        "members": ["BALL", "BLAST", "KICK", "RIOT"]
+      },
+      "SPARSE/LACKING": {
+        "level": 2,
+        "members": ["LIGHT", "SHORT", "SPARE", "THIN"]
+      },
+      "“GET A ___!”": {
+        "level": 3,
+        "members": ["CLUE", "GRIP", "LIFE", "ROOM"]
+      }
+    },
+    "startingGroups": [
+      ["KICK", "BALL", "BOOM", "ROOM"],
+      ["SHORT", "CLUE", "SPARE", "BLAST"],
+      ["DOLLY", "GRIP", "LIFE", "LIGHT"],
+      ["RIOT", "TRIPOD", "THIN", "LENS"]
+    ]
+  },
+  {
+    "id": 153,
+    "groups": {
+      "CAR COMPANIES": {
+        "level": 0,
+        "members": ["BMW", "HONDA", "JAGUAR", "SUBARU"]
+      },
+      "SPORTS PROFESSIONAL": {
+        "level": 1,
+        "members": ["COACH", "GM", "PLAYER", "SCOUT"]
+      },
+      "PRESIDENTS": {
+        "level": 2,
+        "members": ["FORD", "GRANT", "LINCOLN", "WILSON"]
+      },
+      "COMMON PREFIXES": {
+        "level": 3,
+        "members": ["AUTO", "POST", "SEMI", "SUB"]
+      }
+    },
+    "startingGroups": [
+      ["FORD", "AUTO", "SCOUT", "POST"],
+      ["SEMI", "GM", "GRANT", "SUBARU"],
+      ["COACH", "JAGUAR", "BMW", "SUB"],
+      ["HONDA", "WILSON", "PLAYER", "LINCOLN"]
+    ]
+  },
+  {
+    "id": 154,
+    "groups": {
+      "UNIT OF LANGUAGE": {
+        "level": 0,
+        "members": ["LETTER", "PARAGRAPH", "SENTENCE", "WORD"]
+      },
+      "FUNNY PERSON": {
+        "level": 1,
+        "members": ["CARD", "CLOWN", "CUTUP", "JOKER"]
+      },
+      "TRADEMARK": {
+        "level": 2,
+        "members": ["FEATURE", "HALLMARK", "STAMP", "TRAIT"]
+      },
+      "THINGS WITH LEAVES": {
+        "level": 3,
+        "members": ["BOOK", "TABLE", "TEA", "TREE"]
+      }
+    },
+    "startingGroups": [
+      ["STAMP", "WORD", "CLOWN", "TEA"],
+      ["BOOK", "CARD", "LETTER", "FEATURE"],
+      ["SENTENCE", "HALLMARK", "TREE", "JOKER"],
+      ["TRAIT", "TABLE", "CUTUP", "PARAGRAPH"]
+    ]
+  },
+  {
+    "id": 155,
+    "groups": {
+      "BASIC EMOTIONS": {
+        "level": 0,
+        "members": ["ANGER", "FEAR", "HAPPINESS", "SURPRISE"]
+      },
+      "BIT OF VOCAL FANFARE": {
+        "level": 1,
+        "members": ["BEHOLD", "PRESTO", "TADA", "VOILA"]
+      },
+      "OBTAIN": {
+        "level": 2,
+        "members": ["GET", "LAND", "SECURE", "WIN"]
+      },
+      "___ ANT": {
+        "level": 3,
+        "members": ["ADAM", "CARPENTER", "FIRE", "RED"]
+      }
+    },
+    "startingGroups": [
+      ["WIN", "FIRE", "HAPPINESS", "PRESTO"],
+      ["VOILA", "ADAM", "LAND", "FEAR"],
+      ["GET", "ANGER", "BEHOLD", "RED"],
+      ["SURPRISE", "CARPENTER", "SECURE", "TADA"]
+    ]
+  },
+  {
+    "id": 156,
+    "groups": {
+      "“GROSS!”": {
+        "level": 0,
+        "members": ["EW", "ICK", "PU", "UGH"]
+      },
+      "MAGAZINES": {
+        "level": 1,
+        "members": ["O", "OK", "US", "W"]
+      },
+      "“YES” IN DIFFERENT LANGUAGES": {
+        "level": 2,
+        "members": ["HAI", "JA", "SI", "DA"]
+      },
+      "HOMOPHONES": {
+        "level": 3,
+        "members": ["OUI", "WE", "WEE", "WII"]
+      }
+    },
+    "startingGroups": [
+      ["EW", "OK", "WE", "O"],
+      ["US", "PU", "SI", "WII"],
+      ["DA", "WEE", "UGH", "JA"],
+      ["ICK", "HAI", "W", "OUI"]
+    ]
+  },
+  {
+    "id": 157,
+    "groups": {
+      "BALDERDASH": {
+        "level": 0,
+        "members": ["BULL", "HOGWASH", "NONSENSE", "ROT"]
+      },
+      "HELM": {
+        "level": 1,
+        "members": ["DIRECT", "GUIDE", "LEAD", "STEER"]
+      },
+      "SINGLE/PLURAL ANIMALS": {
+        "level": 2,
+        "members": ["BUFFALO", "DEER", "FISH", "MOOSE"]
+      },
+      "GREAT ___": {
+        "level": 3,
+        "members": ["DANE", "LAKE", "SEAL", "WHITE"]
+      }
+    },
+    "startingGroups": [
+      ["WHITE", "FISH", "LEAD", "BULL"],
+      ["MOOSE", "LAKE", "STEER", "ROT"],
+      ["DIRECT", "SEAL", "NONSENSE", "DEER"],
+      ["HOGWASH", "GUIDE", "BUFFALO", "DANE"]
+    ]
+  }
+]

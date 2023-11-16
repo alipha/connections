@@ -79,7 +79,7 @@ function validate(which, puzzles) {
 }
 
 var fs = require('fs');
-var currentFile = fs.readFileSync('../puzzles.js', 'utf-8');
+var currentFile = fs.readFileSync('/home/alipha/repos/connections/puzzles.js', 'utf-8');
 var current = eval(currentFile.substring(14, currentFile.length-2));
 validate('current', current);
 console.error('current.length = ' + current.length);
@@ -117,4 +117,4 @@ for(var i = 0; i < current.length; ++i) {
 }
 
 console.error('Changed puzzles: ' + changedIds);
-fs.writeFileSync('../changed.js', 'var changedPuzzles = ' + JSON.stringify(changedPuzzles) + ';');
+fs.writeFileSync('/home/alipha/repos/connections/changed.js', 'var changedPuzzles = ' + JSON.stringify(changedPuzzles) + ';');

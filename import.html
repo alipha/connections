@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function init() {
+			var data = {};
+			var elem = document.getElementById('data');
+
+			for (var i = 0; i < localStorage.length; i++) {
+				var key = localStorage.key(i);
+				data[key] = localStorage.getItem(key);
+			}
+
+			elem.value = JSON.stringify(data);
+		}
+
+		function run() {
+			var data = JSON.parse(document.getElementById('data').value);
+			Object.entries(data).forEach((entry) => {
+				localStorage.setItem(entry[0], entry[1]);
+			});
+		}
+	</script>
+</head>
+<body onload="init()">
+	<input type="button" onclick="run()" value="Import" /><br />
+	<textarea rows="30" cols="100" id="data">
+	</textarea>
+</body>
+</html>

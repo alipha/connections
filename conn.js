@@ -44,10 +44,11 @@ function puzzleId() {
 
 async function init() {
 	const currentDate = new Date();
+	currentDate.setHours(0, 0, 0, 0);
 	var targetDate = new Date('2023-06-11 00:00:00');
 	const timeDifference = currentDate - targetDate;
 	const daysDifference = timeDifference / (1000 * 60 * 60 * 24);
-	todayNumber = Math.floor(daysDifference);
+	todayNumber = Math.round(daysDifference);
 
 	const urlParams = new URLSearchParams(window.location.search);
 	customId = urlParams.get('custom');

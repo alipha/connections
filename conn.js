@@ -123,7 +123,13 @@ async function init() {
 		};
 		elem('date').innerText = new Intl.DateTimeFormat('en-US', dateOptions).format(targetDate);
 
-		puzzle = puzzles[puzzleNumber - 1];
+		if(puzzleNumber < 205) {
+			puzzle = puzzles[puzzleNumber - 1];
+		} else {
+			const dateStr = `${targetDate.getFullYear()}-${String(targetDate.getMonth() + 1).padStart(2, '0')}-${String(targetDate.getDate()).padStart(2, '0')}`;
+			const puzzleData = await fetch(`puzzles/${dateStr}.json`);
+			puzzle = await puzzleData.json();
+		}
 	}
 
 	groups = Object.entries(puzzle.groups).map((entry) => ({ solved: false, category: entry[0], ...entry[1] }));

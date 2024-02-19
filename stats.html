@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="puzzles.js?v=10" charset="UTF-8"></script>
+<script type="text/javascript">
+function init() {
+	//var data = [];
+	var stats = {
+		// posFreq[color][solvePosition], where solvePosition == 0 means not solved
+		posFreq: [
+			[0, 0, 0, 0],
+			[0, 0, 0, 0],
+			[0, 0, 0, 0],
+			[0, 0, 0, 0],
+			[0, 0, 0, 0]
+		],
+		mistakeCount: [0, 0, 0, 0, 0],
+		oneAwayByColor: [0, 0, 0, 0],
+		rainbowCount: 0,
+		twoMatchCount: 0
+	};
+
+	for(var i = 0; i < localStorage.length; i++) {
+		var key = localStorage.key(i);
+		if(key.startsWith('puzzle_') && !key.startsWith('puzzle_c') && !key.startsWith('puzzle_a')) {
+			var id = parseInt(key.substring(7));
+			var puzzle = JSON.parse(localStorage.getItem(key));
+			
+			var solveCount = puzzle.solved.filter(s => s).length;
+			if(solvedCount == 4 || puzzle.guesses.length - solvedCount == 4) {
+				var answer = puzzles[id];
+
+				for(var rowIndex = 0; rowIndex < puzzles.guesses.length; ++rowIndex) {
+					var rowColors = getRowColors(puzzle.guesses[rowIndex], answer);
+				}
+				//data.push({ answer: puzzles[id], state: puzzle });
+			}
+		}
+	}
+	/*
+	for(var i = 0; i < data.length; ++i) {
+		var puzzle = data[i];
+
+	}*/
+}
+</script>
+</head>
+<body>
+</body>
+</html>

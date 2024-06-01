@@ -54,7 +54,7 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 
 async function run() {
-	let targetDate = new Date(2024, 4, 2);
+	let targetDate = new Date(2024, 5, 19);
 	while(true) {
 		const dateStr = `${targetDate.getFullYear()}-${String(targetDate.getMonth() + 1).padStart(2, '0')}-${String(targetDate.getDate()).padStart(2, '0')}`;
 		const puzzleData = await fetch(`https://www.nytimes.com/svc/connections/v1/${dateStr}.json`);

@@ -3,6 +3,7 @@ var todayNumber;
 var customId = null;
 var changedId = null;
 var adhocId = null;
+var namedId = null;
 var puzzle;
 var groups;
 var guesses = [];
@@ -39,6 +40,7 @@ function puzzleId() {
 	return adhocId !== null ? puzzleNumber 
 	   : changedId !== null ? 'changed_' + (changedId - 1)
 		: customId !== null ? 'custom_' + (customId - 1) 
+	   : namedId !== null ? 'named_' + namedId
 		: puzzleNumber - 1;
 }
 
@@ -53,6 +55,10 @@ async function init() {
 	const urlParams = new URLSearchParams(window.location.search);
 	customId = urlParams.get('custom');
 	changedId = urlParams.get('changed');
+	namedId = urlParams.get('p');
+	if(namedId !== null && /[^\w-]/.test(namedId))
+		namedId = null;
+
 	const adhocStr = urlParams.get('adhoc');
 
 	if(adhocStr !== null) {
@@ -63,6 +69,13 @@ async function init() {
 		elem('previous').classList.add('hide');
 		elem('next').classList.add('hide');
 		elem('date').innerText = 'Puzzle ' + adhocId;
+	} else if(namedId !== null) {
+		puzzleNumber = 'named_' + namedId;
+		elem('previous').classList.add('hide');
+		elem('next').classList.add('hide');
+		elem('date').innerText = 'Puzzle ' + namedId;
+		const puzzleData = await fetch(`custom/${namedId}.json`);
+		puzzle = await puzzleData.json();
 	} else if(customId !== null) {
 		customId = Number(customId);
 		puzzleNumber = 'custom_' + customId;
@@ -516,6 +529,7 @@ function share() {
 	var text = adhocId !== null ? 'Connections\nPuzzle ' + adhocId + '\n' + toEmojis() 
 		: customId !== null ? 'Connections\nCustom Puzzle #' + customId + '\n' + toEmojis()
 		: changedId !== null ? 'Connections\nOfficial Puzzle #' + (puzzle.id + 1) + '\n' + toEmojis()
+		: namedId !== null ? 'Connections\nPuzzle ' + namedId + '\n' + toEmojis()
 		: 'Connections\nPuzzle #' + puzzleNumber + '\n' + toEmojis();
 	
 	navigator.clipboard.writeText(text)

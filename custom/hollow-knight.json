@@ -1,0 +1,66 @@
+{
+    "groups": {
+        "BINDINGS": {
+            "level": 0,
+            "members": [
+                "NAIL",
+                "SHELL",
+                "CHARMS",
+                "SOUL"
+            ]
+        },
+        "GREAT KNIGHTS": {
+            "level": 1,
+            "members": [
+                "GREY MOURNER",
+                "ISMA",
+                "DUNG DEFENDER",
+                "DRYYA"
+            ]
+        },
+        "FIRST WORD OF ABILITIES": {
+            "level": 2,
+            "members": [
+                "MONARCH",
+                "MOTHWING",
+                "CRYSTAL",
+                "SHADE"
+            ]
+        },
+        "MANTIS ______": {
+            "level": 3,
+            "members": [
+                "LORD",
+                "YOUTH",
+                "VILLAGE",
+                "CLAW"
+            ]
+        }
+    },
+    "startingGroups": [
+        [
+            "YOUTH",
+            "MOTHWING",
+            "CRYSTAL",
+            "SOUL"
+        ],
+        [
+            "DUNG DEFENDER",
+            "CHARMS",
+            "SHADE",
+            "VILLAGE"
+        ],
+        [
+            "MONARCH",
+            "GREY MOURNER",
+            "DRYYA",
+            "CLAW"
+        ],
+        [
+            "ISMA",
+            "LORD",
+            "SHELL",
+            "NAIL"
+        ]
+    ]
+}

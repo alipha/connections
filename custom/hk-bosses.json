@@ -1,0 +1,66 @@
+{
+    "groups": {
+        "DREAM WARRIORS": {
+            "level": 0,
+            "members": [
+                "MARKOTH",
+                "GORB",
+                "MARMU",
+                "XERO"
+            ]
+        },
+        "BOSSES THAT DO TWO DAMAGE": {
+            "level": 1,
+            "members": [
+                "TRAITOR LORD",
+                "NIGHTMARE KING GRIMM",
+                "ENRAGED GUARDIAN",
+                "FAILED CHAMPION"
+            ]
+        },
+        "BOSSES WITH SPAWNS": {
+            "level": 2,
+            "members": [
+                "BROKEN VESSEL",
+                "SOUL WARRIOR",
+                "FLUKEMARM",
+                "GREY PRINCE ZOTE"
+            ]
+        },
+        "BOSSES THAT DON'T DIE WHEN YOU BEAT THEM": {
+            "level": 3,
+            "members": [
+                "HORNET",
+                "DUNG DEFENDER",
+                "CRYSTAL GUARDIAN",
+                "MANTIS LORDS"
+            ]
+        }
+    },
+    "startingGroups": [
+        [
+            "CRYSTAL GUARDIAN",
+            "HORNET",
+            "SOUL WARRIOR",
+            "DUNG DEFENDER"
+        ],
+        [
+            "BROKEN VESSEL",
+            "GREY PRINCE ZOTE",
+            "ENRAGED GUARDIAN",
+            "FAILED CHAMPION"
+        ],
+        [
+            "MARKOTH",
+            "GORB",
+            "MANTIS LORDS",
+            "XERO"
+        ],
+        [
+            "FLUKEMARM",
+            "TRAITOR LORD",
+            "MARMU",
+            "NIGHTMARE KING GRIMM"
+        ]
+    ]
+}

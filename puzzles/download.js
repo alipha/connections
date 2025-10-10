@@ -1,47 +1,62 @@
 function validate(puzzle, i) {
-	if(!puzzle.groups) {
-		console.error('groups field not found on puzzle ' + i);
+	var result = {
+		id: puzzle.id,
+		groups: {},
+		startingGroups: [
+			['', '', '', ''],
+			['', '', '', ''],
+			['', '', '', ''],
+			['', '', '', '']
+		]
+	};
+	if(!puzzle.categories) {
+		console.error('categories field not found on puzzle ' + i);
 		process.exit(1);
 	}
+	if(!Array.isArray(puzzle.categories)) {
+		console.error('categories is not an array on puzzle ' + i);
+		process.exit(1);
+	}
+	/*
 	if(!puzzle.startingGroups || !Array.isArray(puzzle.startingGroups) || puzzle.startingGroups.length !== 4) {
 		console.error('startingGroups is not valid on puzzle ' + i);
 		process.exit(1);
 	}
-	var groupCount = 0;
-	for(const [category, group] of Object.entries(puzzle.groups)) {
-		groupCount++;
-		if(typeof group.level !== 'number' || group.level < 0 || group.level > 3) {
-			console.error('invalid level ' + group.level + ' for puzzle ' + i);
-			process.exit(1);
-		}
-		if(!group.members || !Array.isArray(group.members) || group.members.length !== 4) {
-			console.error('invalid members for puzzle ' + i);
-			process.exit(1);
-		}
-		for(var m = 0; m < group.members.length; ++m) {
-			if(typeof group.members[m] !== 'string') {
-				console.error('group.member ' + m + ' of puzzle ' + i + ' is not a string');
-				process.exit(1);
-			}
-		}
-	}
-	if(groupCount !== 4) {
-		console.error('Puzzle ' + i + ' had ' + groupCount + ' groups');
+	*/
+	if(puzzle.categories.length !== 4) {
+		console.error('Puzzle ' + i + ' had ' + puzzle.categories.length + ' categories');
 		process.exit(1);
 	}
-	for(var g = 0; g < puzzle.startingGroups.length; ++g) {
-		var group = puzzle.startingGroups[g];
-		if(!group || !Array.isArray(group) || group.length !== 4) {
-			console.error('Group ' + g + ' on puzzle ' + i + ' is not valid');
+	for(var g = 0; g < puzzle.categories.length; ++g) {
+		const category = puzzle.categories[g];
+		if(typeof category.title !== 'string') {
+			console.error('no title for category ' + g + ' of puzzle ' + i);
 			process.exit(1);
 		}
-		for(var m = 0; m < group.length; ++m) {
-			if(typeof group[m] !== 'string') {
-				console.error('group[' + g + '][' + m + '] of puzzle ' + i + ' is not a string');
+		if(!category.cards || !Array.isArray(category.cards)) {
+			console.error('invalid cards for category ' + g + ' of puzzle ' + i);
+			process.exit(1);
+		}
+		if(category.cards.length !== 4) {
+			console.error('cards for category ' + g + ' of puzzle ' + i + ' has length of ' + category.cards.length);
+			process.exit(1);
+		}
+		result.groups[category.title] = { level: g, members: ['', '', '', ''] };
+		for(var m = 0; m < category.cards.length; ++m) {
+			const card = category.cards[m];
+			if(typeof card.content !== 'string') {
+				console.error('card.content ' + m + ' of category ' + g + ' of puzzle ' + i + ' is not a string');
 				process.exit(1);
 			}
+			if(typeof card.position !== 'number' || card.position < 0 || card.position > 15) {
+				console.error('card.position ' + m + ' of category ' + g + ' of puzzle ' + i + ' is invalid: ' + card.position);
+				process.exit(1);
+			}
+			result.groups[category.title].members[m] = card.content;
+			result.startingGroups[Math.floor(card.position / 4)][card.position % 4] = card.content;
 		}
 	}
+	return result;
 }
 
 function sleep(ms) {
@@ -54,14 +69,14 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 
 async function run() {
-	let targetDate = new Date(2025, -1+8, 26);
+	let targetDate = new Date(2025, -1+10, 9);
 	while(true) {
 		const dateStr = `${targetDate.getFullYear()}-${String(targetDate.getMonth() + 1).padStart(2, '0')}-${String(targetDate.getDate()).padStart(2, '0')}`;
-		const puzzleData = await fetch(`https://www.nytimes.com/svc/connections/v1/${dateStr}.json`);
+		const puzzleData = await fetch(`https://www.nytimes.com/svc/connections/v2/${dateStr}.json`);
 		if(puzzleData.status != 200)
 			break;
 		puzzle = await puzzleData.json();
-		validate(puzzle, dateStr);
+		puzzle = validate(puzzle, dateStr);
 		
 		fs.writeFileSync(`${dateStr}.json`, JSON.stringify(puzzle));
 		console.log(`Wrote ${dateStr}.json`);

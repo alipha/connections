@@ -25,7 +25,14 @@ function getText(td) { return td.firstChild.innerText; }
 
 function setText(td, text) {
 	td.firstChild.innerText = text;
-	resizeText(td);
+	if(puzzle.images && puzzle.images[text]) {
+		td.firstChild.style.display = 'none';
+		td.lastChild.src = puzzle.images[text];
+		td.lastChild.alt = text;
+		td.lastChild.style.display='';
+	} else {
+		resizeText(td);
+	}
 }
 
 function resizeText(td) {

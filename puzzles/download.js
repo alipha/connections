@@ -2,6 +2,7 @@ function validate(puzzle, i) {
 	var result = {
 		id: puzzle.id,
 		groups: {},
+		images: {},
 		startingGroups: [
 			['', '', '', ''],
 			['', '', '', ''],
@@ -17,12 +18,6 @@ function validate(puzzle, i) {
 		console.error('categories is not an array on puzzle ' + i);
 		process.exit(1);
 	}
-	/*
-	if(!puzzle.startingGroups || !Array.isArray(puzzle.startingGroups) || puzzle.startingGroups.length !== 4) {
-		console.error('startingGroups is not valid on puzzle ' + i);
-		process.exit(1);
-	}
-	*/
 	if(puzzle.categories.length !== 4) {
 		console.error('Puzzle ' + i + ' had ' + puzzle.categories.length + ' categories');
 		process.exit(1);
@@ -43,17 +38,28 @@ function validate(puzzle, i) {
 		}
 		result.groups[category.title] = { level: g, members: ['', '', '', ''] };
 		for(var m = 0; m < category.cards.length; ++m) {
+			let content = '';
 			const card = category.cards[m];
-			if(typeof card.content !== 'string') {
+			// TODO: image_url, image_alt_text
+			if(typeof card.image_url === 'string') {
+				if(typeof card.image_alt_text !== 'string') {
+					console.error('card.image_url ' + m + ' of category ' + g + ' of puzzle ' + i + ' exists but not image_alt_text');
+					process.exit(1);
+				}
+				content = card.image_alt_text;
+				result.images[content] = card.image_url;
+			} else if(typeof card.content !== 'string') {
 				console.error('card.content ' + m + ' of category ' + g + ' of puzzle ' + i + ' is not a string');
 				process.exit(1);
+			} else {
+				content = card.content;
 			}
 			if(typeof card.position !== 'number' || card.position < 0 || card.position > 15) {
 				console.error('card.position ' + m + ' of category ' + g + ' of puzzle ' + i + ' is invalid: ' + card.position);
 				process.exit(1);
 			}
-			result.groups[category.title].members[m] = card.content;
-			result.startingGroups[Math.floor(card.position / 4)][card.position % 4] = card.content;
+			result.groups[category.title].members[m] = content;
+			result.startingGroups[Math.floor(card.position / 4)][card.position % 4] = content;
 		}
 	}
 	return result;
@@ -69,7 +75,7 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 
 async function run() {
-	let targetDate = new Date(2025, -1+10, 9);
+	let targetDate = new Date(2025, -1+10, 22);
 	while(true) {
 		const dateStr = `${targetDate.getFullYear()}-${String(targetDate.getMonth() + 1).padStart(2, '0')}-${String(targetDate.getDate()).padStart(2, '0')}`;
 		const puzzleData = await fetch(`https://www.nytimes.com/svc/connections/v2/${dateStr}.json`);

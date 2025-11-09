@@ -1,0 +1,66 @@
+{
+  "groups": {
+    "OLD HEARTS": {
+      "level": 0,
+      "members": [
+        "ENCRUSTED",
+        "POLLEN",
+        "HUNTER'S",
+        "CONJOINED"
+      ]
+    },
+    "CRESTS": {
+      "level": 1,
+      "members": [
+        "BEAST",
+        "REAPER",
+        "SHAMAN",
+        "WITCH"
+      ]
+    },
+    "FEATURED IN HOLLOW KNIGHT": {
+      "level": 2,
+      "members": [
+        "HORNET",
+        "SHADOW CREEPER",
+        "MISTER MUSHROOM",
+        "LIFESEED"
+      ]
+    },
+    "CHARACTER MINUS ORDINAL NUMBER": {
+      "level": 3,
+      "members": [
+        "SINNER",
+        "SENTINEL",
+        "CHORUS",
+        "ARCHITECT"
+      ]
+    }
+  },
+  "startingGroups": [
+    [
+      "CONJOINED",
+      "LIFESEED",
+      "CHORUS",
+      "POLLEN"
+    ],
+    [
+      "ENCRUSTED",
+      "SHAMAN",
+      "HORNET",
+      "SINNER"
+    ],
+    [
+      "HUNTER'S",
+      "SENTINEL",
+      "WITCH",
+      "MISTER MUSHROOM"
+    ],
+    [
+      "REAPER",
+      "SHADOW CREEPER",
+      "BEAST",
+      "ARCHITECT"
+    ]
+  ]
+}

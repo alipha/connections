@@ -39,7 +39,8 @@ function resizeText(td) {
 	var size = 15;
 	td.style.fontSize = '15px';
 	td.firstChild.style.display = '';
-	td.lastChild.style.display = 'none';
+	if(td.lastChild.tagName == 'IMG')
+		td.lastChild.style.display = 'none';
 	while(td.offsetWidth <= td.firstChild.offsetWidth && size > 8) {
 		td.style.fontSize = (--size) + 'px';
 	}
